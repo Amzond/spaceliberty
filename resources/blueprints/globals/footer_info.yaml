@@ -1,0 +1,64 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: address
+        field:
+          placeholder: 'A.Jaksto g. 9, Vilnius, Lietuva'
+          input_type: text
+          antlers: false
+          display: Address
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: company_code
+        field:
+          placeholder: "Reg. kodas:\t305281052"
+          input_type: text
+          antlers: false
+          display: Company_code
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: subtitle
+        field:
+          placeholder: 'Interjero dizaino studija'
+          input_type: text
+          antlers: false
+          display: Subtitle
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: email
+        field:
+          placeholder: jauku@spaceliberty.lt
+          input_type: email
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: phone
+        field:
+          placeholder: '+370 608 96 491'
+          input_type: number
+          antlers: false
+          display: Phone
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false

@@ -1,0 +1,91 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: address
+        field:
+          input_type: text
+          antlers: false
+          display: Address
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: phone
+        field:
+          input_type: text
+          antlers: false
+          display: Phone
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: subtitle
+        field:
+          input_type: text
+          antlers: false
+          display: Subtitle
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: email
+        field:
+          input_type: text
+          antlers: false
+          display: email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: facebook
+        field:
+          input_type: text
+          antlers: false
+          display: facebook
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: instagram
+        field:
+          input_type: text
+          antlers: false
+          display: instagram
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: reg_code
+        field:
+          input_type: text
+          antlers: false
+          display: reg_code
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: info_klientams
+        field:
+          antlers: false
+          display: 'info klientams'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          read_only: false

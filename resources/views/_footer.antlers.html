@@ -1,0 +1,42 @@
+<div class="bg-white w-screen pt-16 pb-32 px-80 gap-10">
+
+   <div class="container grid grid-cols-auto-fit gap-16 ">
+
+       <div class="flex flex-col gap-1" >
+            <h3 class="font-sans font-normal text-28px" >Erdvė ir Laisvė, MB</h3>
+                <div class="flex flex-col gap-1">
+                    <h4 class="font-sans font-normal text-16-24px tracking-widest">{{ globals:subtitle }}</h4>
+                    <p class="font-sans font-normal text-16-20px">{{ globals:reg_code }}</p>
+                    <p>{{ globals:address }}</p>
+                    <a href="mailto:{{globals:email}} ">{{globals:email}}</a>
+                    <a href="tel:{{globals:phone}}">{{globals:phone}}</a>
+                </div>
+       </div>
+
+       {{ nav:footer }}
+        <div class=" gap-1 ">
+                {{ if title != "Erdvė ir Laisvė, MB" }}
+                <h3 class="font-sans font-normal text-28px" >{{title}}</h3>
+                {{ children }}
+                <div class="flex items-center">
+                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                        <path d="M0 4H8.5M8.5 4L5 0.5M8.5 4L5 7.5" stroke="black"/>
+                    </svg>
+                    <a href="#" class="hover:underline">{{title}}</a>
+                </div>
+                {{ /children }}
+                {{ /if }}
+   </div>
+    {{ /nav:footer }}
+       <div class="flex flex-col gap-1">
+           <h3 class="font-sans font-normal text-28px" > Esate mūsų klientas?</h3>
+           <p>{{globals:info_klientams}}</p>
+       </div>
+
+    </div>
+    <div class="flex gap-8" >
+        <a href="#">Privatumo politika</a>
+        <a href="#">Naudojimo taisykles</a>
+        <p class="inline ml-auto ">{{ now format="Y" }} Visos teises saugamos, Erdvė ir Laisvė, MB &copy;   </p>
+    </div>
+</div>
