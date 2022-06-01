@@ -443,10 +443,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 851px) {
 
   .container {
-    max-width: 1024px;
+    max-width: 851px;
   }
 }
 
@@ -498,10 +498,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2rem !important;
 }
 
-.mr-auto {
-  margin-right: auto !important;
-}
-
 .inline {
   display: inline !important;
 }
@@ -526,12 +522,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 10rem !important;
 }
 
-.w-screen {
-  width: 100vw !important;
-}
-
 .grid-cols-auto-fit {
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)) !important;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
 
 .flex-col {
@@ -562,12 +558,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 2rem !important;
 }
 
-.gap-2\.5 {
-  gap: 0.625rem !important;
-}
-
 .gap-2 {
   gap: 0.5rem !important;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem !important;
 }
 
 .gap-4 {
@@ -626,16 +622,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem !important;
 }
 
-.px-2 {
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
-}
-
-.py-1 {
-  padding-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
-}
-
 .pt-16 {
   padding-top: 4rem !important;
 }
@@ -677,21 +663,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem !important;
 }
 
-.text-16-20px {
-  font-size: 16px !important;
-  line-height: 20px !important;
-}
-
 .font-normal {
   font-weight: 400 !important;
 }
 
 .font-semibold {
   font-weight: 600 !important;
-}
-
-.font-normal {
-  font-weight: 400 !important;
 }
 
 .leading-normal {
@@ -751,35 +728,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(198 135 108 / var(--tw-text-opacity)) !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 851px) {
 
-  .md\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  .lg\:ml-auto {
+    margin-left: auto !important;
   }
-}
-
-@media (min-width: 1024px) {
 
   .lg\:min-h-screen {
     min-height: 100vh !important;
   }
 
-  .lg\:grid-cols-1-2fr {
-    grid-template-columns: 0.6fr 1.3fr !important;
-  }
-
   .lg\:grid-cols-auto-fit {
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)) !important;
-  }
-
-  .lg\:px-80 {
-    padding-left: 20rem !important;
-    padding-right: 20rem !important;
-  }
-
-  .lg\:py-4 {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
   }
 
   .lg\:px-80 {
@@ -801,7 +761,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 1280px) {
+
+  .xl\:grid-cols-1-2fr {
+    grid-template-columns: 0.6fr 1.3fr !important;
+  }
+}
+
 @media (max-width: 850px) {
+
+  .xs\:w-full {
+    width: 100% !important;
+  }
+
+  .xs\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+
+  .xs\:place-content-center {
+    place-content: center !important;
+  }
+
+  .xs\:gap-4 {
+    gap: 1rem !important;
+  }
 
   .xs\:px-5 {
     padding-left: 1.25rem !important;
