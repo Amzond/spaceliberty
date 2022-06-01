@@ -19,12 +19,12 @@
                 </svg>
             </a>
         </div>
-        <div class="flex gap-4">
+        <div class="flex gap-4 xs:hidden" >
             <a class="px-2 py-1 font-ale-sans font-normal text-16-20px 002em" href="#">LT</a>
             {{ nav:header }}
 
-            <div class="px-2 py-1">
-                <a href="#"><p class="font-ale-sans font-normal text-16-20px 002em">{{title}}</p></a>
+            <div class="px-2 py-1 ">
+                <a class="hover:text-orange active:text-dark-orange" href="#"><p class="font-ale-sans font-normal text-16-20px 002em">{{title}}</p></a>
             </div>
             {{ /nav:header }}
 
@@ -32,8 +32,17 @@
 
 
     </div>
-    <div class="ml-auto">
-        <a class="text-16-20px font-ale-sans font-normal " href="tel:{{globals:phone}}">{{globals:phone}}</a>
+    <div class="ml-auto flex h-11 w-44 gap-4">
+        <a class="text-16-20px font-ale-sans font-normal hover:text-orange active:text-dark-orange " href="tel:{{globals:phone}}">{{globals:phone}}</a>
+        <a  class="hover:text-orange active:text-dark-orange"href="#">
+            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.5" width="32" height="1" fill="currentColor"/>
+                <rect y="11.5" width="32" height="1" fill="currentColor"/>
+                <rect y="22.5" width="32" height="1" fill="currentColor"/>
+            </svg>
+        </a>
+
+
     </div>
 
 </div>
