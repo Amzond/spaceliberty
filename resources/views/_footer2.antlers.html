@@ -1,33 +1,34 @@
-<div class="text-black bg-white w-screen lg:pt-16 lg:pb-32 lg:px-80 xs:px-5 xs:pb-16 xs:pt-8">
+<div class="text-black bg-white w-full pt-16 pb-32 px-4">
+    <!-- lg:pt-16 lg:pb-32 lg:px-80 xs:px-5 xs:pb-16 xs:pt-8 -->
+    <div class="container grid grid-cols-1-2fr xs:grid-cols-1 gap-2  mx-auto">
+        <!-- xs:gap-16 -->
+        <div class="gap-2">
+            <h3 class="font-sans font-normal text-28px" >Erdvė ir Laisvė, MB</h3>
+            <div class="flex flex-col gap-1">
+                <h4 class="font-sans font-normal text-18-24px tracking-widest ">{{ globals:subtitle }}</h4>
+                <p class="font-ale-sans font-normal text-16-20px 002em">{{ globals:reg_code }}</p>
+                <p class="font-ale-sans font-normal text-16-20px 002em">{{ globals:address }}</p>
+                <a class="underline text-16-20px font-ale-sans font-normal 002em" href="mailto:{{globals:email}} ">{{globals:email}}</a>
+                <a class="underline text-16-20px font-ale-sans font-normal 002em" href="tel:{{globals:phone}}">{{globals:phone}}</a>
+                <div class="flex gap-2.5 mt-8">
+                    <a href="#">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32 1H8C4.13401 1 1 4.13401 1 8V32C1 35.866 4.13401 39 8 39H32C35.866 39 39 35.866 39 32V8C39 4.13401 35.866 1 32 1ZM8 0C3.58172 0 0 3.58172 0 8V32C0 36.4183 3.58172 40 8 40H32C36.4183 40 40 36.4183 40 32V8C40 3.58172 36.4183 0 32 0H8Z" fill="black"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 30C25.5228 30 30 25.5228 30 20C30 14.4772 25.5228 10 20 10C14.4772 10 10 14.4772 10 20C10 25.5228 14.4772 30 20 30ZM20 31C26.0751 31 31 26.0751 31 20C31 13.9249 26.0751 9 20 9C13.9249 9 9 13.9249 9 20C9 26.0751 13.9249 31 20 31Z" fill="black"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M31 10C31.5523 10 32 9.55228 32 9C32 8.44772 31.5523 8 31 8C30.4477 8 30 8.44772 30 9C30 9.55228 30.4477 10 31 10ZM31 11C32.1046 11 33 10.1046 33 9C33 7.89543 32.1046 7 31 7C29.8954 7 29 7.89543 29 9C29 10.1046 29.8954 11 31 11Z" fill="black"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32 1H8C4.13401 1 1 4.13401 1 8V32C1 35.866 4.13401 39 8 39H32C35.866 39 39 35.866 39 32V8C39 4.13401 35.866 1 32 1ZM8 0C3.58172 0 0 3.58172 0 8V32C0 36.4183 3.58172 40 8 40H32C36.4183 40 40 36.4183 40 32V8C40 3.58172 36.4183 0 32 0H8Z" fill="black"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1184 9.59331C21.2555 10.7714 20.94 12.1955 20.94 13.1277V19.0745H15.5V24.2021H20.94V39H19.94V25.2021H14.5V18.0745H19.94V13.1277C19.94 12.0172 20.3045 10.3776 21.3116 9.00243C22.336 7.60378 24.0127 6.5 26.56 6.5H32.5V12.9468H28.6C27.5833 12.9468 27.3458 13.1294 27.2439 13.2996C27.1743 13.4156 27.1194 13.6025 27.0898 13.9282C27.0605 14.2517 27.06 14.6516 27.06 15.1702V18.0745H32.5586L31.7676 25.2021H27.06V39H26.06V24.2021H30.8724L31.4414 19.0745H26.06V15.1509C26.06 14.6559 26.06 14.2115 26.0939 13.8378C26.1281 13.4613 26.2007 13.095 26.3861 12.7855C26.7942 12.1046 27.5767 11.9468 28.6 11.9468H31.5V7.5H26.56C24.3473 7.5 22.964 8.43877 22.1184 9.59331Z" fill="black"/>
+                        </svg>
+                    </a>
 
-    <div class="container grid xl:grid-cols-1-2fr xs:grid-cols-1 gap-2 xs:gap-16">
-            <div class="gap-2">
-                <h3 class="font-sans font-normal text-28px" >Erdvė ir Laisvė, MB</h3>
-                <div class="flex flex-col gap-1">
-                    <h4 class="font-sans font-normal text-18-24px tracking-widest ">{{ globals:subtitle }}</h4>
-                    <p class="font-ale-sans font-normal text-16-20px 002em">{{ globals:reg_code }}</p>
-                    <p class="font-ale-sans font-normal text-16-20px 002em">{{ globals:address }}</p>
-                    <a class="underline text-16-20px font-ale-sans font-normal 002em" href="mailto:{{globals:email}} ">{{globals:email}}</a>
-                    <a class="underline text-16-20px font-ale-sans font-normal 002em" href="tel:{{globals:phone}}">{{globals:phone}}</a>
-                    <div class="flex gap-2.5 mt-8">
-                        <a href="#">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M32 1H8C4.13401 1 1 4.13401 1 8V32C1 35.866 4.13401 39 8 39H32C35.866 39 39 35.866 39 32V8C39 4.13401 35.866 1 32 1ZM8 0C3.58172 0 0 3.58172 0 8V32C0 36.4183 3.58172 40 8 40H32C36.4183 40 40 36.4183 40 32V8C40 3.58172 36.4183 0 32 0H8Z" fill="black"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 30C25.5228 30 30 25.5228 30 20C30 14.4772 25.5228 10 20 10C14.4772 10 10 14.4772 10 20C10 25.5228 14.4772 30 20 30ZM20 31C26.0751 31 31 26.0751 31 20C31 13.9249 26.0751 9 20 9C13.9249 9 9 13.9249 9 20C9 26.0751 13.9249 31 20 31Z" fill="black"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M31 10C31.5523 10 32 9.55228 32 9C32 8.44772 31.5523 8 31 8C30.4477 8 30 8.44772 30 9C30 9.55228 30.4477 10 31 10ZM31 11C32.1046 11 33 10.1046 33 9C33 7.89543 32.1046 7 31 7C29.8954 7 29 7.89543 29 9C29 10.1046 29.8954 11 31 11Z" fill="black"/>
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M32 1H8C4.13401 1 1 4.13401 1 8V32C1 35.866 4.13401 39 8 39H32C35.866 39 39 35.866 39 32V8C39 4.13401 35.866 1 32 1ZM8 0C3.58172 0 0 3.58172 0 8V32C0 36.4183 3.58172 40 8 40H32C36.4183 40 40 36.4183 40 32V8C40 3.58172 36.4183 0 32 0H8Z" fill="black"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1184 9.59331C21.2555 10.7714 20.94 12.1955 20.94 13.1277V19.0745H15.5V24.2021H20.94V39H19.94V25.2021H14.5V18.0745H19.94V13.1277C19.94 12.0172 20.3045 10.3776 21.3116 9.00243C22.336 7.60378 24.0127 6.5 26.56 6.5H32.5V12.9468H28.6C27.5833 12.9468 27.3458 13.1294 27.2439 13.2996C27.1743 13.4156 27.1194 13.6025 27.0898 13.9282C27.0605 14.2517 27.06 14.6516 27.06 15.1702V18.0745H32.5586L31.7676 25.2021H27.06V39H26.06V24.2021H30.8724L31.4414 19.0745H26.06V15.1509C26.06 14.6559 26.06 14.2115 26.0939 13.8378C26.1281 13.4613 26.2007 13.095 26.3861 12.7855C26.7942 12.1046 27.5767 11.9468 28.6 11.9468H31.5V7.5H26.56C24.3473 7.5 22.964 8.43877 22.1184 9.59331Z" fill="black"/>
-                            </svg>
-                        </a>
-
-                    </div>
                 </div>
             </div>
-        <div class="grid lg:grid-cols-auto-fit xs:grid-cols-1 xs:gap-16">
+        </div>
+        <div class="grid lg:grid-cols-auto-fit xs:grid-cols-1 xs:gap-16 ">
             {{ nav:footer }}
             <div >
                 <h3 class="font-sans font-normal text-28px" >{{title}}</h3>
@@ -53,9 +54,9 @@
             {{ /nav:footer }}
             <div>
                 <h3 class="font-sans font-normal text-28px" >Esate mūsų klientas?</h3>
-                    <div class="16-20px 002em font-ale-sans">
-                        <p>{{globals:info_klientams}}</p>
-                    </div>
+                <div class="16-20px 002em font-ale-sans">
+                    <p>{{globals:info_klientams}}</p>
+                </div>
                 <div class="h-10 w-40 xs:w-full mt-8 bg-transparent active:bg-dark-orange hover:bg-orange text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded tracking-widest ">
                     <a class="flex items-center font-normal 18-24px gap-2 xs:place-content-center" href="#">Prisijungti
                         <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,16 +67,15 @@
             </div>
         </div>
     </div>
-    <div class="flex mt-32 grid grid-cols-2 002em xs:grid-cols-1 xs:gap-4" >
-        <div class="flex gap-8" >
+    <div class="flex mt-32 grid grid-cols-2 002em xs:grid-cols-1 xs:gap-4 " >
+        <div class="flex gap-8 " >
             <a class="underline hover:text-orange active:text-dark-orange 16-20px" href="#">Privatumo politika</a>
             <a class="underline hover:text-orange active:text-dark-orange 16-20px" href="#">Naudojimo taisykles</a>
         </div>
-        <div class="lg:ml-auto " >
+        <div class="lg:ml-auto mr-8" >
             <p class="text-sm xs:place-content-center ">{{ now format="Y" }} Visos teises saugamos, Erdvė ir Laisvė, MB &copy; </p>
         </div>
 
-
-
     </div>
+
 </div>
