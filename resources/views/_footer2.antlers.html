@@ -3,8 +3,8 @@
     <div class="container grid bp-footer:grid-cols-1-2fr grid-cols-1 gap-2 mx-auto lg:pt-16 lg:pb-32 lg:px-32 xs:px-5 xs:pb-16 xs:pt-8 ">
         <!-- xs:gap-16 -->
         <div class="gap-2 xs:pb-16">
-            <h3 class="font-sans font-normal text-28px" >Erdvė ir Laisvė, MB</h3>
-            <div class="flex flex-col gap-1">
+            <h3 class="font-sans font-normal text-28px mb-2" >Erdvė ir Laisvė, MB</h3>
+            <div class="flex flex-col gap-2 ">
                 <h4 class="font-sans font-normal text-18-24px tracking-widest ">{{ globals:subtitle }}</h4>
                 <p class="font-ale-sans font-normal text-16-20px 002em">{{ globals:reg_code }}</p>
                 <p class="font-ale-sans font-normal text-16-20px 002em">{{ globals:address }}</p>
@@ -31,16 +31,21 @@
         <div class="grid bp-footer:grid-cols-auto-fit grid-cols-1 xs:gap-16 ">
             {{ nav:footer }}
             <div >
-                <h3 class="font-sans font-normal text-28px" >{{title}}</h3>
-                {{ children }}
-                <div class="flex items-center hover:text-orange active:text-dark-orange font-normal 16-24px">
-                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
-                        <path d="M0 4H8.5M8.5 4L5 0.5M8.5 4L5 7.5" stroke="currentColor"/>
-                    </svg>
-                    <a href="#" class="hover:underline  tracking-widest ">{{title}}</a>
+                <h3 class="font-sans font-normal text-28px mb-2" >{{title}}</h3>
 
-                </div>
+                {{ children }}
+
+                    <div class="mb-2 flex items-center hover:text-orange active:text-dark-orange font-normal ">
+
+                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                            <path d="M0 4H8.5M8.5 4L5 0.5M8.5 4L5 7.5" stroke="currentColor"/>
+                        </svg>
+                        <a href="#" class="hover:underline text-18-24px tracking-widest ">{{title}}</a>
+
+                    </div>
+
                 {{ /children }}
+
                 {{ if title == "Paslaugos"}}
                 <div class="h-10 w-40 xs:w-full mt-8 bg-transparent active:bg-dark-orange hover:bg-orange text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded tracking-widest ">
                     <a class="flex items-center font-normal 18-24px gap-2 xs:place-content-center" href="#">Užsisakyti
@@ -53,8 +58,8 @@
             </div>
             {{ /nav:footer }}
             <div>
-                <h3 class="font-sans font-normal text-28px" >Esate mūsų klientas?</h3>
-                <div class="16-20px 002em font-ale-sans">
+                <h3 class="font-sans font-normal text-28px mb-2" >Esate mūsų klientas?</h3>
+                <div class="text-18-24px 002em font-ale-sans">
                     <p>{{globals:info_klientams}}</p>
                 </div>
                 <div class="h-10 w-40 xs:w-full mt-8 bg-transparent active:bg-dark-orange hover:bg-orange text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded tracking-widest ">
