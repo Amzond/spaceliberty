@@ -33,9 +33,9 @@ module.exports = {
             'dark-orange': '#C6876C',
         },
         screens:{
-            'xs': {'max': '1475px'},
+            'xs': {'max': '1200px'},
             'lg': '851px',
-            'bp-footer': '1475px',
+            'bp-footer': '1200px',
         },
 
 
