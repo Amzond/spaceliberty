@@ -1,6 +1,6 @@
 <div id="nav" class="w-full  bg-transparent flex z-10  py-4 px-4 sticky top-0" >
   <!--   -->
-    <div class="container flex items-center text-black mx-auto">
+    <div class="container flex items-center text-black mx-auto lg:px-40 xs:px-5">
         <div class="mr-8" >
             <a href="#">
                 <svg width="188" height="38" viewBox="0 0 188 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,13 +22,14 @@
         </div>
 
         <div id="anchors" class="flex gap-4 ">
+            <a class="px-2 py-1 font-ale-sans font-normal text-16-20px 002em" href="#">LT</a>
             {{ nav:header}}
             <div class="px-2 py-1 xs:hidden ">
                 <a class="hover:text-orange active:text-dark-orange" href="#"><p class="font-ale-sans font-normal text-16-20px 002em">{{title}}</p></a>
             </div>
             {{ /nav:header}}
         </div>
-        <div class="ml-auto flex h-11 w-44 items-center gap-4 ">
+        <div class="ml-auto flex h-11 items-center gap-4 ">
             <a class="xs:hidden text-16-20px font-ale-sans font-normal hover:text-orange active:text-dark-orange" href="tel:{{globals:phone}}">{{globals:phone}}</a>
             <a  class="hover:text-orange active:text-dark-orange"href="#">
                 <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
