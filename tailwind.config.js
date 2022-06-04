@@ -32,6 +32,9 @@ module.exports = {
             'orange': '#F2946B',
             'dark-orange': '#C6876C',
             'lang-bg': 'rgba(0, 0, 0, 0.02)',
+            'lang-bg-h': 'rgba(242, 148, 107, 0.05)',
+            'lang-bg-a': 'rgba(198, 135, 108, 0.1)',
+            'cover-bg': 'rgba(0, 0, 0, 0.5)',
         },
         screens:{
             'xs': {'max': '1280px'},

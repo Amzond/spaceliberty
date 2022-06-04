@@ -485,12 +485,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px !important;
 }
 
+.left-0 {
+  left: 0px !important;
+}
+
 .z-10 {
   z-index: 10 !important;
 }
 
 .z-40 {
   z-index: 40 !important;
+}
+
+.z-30 {
+  z-index: 30 !important;
 }
 
 .mx-auto {
@@ -544,6 +552,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-11 {
   height: 2.75rem !important;
+}
+
+.h-full {
+  height: 100% !important;
 }
 
 .w-screen {
@@ -647,6 +659,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-lang-bg {
   background-color: rgba(0, 0, 0, 0.02) !important;
+}
+
+.bg-cover-bg {
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .p-2 {
@@ -793,6 +809,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(242 148 107 / var(--tw-bg-opacity)) !important;
 }
 
+.hover\:bg-lang-bg-h:hover {
+  background-color: rgba(242, 148, 107, 0.05) !important;
+}
+
 .hover\:text-orange:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(242 148 107 / var(--tw-text-opacity)) !important;
@@ -801,6 +821,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-white:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-dark-orange:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(198 135 108 / var(--tw-text-opacity)) !important;
 }
 
 .hover\:underline:hover {
@@ -816,6 +841,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .active\:text-dark-orange:active {
   --tw-text-opacity: 1 !important;
   color: rgb(198 135 108 / var(--tw-text-opacity)) !important;
+}
+
+.active\:text-orange:active {
+  --tw-text-opacity: 1 !important;
+  color: rgb(242 148 107 / var(--tw-text-opacity)) !important;
 }
 
 .active\:underline:active {
