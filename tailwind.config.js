@@ -31,11 +31,15 @@ module.exports = {
         colors:{
             'orange': '#F2946B',
             'dark-orange': '#C6876C',
+            'lang-bg': 'rgba(0, 0, 0, 0.02)',
         },
         screens:{
-            'xs': {'max': '1200px'},
+            'xs': {'max': '1280px'},
             'lg': '851px',
-            'bp-footer': '1200px',
+            'bp-footer': '1280px',
+        },
+        boxShadow:{
+            'lang-box': '16px 16px 44px rgba(0, 0, 0, 0.25)',
         },
 
 

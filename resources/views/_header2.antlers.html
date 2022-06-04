@@ -22,7 +22,39 @@
         </div>
 
         <div id="anchors" class="flex gap-4 ">
-            <a class="px-2 py-1 font-ale-sans font-normal text-16-20px 002em" href="#">LT</a>
+
+            <div class="hover:text-orange hover:underline active:text-dark-orange active:underline xs:hidden" onclick="showTooltip()" id="lang-btn">
+                <a class="flex items-center px-2 py-1 font-ale-sans gap-1 font-normal text-16-20px 002em" href="#">LT
+                    <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L3 3L5 1" stroke="currentColor"/>
+                    </svg></a>
+            </div>
+            <div class="hover:text-orange hover:underline active:text-dark-orange active:underline bp-footer:hidden" onclick="showMobileTooltip()" id="langm-btn">
+                <a class="flex items-center px-2 py-1 font-ale-sans gap-1 font-normal text-16-20px 002em" href="#">LT
+                    <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L3 3L5 1" stroke="currentColor"/>
+                    </svg></a>
+            </div>
+            <div id="lang" class="hidden origin-top-right absolute top-0 mt-16 bg-white shadow-lang-box p-2 rounded "  style=" height:112px; width: 200px;">
+                <div class="bg-lang-bg mb-2  rounded  hover:text-orange active:text-dark-orange">
+                    <a class="flex items-center text-16-20px font-ale-sans font-normal 002em p-3" href="#">
+                        Lietuvių
+                        <svg class="ml-auto" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="black" stroke-linecap="square"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="bg-lang-bg rounded  hover:text-orange active:text-dark-orange">
+                    <a class="flex items-center text-16-20px font-ale-sans font-normal 002em p-3" href="#">
+                        English
+                        <svg class="ml-auto" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="black" stroke-linecap="square"/>
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+
             {{ nav:header}}
             <div class="px-2 py-1 xs:hidden ">
                 <a class="hover:text-orange active:text-dark-orange" href="#"><p class="font-ale-sans font-normal text-16-20px 002em">{{title}}</p></a>
@@ -41,9 +73,24 @@
         </div>
     </div>
 </div>
-
-
-
+<div id="langm" class="hidden fixed bottom-0 bg-white p-8 font-pro rounded w-full z-40 translate-y-250 transition-all duration-500" onclick="hideDarkBackground()">
+    <div class="bg-lang-bg mb-2  rounded  hover:text-orange active:text-dark-orange">
+        <a class="flex items-center text-16-20px font-ale-sans font-normal 002em p-3" href="#">
+            Lietuvių
+            <svg class="ml-auto" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="black" stroke-linecap="square"/>
+            </svg>
+        </a>
+    </div>
+    <div class="bg-lang-bg rounded  hover:text-orange active:text-dark-orange">
+        <a class="flex items-center text-16-20px font-ale-sans font-normal 002em p-3" href="#">
+            English
+            <svg class="ml-auto" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="black" stroke-linecap="square"/>
+            </svg>
+        </a>
+    </div>
+</div>
 
 
 <script>
@@ -59,5 +106,46 @@
         }
     }
 
+</script>
+<script>
+     let canHideTooltip = true;
+     document.body.addEventListener("click", hideTooltip);
 
+     function hideTooltip(){
+         if(canHideTooltip === true){
+             let lang = document.getElementById('lang');
+             let langm = document.getElementById('langm');
+             let btn = document.getElementById('lang-btn');
+             lang.classList.add('hidden');
+             btn.classList.remove('underline');
+             langm.classList.add('translate-y-250');
+             langm.classList.add('hidden');
+             btn.classList.remove('text-dark-orange')
+         } else{
+             canHideTooltip = true;
+         }
+     }
+
+     function hideDarkBackground(){
+         let darkBackground = document.getElementById('black-background')
+         darkBackground.classList.add('hidden');
+     }
+
+    function showTooltip() {
+        canHideTooltip = false
+        let lang = document.getElementById('lang');
+        let btn = document.getElementById('lang-btn');
+        lang.classList.remove('hidden');
+        btn.classList.add('underline');
+        btn.classList.add('text-dark-orange')
+    }
+
+     function showMobileTooltip() {
+         canHideTooltip = false
+         let langm = document.getElementById('langm');
+         let darkBackground = document.getElementById('black-background');
+         langm.classList.remove('translate-y-250');
+         langm.classList.remove('hidden');
+         darkBackground.classList.remove('hidden');
+     }
 </script>
