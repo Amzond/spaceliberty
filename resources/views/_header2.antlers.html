@@ -1,6 +1,6 @@
 <div id="nav" class="w-full  bg-transparent flex z-10  py-4 sticky top-0" >
-  <!--   -->
-    <div class="container flex items-center text-black mx-auto lg:px-40 px-4 ">
+
+    <div class="container flex items-center text-black mx-auto bp-footer:px-40 px-4 ">
         <div class="mr-8" >
             <a href="#">
                 <svg width="188" height="38" viewBox="0 0 188 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,32 +23,32 @@
 
         <div id="anchors" class="flex gap-4 ">
 
-            <div class="hover:text-orange hover:underline active:text-dark-orange active:underline xs:hidden" onclick="showTooltip()" id="lang-btn">
+            <div class="hover:bg-lang-bg-h active:bg-lang-bg-a hover:text-orange hover:underline active:text-dark-orange active:underline xs:hidden" onclick="showTooltip()" id="lang-btn">
                 <a class="flex items-center px-2 py-1 font-ale-sans gap-1 font-normal text-16-20px 002em" href="#">LT
                     <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L3 3L5 1" stroke="currentColor"/>
                     </svg></a>
             </div>
-            <div class="hover:text-orange hover:underline active:text-dark-orange active:underline bp-footer:hidden" onclick="showMobileTooltip()" id="langm-btn">
-                <a class="flex items-center px-2 py-1 font-ale-sans gap-1 font-normal text-16-20px 002em" href="#">LT
+            <div class="hover:bg-lang-bg-h active:bg-lang-bg-a hover:text-orange hover:underline active:text-dark-orange active:underline bp-footer:hidden" onclick="showMobileTooltip()" id="langm-btn">
+                <a class="flex items-center px-2 py-1  font-ale-sans gap-1 font-normal text-16-20px 002em" href="#">LT
                     <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L3 3L5 1" stroke="currentColor"/>
                     </svg></a>
             </div>
             <div id="lang" class="hidden origin-top-right absolute top-0 mt-16 bg-white shadow-lang-box p-2 rounded "  style=" height:112px; width: 200px;">
                 <div class="bg-lang-bg mb-2 rounded hover:text-dark-orange active:text-orange hover:bg-lang-bg-h active:lang-bg-a">
-                    <a class="flex items-center text-16-20px font-ale-sans font-normal 002em p-3" href="#">
+                    <a class="hover:underline active:underline flex items-center text-16-20px font-ale-sans font-normal 002em p-3" href="#">
                         Lietuvių
                         <svg class="ml-auto" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="black" stroke-linecap="square"/>
+                            <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="currentColor" stroke-linecap="square"/>
                         </svg>
                     </a>
                 </div>
                 <div class="bg-lang-bg rounded hover:bg-lang-bg-h active:lang-bg-a hover:text-dark-orange active:text-orange">
-                    <a class="flex items-center text-16-20px font-ale-sans font-normal 002em p-3 " href="#">
+                    <a class="hover:underline active:underline flex items-center text-16-20px font-ale-sans font-normal 002em p-3 " href="#">
                         English
                         <svg class="ml-auto" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="black" stroke-linecap="square"/>
+                            <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="currentColor" stroke-linecap="square"/>
                         </svg>
 
                     </a>
@@ -63,13 +63,16 @@
         </div>
         <div class="ml-auto flex h-11 items-center gap-4 ">
             <a class="xs:hidden text-16-20px font-ale-sans font-normal hover:text-orange active:text-dark-orange" href="tel:{{globals:phone}}">{{globals:phone}}</a>
-            <a  class="hover:text-orange active:text-dark-orange"href="#">
-                <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect y="0.5" width="32" height="1" fill="currentColor"/>
-                    <rect y="11.5" width="32" height="1" fill="currentColor"/>
-                    <rect y="22.5" width="32" height="1" fill="currentColor"/>
-                </svg>
-            </a>
+            <div class="px-1.5 py-2.5 hover:bg-lang-bg-h active:bg-lang-bg-a ">
+                <a  class=" hover:text-orange active:text-dark-orange"href="#">
+                    <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.5" width="32" height="1" fill="currentColor"/>
+                        <rect y="11.5" width="32" height="1" fill="currentColor"/>
+                        <rect y="22.5" width="32" height="1" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+
         </div>
     </div>
 </div>
@@ -98,7 +101,7 @@
 </div>
 
 <script>
-    window.onscroll = function () { Scroll() };
+    window.onscroll = function () { Scroll(), hideDarkBackground()};
 
     function Scroll() {
         if( document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -110,10 +113,10 @@
         }
     }
 
-</script>
-<script>
+
      let canHideTooltip = true;
      document.body.addEventListener("click", hideTooltip);
+
 
      function hideTooltip(){
          if(canHideTooltip === true){
@@ -132,7 +135,14 @@
 
      function hideDarkBackground(){
          let darkBackground = document.getElementById('black-background')
+         let langm = document.getElementById('langm');
          darkBackground.classList.add('hidden');
+         if( document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+            darkBackground.classList.add('hidden');
+            langm.classList.add('hidden');
+
+         }
+
      }
     function showTooltip() {
         canHideTooltip = false
