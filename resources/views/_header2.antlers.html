@@ -136,11 +136,13 @@
      function hideDarkBackground(){
          let darkBackground = document.getElementById('black-background')
          let langm = document.getElementById('langm');
+         let btn = document.getElementById('langm-btn');
          darkBackground.classList.add('hidden');
          if( document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
             darkBackground.classList.add('hidden');
             langm.classList.add('hidden');
-
+            btn.classList.remove('underline');
+            btn.classList.remove('text-dark-orange');
          }
 
      }
