@@ -29,7 +29,7 @@
                         <path d="M1 1L3 3L5 1" stroke="currentColor"/>
                     </svg></div>
             </div>
-            <div class="hover:bg-lang-bg-h active:bg-lang-bg-a hover:text-orange hover:underline active:text-dark-orange active:underline bp-footer:hidden" onclick="showMobileTooltip()" id="langm-btn">
+            <div class="hover:bg-lang-bg-h  hover:text-orange hover:underline  bp-footer:hidden" onclick="showMobileTooltip()" id="langm-btn">
                 <div class="cursor-pointer flex items-center px-2 py-1  font-ale-sans gap-1 font-normal text-16-20px 002em" >LT
                     <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L3 3L5 1" stroke="currentColor"/>
@@ -143,6 +143,7 @@
             langm.classList.add('hidden');
             btn.classList.remove('underline');
             btn.classList.remove('text-dark-orange');
+            btn.classList.remove('bg-lang-bg-a');
          }
 
      }
@@ -157,9 +158,13 @@
      function showMobileTooltip() {
          canHideTooltip = false
          let langm = document.getElementById('langm');
+         let btn = document.getElementById('langm-btn');
          let darkBackground = document.getElementById('black-background');
          langm.classList.remove('translate-y-250');
          langm.classList.remove('hidden');
          darkBackground.classList.remove('hidden');
+         btn.classList.add('underline');
+         btn.classList.add('text-dark-orange');
+         btn.classList.add('bg-lang-bg-a');
      }
 </script>
