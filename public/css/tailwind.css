@@ -516,6 +516,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.25rem !important;
 }
 
+.-mx-1 {
+  margin-left: -0.25rem !important;
+  margin-right: -0.25rem !important;
+}
+
+.my-1 {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
 .mr-2 {
   margin-right: 0.5rem !important;
 }
@@ -586,6 +596,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full {
   width: 100% !important;
+}
+
+.w-1\/3 {
+  width: 33.333333% !important;
 }
 
 .origin-top-right {
@@ -924,6 +938,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 851px) {
+
+  .lg\:-mx-4 {
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
+  }
+
+  .lg\:my-4 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
 
   .lg\:-mx-4 {
     margin-left: -1rem !important;

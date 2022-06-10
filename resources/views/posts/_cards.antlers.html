@@ -6,10 +6,12 @@
                <img src="{{ featured_image }}">
             </a>
             {{title}}
+            {{ author:avatar}}
+            {{ posts:author:name }}
+
+            <p> {{date}}</p>
+
         </div>
-
-
-
     </div>
     {{ /collection:posts }}
 </div>
