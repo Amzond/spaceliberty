@@ -16,7 +16,8 @@ module.exports = {
         fontFamily: {
             'sans': ['Alegreya', 'sans-serif'],
             'serif': ['Alegreya', 'serif'],
-            'ale-sans': ['Alegreya Sans', 'sans-serif']
+            'ale-sans': ['Alegreya Sans', 'sans-serif'],
+            'playfair':['Playfair Display', 'serif'],
             },
         fontSize: {
             '28px': ['28px', '38px'],
