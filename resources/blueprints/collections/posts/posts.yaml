@@ -1,0 +1,177 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+      -
+        handle: first_image
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'First Image'
+          type: assets
+          icon: assets
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: second_image
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Second Image'
+          type: assets
+          icon: assets
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: first_photo_author
+        field:
+          input_type: text
+          antlers: false
+          display: 'First photo author'
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: second_photo_author
+        field:
+          input_type: text
+          antlers: false
+          display: 'Second photo author'
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: second_content
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: 'Second content'
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: third_image
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Third image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: thrid_photo_author
+        field:
+          input_type: text
+          antlers: false
+          display: 'Thrid photo author'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: third_content
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: 'Third content'
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: last_image
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Last image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: last_photo_author
+        field:
+          input_type: text
+          antlers: false
+          display: 'Last photo author'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: author
+        field:
+          mode: select
+          display: Author
+          type: users
+          icon: users
+          listable: hidden
+          instructions_position: above
+          read_only: false
+title: Posts
