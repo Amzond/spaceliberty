@@ -166,6 +166,7 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+          max_items: 1
       -
         handle: featured_image
         field:

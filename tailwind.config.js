@@ -23,11 +23,16 @@ module.exports = {
             '28px': ['28px', '38px'],
             '16-24px': ['16px', '24px'],
             '16-20px': ['16px', '20px'],
+            '16-22px': ['16px', '22px'],
             '18-24px': ['18px', '24px'],
+            '28-37px': ['28px', '37px'],
+            '14-19px': ['14px', '19px'],
+            '12-14px': ['12px', '14px'],
 
         },
         letterSpacing: {
             '002em': '0.02em',
+            '006em': '0.06em',
         },
         colors:{
             'orange': '#F2946B',
@@ -44,6 +49,20 @@ module.exports = {
         },
         boxShadow:{
             'lang-box': '16px 16px 44px rgba(0, 0, 0, 0.25)',
+        },
+        width: {
+            '378': '378px',
+            '335': '335px',
+        },
+        height:{
+            '378': '378px',
+            '335': '335px',
+        },
+        maxHeight:{
+            '378': '378px',
+        },
+        minHeight:{
+            '48': '48px',
         },
 
 
