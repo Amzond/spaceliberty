@@ -15,6 +15,7 @@ module.exports = {
         },
         fontFamily: {
             'sans': ['Alegreya', 'sans-serif'],
+            'sans2': ['Alegreya', 'sans'],
             'serif': ['Alegreya', 'serif'],
             'ale-sans': ['Alegreya Sans', 'sans-serif'],
             'playfair':['Playfair Display', 'serif'],
@@ -28,6 +29,8 @@ module.exports = {
             '28-37px': ['28px', '37px'],
             '14-19px': ['14px', '19px'],
             '12-14px': ['12px', '14px'],
+            '38-51px': ['38px', '51px'],
+            '20-28px': ['20px', '28px'],
 
         },
         letterSpacing: {
@@ -41,6 +44,7 @@ module.exports = {
             'lang-bg-h': 'rgba(242, 148, 107, 0.05)',
             'lang-bg-a': 'rgba(198, 135, 108, 0.1)',
             'cover-bg': 'rgba(0, 0, 0, 0.5)',
+            'grey-card': 'rgba(194, 194, 194, 1)',
         },
         screens:{
             'xs': {'max': '1280px'},
@@ -63,6 +67,10 @@ module.exports = {
         },
         minHeight:{
             '48': '48px',
+        },
+        margin:{
+            '306': '306px',
+            '218': '218px',
         },
 
 
