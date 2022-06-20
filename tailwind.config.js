@@ -31,6 +31,7 @@ module.exports = {
             '12-14px': ['12px', '14px'],
             '38-51px': ['38px', '51px'],
             '20-28px': ['20px', '28px'],
+            '38-51px': ['38px', '51px'],
 
         },
         letterSpacing: {

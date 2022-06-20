@@ -141,15 +141,6 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
-      -
-        handle: tag
-        field:
-          display: Tag
-          type: taggable
-          icon: tags
-          listable: hidden
-          instructions_position: above
-          read_only: false
   sidebar:
     display: Sidebar
     fields:
@@ -191,4 +182,16 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+      -
+        handle: tags
+        field:
+          type: terms
+          taxonomies:
+            - tags
+          display: Tags
+          mode: select
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          create: true
 title: Posts
