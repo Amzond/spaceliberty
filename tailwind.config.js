@@ -37,6 +37,7 @@ module.exports = {
         letterSpacing: {
             '002em': '0.02em',
             '006em': '0.06em',
+            '003em': '0.03em',
         },
         colors:{
             'orange': '#F2946B',
@@ -56,6 +57,7 @@ module.exports = {
         boxShadow:{
             'lang-box': '16px 16px 44px rgba(0, 0, 0, 0.25)',
             'card': '24px 33px 100px rgba(188, 121, 60, 0.1)',
+            'card-hover': ' 24px 33px 100px rgba(188, 121, 60, 0.15)',
 
         },
         width: {

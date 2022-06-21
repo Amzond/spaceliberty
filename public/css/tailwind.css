@@ -987,12 +987,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5 !important;
 }
 
+.tracking-006em {
+  letter-spacing: 0.06em !important;
+}
+
 .tracking-widest {
   letter-spacing: 0.1em !important;
 }
 
+.tracking-002em {
+  letter-spacing: 0.02em !important;
+}
+
 .tracking-006em {
   letter-spacing: 0.06em !important;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em !important;
+}
+
+.tracking-002em {
+  letter-spacing: 0.02em !important;
+}
+
+.tracking-003em {
+  letter-spacing: 0.03em !important;
 }
 
 .text-gray-800 {
@@ -1086,6 +1106,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline !important;
           text-decoration-line: underline !important;
+}
+
+.hover\:shadow-card-hover:hover {
+  --tw-shadow:  24px 33px 100px rgba(188, 121, 60, 0.15) !important;
+  --tw-shadow-colored: 24px 33px 100px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 
 .active\:bg-dark-orange:active {

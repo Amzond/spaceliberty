@@ -1,17 +1,17 @@
 <div class="relative container mx-auto grid bp-footer:grid-cols-3 grid-cols-1 gap-4 ">
     {{ collection:posts group_by="date|F Y"  limit="2" }}
     <a href="{{ url }}"
-       class="group bg-white rounded hover:text-dark-orange transition-all flex flex-col active:text-orange sm:flex shadow-card active:shadow-none active:bg-clicked-card-bg">
+       class="group bg-white rounded hover:text-dark-orange transition-all flex flex-col active:text-orange sm:flex shadow-card hover:shadow-card-hover active:shadow-none active:bg-clicked-card-bg">
         <div>
             <img class="w-full " src="{{ featured_image }}">
-            <h5 class="my-8 mx-8 min-h-48 006em font-bold text-18-24px font-playfair ">{{title}}</h5>
+            <h5 class="my-8 mx-8 min-h-48 tracking-006em font-bold text-18-24px font-playfair ">{{title}}</h5>
 
             <div class="ml-8 flex items-center gap-2 mb-8">
 
                 <img src="{{ author:avatar }}" class="h-9 w-9 rounded-full">
                 <div>
                     <h6 class="text-black font-serif font-medium tracking-widest text-14-19px">{{author:name}}</h6>
-                    <p class="text-black font-sans2 002em text-12-14px">Publikuota {{ date  }}</p>
+                    <p class="text-black font-sans2 tracking-002em text-12-14px">Publikuota {{ date  }}</p>
                 </div>
 
 
@@ -30,14 +30,14 @@
 
     {{ /collection:posts }}
     <a href="/posts"
-       class="group bg-white text-grey-card rounded hover:text-dark-orange transition-all flex flex-col active:text-orange shadow-card active:shadow-none">
+       class="group bg-white text-grey-card rounded hover:text-dark-orange transition-all flex flex-col active:text-orange hover:shadow-card-hover shadow-card active:shadow-none">
         <div>
             <div class="flex  flex-col ">
                 <h2 class="mx-8 pt-8 mb-8 font-bold text-38-51px font-playfair  tracking-006em ">Daugiau patarimų</h2>
                 <svg class="mx-8" width="20" height="1" viewBox="0 0 20 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="0.5" x2="20" y2="0.5" stroke="currentColor"/>
                 </svg>
-                <p class="mx-8 mt-8 font-sans font-normal text-20-28px ">Mylimiausias temas -medžiagos, inžinerinės sistemos ir processai 🤓</p>
+                <p class="mx-8 mt-8 font-sans font-normal tracking-003em text-20-28px ">Mylimiausias temas -medžiagos, inžinerinės sistemos ir processai 🤓</p>
             </div>
         </div>
         <div class=" mt-auto ml-auto flex items-center " >
