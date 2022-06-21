@@ -46,6 +46,7 @@ module.exports = {
             'lang-bg-a': 'rgba(198, 135, 108, 0.1)',
             'cover-bg': 'rgba(0, 0, 0, 0.5)',
             'grey-card': 'rgba(194, 194, 194, 1)',
+            'clicked-card-bg': '#FFFDFB',
         },
         screens:{
             'xs': {'max': '1280px'},
@@ -54,6 +55,8 @@ module.exports = {
         },
         boxShadow:{
             'lang-box': '16px 16px 44px rgba(0, 0, 0, 0.25)',
+            'card': '24px 33px 100px rgba(188, 121, 60, 0.1)',
+
         },
         width: {
             '378': '378px',

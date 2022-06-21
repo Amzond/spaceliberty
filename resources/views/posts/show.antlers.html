@@ -1,0 +1,23 @@
+<head >
+    <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+    <script src="{{ mix src='/js/site.js' }}" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@100&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+
+
+{{ partial:header2}}
+
+<div class="container w-full items-center mx-auto bp-footer:px-40 px-4">
+
+
+{{post_content }}
+    <a>{{partial src="sets/{type}" }}</a>
+{{/post_content }}
+
+</div>
+{{partial:footer2}}
+

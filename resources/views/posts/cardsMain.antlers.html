@@ -1,7 +1,7 @@
 <div class="relative container mx-auto grid bp-footer:grid-cols-3 grid-cols-1 gap-4 ">
     {{ collection:posts group_by="date|F Y"  limit="2" }}
-    <a href="#"
-       class="group bg-white rounded hover:text-dark-orange transition-all flex flex-col active:text-orange sm:flex ">
+    <a href="{{ url }}"
+       class="group bg-white rounded hover:text-dark-orange transition-all flex flex-col active:text-orange sm:flex shadow-card active:shadow-none active:bg-clicked-card-bg">
         <div>
             <img class="w-full " src="{{ featured_image }}">
             <h5 class="my-8 mx-8 min-h-48 006em font-bold text-18-24px font-playfair ">{{title}}</h5>
@@ -17,8 +17,8 @@
 
 
 
-                <div class=" mt-auto ml-auto   " >
-                    <p href="#" class="pr-8 text-16-22px hover:underline hover:text-dark-orange active:text-orange flex gap-2 font-serif tracking-widest items-center font">Skaityti
+                <div class=" mt-auto ml-auto " >
+                    <p class="pr-8 text-16-22px group-hover:underline hover:text-dark-orange active:text-orange flex gap-2 font-serif tracking-widest items-center font">Skaityti
                         <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 6H21M21 6L15.5 0.5M21 6L15.5 11.5" stroke="currentColor"/>
                         </svg>
@@ -30,11 +30,10 @@
 
     {{ /collection:posts }}
     <a href="/posts"
-       class="group bg-white text-grey-card rounded hover:text-dark-orange transition-all flex flex-col active:text-orange ">
+       class="group bg-white text-grey-card rounded hover:text-dark-orange transition-all flex flex-col active:text-orange shadow-card active:shadow-none">
         <div>
             <div class="flex  flex-col ">
-
-                <h2 class="mx-8 pt-8 mb-8 font-bold text-38-51px font-playfair 006em ">Daugiau patarimų</h2>
+                <h2 class="mx-8 pt-8 mb-8 font-bold text-38-51px font-playfair  tracking-006em ">Daugiau patarimų</h2>
                 <svg class="mx-8" width="20" height="1" viewBox="0 0 20 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="0.5" x2="20" y2="0.5" stroke="currentColor"/>
                 </svg>
@@ -49,6 +48,5 @@
             </p>
         </div>
     </a>
-
 </div>
 
