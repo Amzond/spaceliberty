@@ -15,11 +15,10 @@
         <h2 class="mb-8 text-38-51px font-playfair font-bold 006em">Dizano blogas</h2>
     </div>
     <div class="mx-8">
-        <a href="/posts/tags" class="hover:text-white active:text-white font-sans rounded-md hover:bg-dark-orange active:bg-dark-orange py-2 px-4">Visi postai</a>
 
-        {{ tags }}
-        <a href=" {{ url }}" class="hover:text-white active:text-white font-sans">{{ title }}</a>
-        {{ /tags }}
+
+
+        {{ partial:posts/tags/index }}
 
     </div>
     {{ entries as="posts"  }}

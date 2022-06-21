@@ -1,4 +1,5 @@
-<div class="relative container mx-auto grid bp-footer:grid-cols-3 grid-cols-1 gap-4 ">
+<div class=" container max-w-1215px mx-auto grid bp-footer:grid-cols-3 grid-cols-1 gap-4 ">
+    <!-- bp-footer:grid-cols-3 grid-cols-1 -->
     {{ collection:posts group_by="date|F Y"  limit="2" }}
     <a href="{{ url }}"
        class="group bg-white rounded hover:text-dark-orange transition-all flex flex-col active:text-orange sm:flex shadow-card hover:shadow-card-hover active:shadow-none active:bg-clicked-card-bg">

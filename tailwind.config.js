@@ -50,9 +50,9 @@ module.exports = {
             'clicked-card-bg': '#FFFDFB',
         },
         screens:{
-            'xs': {'max': '1280px'},
+            'xs': {'max': '1235px'},
             'lg': '851px',
-            'bp-footer': '1280px',
+            'bp-footer': '1234px',
         },
         boxShadow:{
             'lang-box': '16px 16px 44px rgba(0, 0, 0, 0.25)',
@@ -77,6 +77,9 @@ module.exports = {
         margin:{
             '306': '306px',
             '218': '218px',
+        },
+        maxWidth:{
+            '1215px': '1215px',
         },
 
 
