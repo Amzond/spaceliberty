@@ -527,6 +527,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2rem !important;
 }
 
+.my-8 {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.my-16 {
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important;
+}
+
+.my-8 {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
 .mb-8 {
   margin-bottom: 2rem !important;
 }
@@ -561,6 +576,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-auto {
   margin-top: auto !important;
+}
+
+.ml-4 {
+  margin-left: 1rem !important;
+}
+
+.mb-16 {
+  margin-bottom: 4rem !important;
+}
+
+.ml-4 {
+  margin-left: 1rem !important;
 }
 
 .flex {
@@ -619,6 +646,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer !important;
 }
 
+.auto-cols-auto {
+  grid-auto-columns: auto !important;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
 }
@@ -667,6 +698,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px !important;
 }
 
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
 .border {
   border-width: 1px !important;
 }
@@ -700,6 +735,61 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-lang-bg-a {
   background-color: rgba(198, 135, 108, 0.1) !important;
+}
+
+.bg-orange {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(242 148 107 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-orange {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(242 148 107 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-orange {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(242 148 107 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-orange {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(242 148 107 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-orange {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(242 148 107 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-orange {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(242 148 107 / var(--tw-bg-opacity)) !important;
 }
 
 .p-2 {
@@ -754,6 +844,71 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.25rem !important;
 }
 
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.py-8 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
 .pr-8 {
   padding-right: 2rem !important;
 }
@@ -784,6 +939,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-sans2 {
   font-family: Alegreya, sans !important;
+}
+
+.font-sans {
+  font-family: Alegreya, sans-serif !important;
 }
 
 .text-28-37px {
@@ -836,6 +995,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 28px !important;
 }
 
+.text-16-22px {
+  font-size: 16px !important;
+  line-height: 22px !important;
+}
+
 .font-bold {
   font-weight: 700 !important;
 }
@@ -872,6 +1036,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.03em !important;
 }
 
+.tracking-widest {
+  letter-spacing: 0.1em !important;
+}
+
 .text-gray-800 {
   --tw-text-opacity: 1 !important;
   color: rgb(31 41 55 / var(--tw-text-opacity)) !important;
@@ -889,6 +1057,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-grey-card {
   color: rgba(194, 194, 194, 1) !important;
+}
+
+.text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.text-orange {
+  --tw-text-opacity: 1 !important;
+  color: rgb(242 148 107 / var(--tw-text-opacity)) !important;
+}
+
+.text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .underline {
@@ -949,6 +1132,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-dark-orange:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(198 135 108 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .hover\:underline:hover {

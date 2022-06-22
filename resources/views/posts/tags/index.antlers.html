@@ -1,7 +1,41 @@
-<div class="mx-8">
-    <a href="/posts" class="hover:text-white active:text-white font-sans rounded hover:bg-dark-orange active:bg-orange py-2 px-4">all posts</a>
-    {{ taxonomy:tags collection="posts" }}
-    <a href="{{ url }}">{{ title }}</a>
-    {{ /taxonomy:tags }}
+<div class="my-8 ">
+    <a id="all" href="/posts" class=" tracking-widest text-16-22px hover:text-white bg-white active:text-white font-sans rounded hover:bg-dark-orange active:bg-orange py-2 px-4">Visi postai</a>
+        {{ taxonomy:tags collection="posts"  }}
+
+
+        <a id="tags" href="{{ url }}" class="aElements tracking-widest text-16-22px hover:text-white bg-white active:text-white font-sans rounded hover:bg-dark-orange active:bg-orange ml-4 py-2 px-4">{{ title }}</a>
+
+     {{ /taxonomy:tags }}
 
 </div>
+<script>
+    window.onload = ChangeColor;
+    function ChangeColor(){
+        let all = document.getElementById('all');
+        let tags = document.getElementById('tags');
+        let aElements = document.getElementsByClassName('aElements');
+
+        if(window.location.pathname == "/posts" ){
+            all.classList.remove('bg-white');
+            all.classList.add('bg-orange');
+            all.classList.add('text-white');
+        }
+        else {
+            for( let i = 0 ; i < aElements.length ; i++ )
+            {
+                if (aElements[i].pathname == "{{ url }}" ){
+
+                console.log(aElements[i]);
+                aElements[i].classList.remove('bg-white');
+                aElements[i].classList.add('bg-orange');
+                aElements[i].classList.add('text-white');
+                }
+            }
+
+        }
+    }
+
+
+
+
+</script>
