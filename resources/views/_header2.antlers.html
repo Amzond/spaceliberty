@@ -57,7 +57,7 @@
 
             {{ nav:header}}
             <div class="px-2 py-1 xs:hidden ">
-                <a class="hover:text-orange active:text-dark-orange" href="#"><p class="font-ale-sans font-normal text-16-20px 002em">{{title}}</p></a>
+                <a class="hover:text-orange active:text-dark-orange" href="{{ url }}"><p class="font-ale-sans font-normal text-16-20px 002em">{{title}}</p></a>
             </div>
             {{ /nav:header}}
         </div>
@@ -101,7 +101,7 @@
 </div>
 
 <script>
-    window.onscroll = function () { Scroll(), hideDarkBackground()};
+    window.onscroll = function () { Scroll(), hideDarkBackground(), HideToolTip()};
 
     function Scroll() {
         if( document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {

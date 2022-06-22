@@ -48,6 +48,7 @@ module.exports = {
             'cover-bg': 'rgba(0, 0, 0, 0.5)',
             'grey-card': 'rgba(194, 194, 194, 1)',
             'clicked-card-bg': '#FFFDFB',
+            'toolTip-bg': 'rgba(0, 0, 0, 0.02)',
         },
         screens:{
             'xs': {'max': '1235px'},
@@ -58,6 +59,7 @@ module.exports = {
             'lang-box': '16px 16px 44px rgba(0, 0, 0, 0.25)',
             'card': '24px 33px 100px rgba(188, 121, 60, 0.1)',
             'card-hover': ' 24px 33px 100px rgba(188, 121, 60, 0.15)',
+            'toolTip': '12px 12px 16px rgba(188, 121, 60, 0.03)',
 
         },
         width: {
