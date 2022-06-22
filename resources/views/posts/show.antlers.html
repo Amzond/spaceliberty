@@ -11,12 +11,54 @@
 
 {{ partial:header2}}
 
-<div class="container w-full items-center mx-auto bp-footer:px-40 px-4">
+<div class="container w-full items-center mx-auto max-w-1215px px-4">
+    <div>
+        <p class="font-ale-sans font-normal text-16-20px underline tracking-002em ">Dizaino blogas</p>
+    </div>
+    <div class="mt-1">
+        <p class="font-playfair font-bold text-38-51px tracking-006em">{{title}}</p>
+    </div>
+            <div class="mt-4 flex items-center gap-2 ">
+
+                <img src="{{ author:avatar }}" class="h-11 w-11 rounded-full">
+                <div>
+                    <h6 class="text-black font-serif font-medium tracking-widest text-18-24px">{{author:name}}</h6>
+                    <p class="text-black font-sans2 tracking-002em text-14-17px">Publikuota {{ date  }}</p>
+                </div>
+                <a href="#" class="rounded-full ml-8 px-3 py-3 bg-post-share hover:bg-lang-bg-h active:bg-lang-bg-a hover:text-dark-orange active:text-orange">
+                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6757 7.68421C6.5178 8.43369 2.88272 13.7571 1.18052 17.2791C0.372477 18.9509 0 20.2168 0 20.3947C0.649802 19.3798 1.31149 18.5478 2.00795 17.8665C4.46389 15.4643 7.35213 14.9371 11.6757 14.8751C12.0008 14.8705 12.3339 14.8684 12.6757 14.8684V21.5L24 11L12.6757 0.5V7.68421ZM13.6757 2.79092V8.56988L12.7965 8.67688C8.66304 9.17997 5.71427 11.9538 3.75756 14.8117C3.55949 15.1009 3.3726 15.3897 3.19667 15.6753C3.71424 15.3606 4.25681 15.0956 4.82996 14.8748C7.02622 14.0285 9.58221 13.8684 12.6757 13.8684H13.6757V19.2091L22.5292 11L13.6757 2.79092Z"
+                                  fill="currentColor"/>
+                        </svg>
+                </a>
+
+            </div>
+    <hr class="mt-8 mb-16 " style="background-color:black">
 
 
-{{post_content }}
-    <a>{{partial src="sets/{type}" }}</a>
-{{/post_content }}
+    {{post_content }}
+        {{partial src="sets/{type}" }}
+    {{/post_content }}
+
+
+
+    <div class="items-center flex bg-cta-bg px-8 py-4 mt-30 xs:hidden">
+
+        <h5 class="font-playfair text-18-24px font-bold tracking-006em">Patiko straipsnis?
+            <p class="font-normal font-sans2 text-16-22px tracking-002em ">Pasidalink su draugais  — tai padeda mums suprasti kas jums yra aktualu 👉</p></h5>
+
+        <a href="#" class="rounded-full ml-auto px-3 py-3 bg-post-share hover:bg-lang-bg-h active:bg-lang-bg-a hover:text-dark-orange active:text-orange">
+            <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6757 7.68421C6.5178 8.43369 2.88272 13.7571 1.18052 17.2791C0.372477 18.9509 0 20.2168 0 20.3947C0.649802 19.3798 1.31149 18.5478 2.00795 17.8665C4.46389 15.4643 7.35213 14.9371 11.6757 14.8751C12.0008 14.8705 12.3339 14.8684 12.6757 14.8684V21.5L24 11L12.6757 0.5V7.68421ZM13.6757 2.79092V8.56988L12.7965 8.67688C8.66304 9.17997 5.71427 11.9538 3.75756 14.8117C3.55949 15.1009 3.3726 15.3897 3.19667 15.6753C3.71424 15.3606 4.25681 15.0956 4.82996 14.8748C7.02622 14.0285 9.58221 13.8684 12.6757 13.8684H13.6757V19.2091L22.5292 11L13.6757 2.79092Z"
+                      fill="currentColor"/>
+            </svg>
+        </a>
+
+
+
+    </div>
+
+
 
 </div>
 {{partial:footer2}}

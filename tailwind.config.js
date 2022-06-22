@@ -31,7 +31,8 @@ module.exports = {
             '12-14px': ['12px', '14px'],
             '38-51px': ['38px', '51px'],
             '20-28px': ['20px', '28px'],
-            '38-51px': ['38px', '51px'],
+            '14-17px': ['14px', '17px'],
+
 
         },
         letterSpacing: {
@@ -49,6 +50,8 @@ module.exports = {
             'grey-card': 'rgba(194, 194, 194, 1)',
             'clicked-card-bg': '#FFFDFB',
             'toolTip-bg': 'rgba(0, 0, 0, 0.02)',
+            'post-share': 'rgba(0, 0, 0, 0.02)',
+            'cta-bg': '#F4EFEF',
         },
         screens:{
             'xs': {'max': '1235px'},
@@ -79,6 +82,7 @@ module.exports = {
         margin:{
             '306': '306px',
             '218': '218px',
+            '30': '30px',
         },
         maxWidth:{
             '1215px': '1215px',
