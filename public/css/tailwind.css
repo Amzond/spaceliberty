@@ -595,6 +595,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem !important;
 }
 
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .mb-8 {
   margin-bottom: 2rem !important;
 }
@@ -867,6 +872,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem !important;
 }
 
+.mb-32 {
+  margin-bottom: 8rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 2rem !important;
+}
+
 .flex {
   display: flex !important;
 }
@@ -945,6 +958,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
 }
 
 .flex-col {
@@ -1069,6 +1086,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-2 {
   gap: 0.5rem !important;
+}
+
+.gap-4 {
+  gap: 1rem !important;
 }
 
 .rounded {
@@ -1504,6 +1525,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.75rem !important;
 }
 
+.px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
 .pr-8 {
   padding-right: 2rem !important;
 }
@@ -1632,6 +1658,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Alegreya, serif !important;
 }
 
+.font-playfair {
+  font-family: Playfair Display, serif !important;
+}
+
 .text-28-37px {
   font-size: 28px !important;
   line-height: 37px !important;
@@ -1685,6 +1715,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-16-22px {
   font-size: 16px !important;
   line-height: 22px !important;
+}
+
+.text-38-51px {
+  font-size: 38px !important;
+  line-height: 51px !important;
 }
 
 .font-bold {
@@ -1787,6 +1822,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 400 !important;
 }
 
+.font-bold {
+  font-weight: 700 !important;
+}
+
 .leading-normal {
   line-height: 1.5 !important;
 }
@@ -1829,6 +1868,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .tracking-002em {
   letter-spacing: 0.02em !important;
+}
+
+.tracking-006em {
+  letter-spacing: 0.06em !important;
 }
 
 .text-gray-800 {
