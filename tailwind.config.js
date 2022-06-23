@@ -52,6 +52,7 @@ module.exports = {
             'toolTip-bg': 'rgba(0, 0, 0, 0.02)',
             'post-share': 'rgba(0, 0, 0, 0.02)',
             'cta-bg': '#F4EFEF',
+            'warm-grey': '#F5F4F2',
         },
         screens:{
             'xs': {'max': '1235px'},
