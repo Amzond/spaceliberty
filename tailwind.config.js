@@ -75,10 +75,11 @@ module.exports = {
             '335': '335px',
         },
         maxHeight:{
-            '378': '378px',
+            '380': '378px',
         },
         minHeight:{
             '48': '48px',
+
         },
         margin:{
             '306': '306px',

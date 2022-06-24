@@ -1,0 +1,18 @@
+.bard h3{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    margin-bottom: 16px;
+}
+.bard p{
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    margin-bottom:32px;
+}

@@ -35,12 +35,11 @@
             </div>
     <hr class="mt-8 mb-16 " style="background-color:black">
 
-
-    {{post_content }}
+    <div class="bard">
+        {{post_content }}
         {{partial src="sets/{type}" }}
-    {{/post_content }}
-
-
+        {{/post_content }}
+    </div>
 
     <div class="items-center flex bg-cta-bg px-8 py-4 mt-30 xs:hidden">
 
@@ -54,10 +53,20 @@
             </svg>
         </a>
 
-
-
     </div>
 
+    <div class="mt-32 mb-32">
+        <h3 class="mb-8 text-28-37px font-playfair font-bold tracking-006em">Daugiau straipsnių</h3>
+        {{ collection:posts as="post" limit="3" }}
+
+
+        <div class="relative container mx-auto grid bp-footer:grid-cols-3 grid-cols-1  gap-4 ">
+            {{ post }}
+                {{ partial:posts/card }}
+            {{ /post }}
+        </div>
+        {{ /collection:posts }}
+    </div>
 
 
 </div>

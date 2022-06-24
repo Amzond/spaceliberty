@@ -4,7 +4,9 @@
     <a href="{{ url }}"
        class="group bg-white rounded hover:text-dark-orange transition-all flex flex-col active:text-orange sm:flex shadow-card hover:shadow-card-hover active:shadow-none active:bg-clicked-card-bg">
         <div>
-            <img class="w-full " src="{{ featured_image }}">
+            <div class=" w-378 h-378">
+                <img class=" w-full h-full " src="{{ featured_image }}">
+            </div>
             <h5  class="my-8 mx-8 min-h-48 tracking-006em font-bold text-18-24px font-playfair ">{{title}}</h5>
 
             <div class="ml-8 flex items-center gap-2 mb-8">
@@ -14,7 +16,6 @@
                     <h6 class="text-black font-serif font-medium tracking-widest text-14-19px">{{author:name}}</h6>
                     <p class="text-black font-sans2 tracking-002em text-12-14px">Publikuota {{ date  }}</p>
                 </div>
-
 
 
 
