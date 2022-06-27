@@ -462,7 +462,7 @@ font-weight: 700;
 font-size: 18px;
 line-height: 24px;
 letter-spacing: 0.06em;
-color: #000000;
+
 }
 
 .PcardAuthor h6{
@@ -577,14 +577,14 @@ color: #000000;
   margin-right: auto !important;
 }
 
-.my-8 {
-  margin-top: 2rem !important;
-  margin-bottom: 2rem !important;
-}
-
 .mx-8 {
   margin-left: 2rem !important;
   margin-right: 2rem !important;
+}
+
+.my-8 {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .mx-4 {
@@ -630,10 +630,6 @@ color: #000000;
   margin-left: auto !important;
 }
 
-.ml-8 {
-  margin-left: 2rem !important;
-}
-
 .mt-auto {
   margin-top: auto !important;
 }
@@ -652,6 +648,10 @@ color: #000000;
 
 .mt-4 {
   margin-top: 1rem !important;
+}
+
+.ml-8 {
+  margin-left: 2rem !important;
 }
 
 .mb-16 {
@@ -698,20 +698,12 @@ color: #000000;
   height: 100% !important;
 }
 
-.h-378 {
-  height: 378px !important;
-}
-
 .h-9 {
   height: 2.25rem !important;
 }
 
 .max-h-380 {
   max-height: 378px !important;
-}
-
-.min-h-48 {
-  min-height: 48px !important;
 }
 
 .w-full {
@@ -722,16 +714,12 @@ color: #000000;
   width: 10rem !important;
 }
 
-.w-378 {
-  width: 378px !important;
+.w-11 {
+  width: 2.75rem !important;
 }
 
 .w-9 {
   width: 2.25rem !important;
-}
-
-.w-11 {
-  width: 2.75rem !important;
 }
 
 .max-w-1215px {
@@ -924,12 +912,12 @@ color: #000000;
   padding-right: 2rem !important;
 }
 
-.pr-8 {
-  padding-right: 2rem !important;
-}
-
 .pt-8 {
   padding-top: 2rem !important;
+}
+
+.pr-8 {
+  padding-right: 2rem !important;
 }
 
 .pb-8 {
@@ -960,12 +948,12 @@ color: #000000;
   font-family: Alegreya Sans, sans-serif !important;
 }
 
-.font-sans2 {
-  font-family: Alegreya, sans !important;
-}
-
 .font-serif {
   font-family: Alegreya, serif !important;
+}
+
+.font-sans2 {
+  font-family: Alegreya, sans !important;
 }
 
 .text-28-37px {
@@ -993,16 +981,6 @@ color: #000000;
   line-height: 1.25rem !important;
 }
 
-.text-12-14px {
-  font-size: 12px !important;
-  line-height: 14px !important;
-}
-
-.text-16-22px {
-  font-size: 16px !important;
-  line-height: 22px !important;
-}
-
 .text-38-51px {
   font-size: 38px !important;
   line-height: 51px !important;
@@ -1013,14 +991,14 @@ color: #000000;
   line-height: 28px !important;
 }
 
+.text-16-22px {
+  font-size: 16px !important;
+  line-height: 22px !important;
+}
+
 .text-14-17px {
   font-size: 14px !important;
   line-height: 17px !important;
-}
-
-.text-14-19px {
-  font-size: 14px !important;
-  line-height: 19px !important;
 }
 
 .font-bold {
@@ -1051,12 +1029,12 @@ color: #000000;
   letter-spacing: 0.1em !important;
 }
 
-.tracking-002em {
-  letter-spacing: 0.02em !important;
-}
-
 .tracking-003em {
   letter-spacing: 0.03em !important;
+}
+
+.tracking-002em {
+  letter-spacing: 0.02em !important;
 }
 
 .text-gray-800 {
