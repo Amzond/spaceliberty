@@ -1,7 +1,8 @@
 
 
-    {{ collection:posts as="post" }}
-    <div class="container max-w-1215px mx-auto grid bp-footer:grid-cols-3 grid-cols-1 gap-4  hover:text-dark-orange ">
+
+    <div class="container max-w-1215px mx-auto grid bp-footer:grid-cols-3 grid-cols-1 gap-4   ">
+        {{ collection:posts as="post" }}
         {{ post sort="date:desc"  limit="2"}}
             {{ partial:posts/card }}
         {{ /post }}
