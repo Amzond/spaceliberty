@@ -1,19 +1,24 @@
 <div class=" container max-w-1215px mx-auto grid bp-footer:grid-cols-3 grid-cols-1 gap-4 ">
     <!-- bp-footer:grid-cols-3 grid-cols-1 -->
-    {{ collection:posts group_by="date|F Y"  limit="2" }}
+ <!--   {{ collection:posts group_by="date|F Y"  limit="2" }}-->
+    {{ collection:posts as="post" }}
+    {{ post sort="date:desc"  }}
     <a href="{{ url }}"
        class="group bg-white rounded hover:text-dark-orange transition-all flex flex-col active:text-orange sm:flex shadow-card hover:shadow-card-hover active:shadow-none active:bg-clicked-card-bg">
         <div>
             <div class=" w-378 h-378">
                 <img class=" w-full h-full " src="{{ featured_image }}">
             </div>
-            <h5  class="my-8 mx-8 min-h-48 tracking-006em font-bold text-18-24px font-playfair ">{{title}}</h5>
+            <div class="PcardTitle">
+                <h5  class="my-8 mx-8  ">{{title}}</h5>
+            </div>
+
 
             <div class="ml-8 flex items-center gap-2 mb-8">
 
                 <img src="{{ author:avatar }}" class="h-9 w-9 rounded-full">
-                <div>
-                    <h6 class="text-black font-serif font-medium tracking-widest text-14-19px">{{author:name}}</h6>
+                <div class="PcardAuthor">
+                    <h6 class="">{{author:name}}</h6>
                     <p class="text-black font-sans2 tracking-002em text-12-14px">Publikuota {{ date  }}</p>
                 </div>
 
@@ -29,7 +34,7 @@
             </div>
         </div>
     </a>
-
+    {{ /post }}
     {{ /collection:posts }}
     <a href="/posts"
        class="group bg-white text-grey-card rounded hover:text-dark-orange transition-all flex flex-col active:text-orange hover:shadow-card-hover shadow-card active:shadow-none active:bg-clicked-card-bg">

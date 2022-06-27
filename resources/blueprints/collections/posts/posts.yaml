@@ -167,6 +167,8 @@ sections:
           instructions_position: above
           read_only: false
           max_items: 1
+          validate:
+            - required
       -
         handle: featured_image
         field:
@@ -182,6 +184,9 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+          validate:
+            - required
+          folder: images/posts
       -
         handle: tags
         field:
@@ -194,4 +199,6 @@ sections:
           listable: hidden
           read_only: false
           create: true
+          validate:
+            - required
 title: Posts

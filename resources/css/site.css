@@ -16,3 +16,40 @@
     letter-spacing: 0.03em;
     margin-bottom:32px;
 }
+.Pheader h3{
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 37px;
+letter-spacing: 0.06em;
+color: #000000;
+}
+
+.PcardTitle h5{
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: 0.06em;
+color: #000000;
+}
+.PcardAuthor h6{
+font-family: 'Alegreya';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.1em;
+color: #000000;
+}
+.PcardAuthor p{
+font-family: 'Alegreya Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.02em;
+color: #000000;
+}
