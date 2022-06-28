@@ -67,6 +67,7 @@ sections:
                     listable: hidden
                     instructions_position: above
                     read_only: false
+                    folder: images/posts
                 -
                   handle: photo_author
                   field:
@@ -96,6 +97,7 @@ sections:
                     instructions_position: above
                     read_only: false
                     width: 50
+                    folder: images/posts
                 -
                   handle: image2
                   field:
@@ -111,6 +113,7 @@ sections:
                     instructions_position: above
                     read_only: false
                     width: 50
+                    folder: images/posts
                 -
                   handle: image1_author
                   field:
@@ -156,6 +159,17 @@ sections:
           required: true
           validate:
             - required
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          mode: single
+          time_enabled: true
+          time_seconds_enabled: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: Date
       -
         handle: author
         field:
