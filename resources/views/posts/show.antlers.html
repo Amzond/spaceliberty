@@ -8,6 +8,9 @@
 
 </head>
 
+<body>
+
+</body>
 
 {{ partial:header2}}
 
@@ -58,18 +61,41 @@
 
     <div class="mt-32 mb-32">
         <h3 class="mb-8 text-28-37px font-playfair font-bold tracking-006em">Daugiau straipsnių</h3>
-        {{ collection:posts :taxonomy:tags="tags" sort="date:desc"  as="post"}}
+        <div class="relative container mx-auto grid bp-footer:grid-cols-3 grid-cols-1  gap-4 " >
 
 
-                <div class="relative container mx-auto grid bp-footer:grid-cols-3 grid-cols-1  gap-4 ">
-                    {{ post limit="3" }}
-                        {{ partial:posts/card }}
-                    {{ /post }}
-                </div>
-
+        {{ collection:posts :taxonomy:tags="tags" :id:isnt="id" sort="date:desc"  as="post"}}
+            {{ if  post | count  >= 3  }}
+                {{ total = 0 }}
+                {{ post limit="3" }}
+                    {{ partial:posts/card }}
+                {{ /post }}
+            {{ /if }}
+            {{ if  post | count  == 2  }}
+                {{ total = 1 }}
+                {{ post limit="2" }}
+                    {{ partial:posts/card }}
+                {{ /post }}
+            {{ /if }}
+            {{ if  post | count  ==  1 }}
+                {{ total = 2 }}
+                {{ post limit="1" }}
+                    {{ partial:posts/card }}
+                {{ /post }}
+            {{ /if }}
         {{ /collection:posts }}
+            {{ if total != 0 }}
+            {{ collection:posts :id:isnt="id" :taxonomy:tags:not="tags" sort="date:desc" limit={total}  as="post"}}
+                {{ post  }}
+                    {{ partial:posts/card }}
+                {{ /post }}
+
+            {{ /collection:posts }}
+            {{ /if }}
+        </div>
     </div>
 
 </div>
 {{partial:footer2}}
+
 
