@@ -86,16 +86,11 @@ color: #000000;
     font-size: 16px;
     line-height: 22px;
 
-
     letter-spacing: 0.02em;
-
     color: #FFFFFF;
 }
 
-
-
 .background{
-
     position: absolute;
     top: 0;
     left: 0;
@@ -105,3 +100,41 @@ color: #000000;
     width: 1215px;
     height: 800px;
 }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  height: 114px;
+  width: 100%;
+  opacity: 0;
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.image:hover .overlay{
+    opacity: 1;
+}
+
+
+.image {
+   position: relative;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center center;
+}
+
+.image:hover .hov-icn {
+  display: block;
+}
+.image:hover .act-icn {
+ display: none;
+}
+
+.image:active .act-icn {
+ display: block;
+}
+
+.image:active .hov-icn {
+  display: none;
+}
+
