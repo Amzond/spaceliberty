@@ -664,6 +664,10 @@ color: #000000;
   margin-top: -4rem !important;
 }
 
+.mb-32 {
+  margin-bottom: 8rem !important;
+}
+
 .mt-467 {
   margin-top: 467px !important;
 }
@@ -716,10 +720,6 @@ color: #000000;
   margin-top: auto !important;
 }
 
-.mb-32 {
-  margin-bottom: 8rem !important;
-}
-
 .mb-4 {
   margin-bottom: 1rem !important;
 }
@@ -746,6 +746,14 @@ color: #000000;
 
 .mt-32 {
   margin-top: 8rem !important;
+}
+
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
 }
 
 .mr-1 {
@@ -788,6 +796,18 @@ color: #000000;
   max-height: 378px !important;
 }
 
+.max-h-675 {
+  max-height: 675px !important;
+}
+
+.max-h-748 {
+  max-height: 748px !important;
+}
+
+.max-h-675 {
+  max-height: 675px !important;
+}
+
 .min-h-48 {
   min-height: 48px !important;
 }
@@ -810,6 +830,10 @@ color: #000000;
 
 .w-9 {
   width: 2.25rem !important;
+}
+
+.w-full {
+  width: 100% !important;
 }
 
 .max-w-648px {
@@ -852,16 +876,16 @@ color: #000000;
   justify-content: center !important;
 }
 
+.gap-8 {
+  gap: 2rem !important;
+}
+
 .gap-2 {
   gap: 0.5rem !important;
 }
 
 .gap-2\.5 {
   gap: 0.625rem !important;
-}
-
-.gap-8 {
-  gap: 2rem !important;
 }
 
 .gap-4 {
@@ -884,6 +908,10 @@ color: #000000;
 
 .rounded-full {
   border-radius: 9999px !important;
+}
+
+.rounded-md {
+  border-radius: 0.375rem !important;
 }
 
 .border {
@@ -1093,6 +1121,16 @@ color: #000000;
 .text-14-17px {
   font-size: 14px !important;
   line-height: 17px !important;
+}
+
+.text-16-22px {
+  font-size: 16px !important;
+  line-height: 22px !important;
+}
+
+.text-16-20px {
+  font-size: 16px !important;
+  line-height: 20px !important;
 }
 
 .font-bold {

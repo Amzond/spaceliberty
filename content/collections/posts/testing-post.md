@@ -97,10 +97,13 @@ post_content:
     image1_author: 'Test image'
     type: two_images_in_row
     enabled: true
+    image2:
+      - images/posts/2.png
+    image2_author: upload
 author: 3f009ef7-3519-487c-b09c-51a8a812a770
 featured_image: 3-1655999057.svg
 tags:
   - tagas
 updated_by: 3f009ef7-3519-487c-b09c-51a8a812a770
-updated_at: 1656235951
+updated_at: 1656676342
 ---

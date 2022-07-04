@@ -77,6 +77,8 @@ module.exports = {
         },
         maxHeight:{
             '380': '378px',
+            '675': '675px',
+            '748': '748px',
         },
         minHeight:{
             '48': '48px',
