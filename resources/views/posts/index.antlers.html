@@ -22,11 +22,11 @@
     </div>
     {{ partial:posts/tags/index }}
 
-    {{ collection:posts as="post"  }}
+    {{ collection:posts as="post" }}
 
 
     <div class="relative container mx-auto grid bp-footer:grid-cols-3 grid-cols-1 px-4 gap-4 ">
-        {{ post }}
+        {{ post sort="date:desc"  }}
             {{ partial:posts/card }}
         {{ /post }}
     </div>

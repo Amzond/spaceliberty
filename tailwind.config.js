@@ -69,13 +69,17 @@ module.exports = {
         width: {
             '378': '378px',
             '335': '335px',
+            '1215px': '1215px',
         },
         height:{
             '378': '378px',
             '335': '335px',
+            '675': '675px',
         },
         maxHeight:{
             '380': '378px',
+            '675': '675px',
+            '748': '748px',
         },
         minHeight:{
             '48': '48px',
@@ -85,9 +89,13 @@ module.exports = {
             '306': '306px',
             '218': '218px',
             '30': '30px',
+            '467': '467px',
+            '175': '175px',
+
         },
         maxWidth:{
             '1215px': '1215px',
+            '648px': '648px',
         },
 
 
@@ -96,5 +104,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp'),
+
   ],
 }

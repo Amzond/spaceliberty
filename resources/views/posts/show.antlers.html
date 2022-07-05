@@ -8,6 +8,9 @@
 
 </head>
 
+<body>
+
+</body>
 
 {{ partial:header2}}
 
@@ -15,8 +18,9 @@
 
         <a href="/posts" class="hover:text-orange active:text-dark-orange font-ale-sans font-normal text-16-20px underline tracking-002em ">Dizaino blogas</a>
 
-    <div class="mt-1">
-        <p class="font-playfair font-bold text-38-51px tracking-006em">{{title}}</p>
+    <div class="mt-1 Pheader">
+
+       <h3 class="">{{title}}</h3>
     </div>
             <div class="mt-4 flex items-center gap-2 ">
 
@@ -33,11 +37,11 @@
                 </a>
 
             </div>
-    <hr class="mt-8 mb-16 " style="background-color:black">
+    <hr class="mt-8 mb-16 " style=" border: 1px solid #000000; background-color:black">
 
     <div class="bard">
         {{post_content }}
-        {{partial src="sets/{type}" }}
+            {{partial src="sets/{type}" }}
         {{/post_content }}
     </div>
 
@@ -57,18 +61,40 @@
 
     <div class="mt-32 mb-32">
         <h3 class="mb-8 text-28-37px font-playfair font-bold tracking-006em">Daugiau straipsnių</h3>
-        {{ collection:posts as="post" limit="3" }}
+        <div class="relative container mx-auto grid bp-footer:grid-cols-3 grid-cols-1  gap-4 " >
 
 
-        <div class="relative container mx-auto grid bp-footer:grid-cols-3 grid-cols-1  gap-4 ">
-            {{ post }}
-                {{ partial:posts/card }}
-            {{ /post }}
-        </div>
+        {{ collection:posts :taxonomy:tags="tags" :id:isnt="id" sort="date:desc"  as="post"}}
+            {{ if  post | count  >= 3  }}
+                {{ total = 0 }}
+                {{ post limit="3" }}
+                    {{ partial:posts/card }}
+                {{ /post }}
+            {{ /if }}
+            {{ if  post | count  == 2  }}
+                {{ total = 1 }}
+                {{ post limit="2" }}
+                    {{ partial:posts/card }}
+                {{ /post }}
+            {{ /if }}
+            {{ if  post | count  ==  1 }}
+                {{ total = 2 }}
+                {{ post limit="1" }}
+                    {{ partial:posts/card }}
+                {{ /post }}
+            {{ /if }}
         {{ /collection:posts }}
+            {{ if total != 0 }}
+            {{ collection:posts :id:isnt="id" :taxonomy:tags:not="tags" sort="date:desc" limit={total}  as="post"}}
+                {{ post  }}
+                    {{ partial:posts/card }}
+                {{ /post }}
+            {{ /collection:posts }}
+            {{ /if }}
+        </div>
     </div>
-
 
 </div>
 {{partial:footer2}}
+
 

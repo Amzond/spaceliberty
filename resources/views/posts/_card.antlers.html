@@ -1,16 +1,21 @@
 
-    <a href="{{url}}"
-       class="group bg-white rounded hover:text-dark-orange transition-all flex flex-col active:text-orange sm:flex hover:shadow-card-hover shadow-card active:shadow-none">
+<a href="{{url}}" class="group bg-white rounded hover:text-dark-orange transition-all flex flex-col active:text-orange sm:flex hover:shadow-card-hover shadow-card active:shadow-none">
         <div>
-        <img class="w-full max-h-380" src="{{ featured_image }}">
-        <h5 class="my-8 mx-8 min-h-48 tracking-006em font-bold text-18-24px font-playfair ">{{title}}</h5>
+            <div class="max-h-380 h-378 ">
+                <img class="w-full h-full " src="{{ featured_image }}">
+            </div>
+
+         <div class="PcardTitle line-clamp-2 my-8 mx-8">
+             <h5 class=" min-h-48">{{title}}</h5>
+         </div>
+
 
         <div class="ml-8 flex items-center gap-2 mb-8">
 
             <img src="{{ author:avatar }}" class="h-9 w-9 rounded-full">
-            <div>
-                <h6 class="text-black font-serif font-medium tracking-widest text-14-19px">{{author:name}}</h6>
-                <p class="text-black font-sans2 tracking-002em text-12-14px">Publikuota {{ date  }}</p>
+            <div class="PcardAuthor">
+                <h6 class="">{{author:name}}</h6>
+                <p class="">Publikuota {{ date format_localized="%B %d, %Y"  }}</p>
             </div>
 
 

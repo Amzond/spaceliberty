@@ -1,38 +1,15 @@
-<div class=" container max-w-1215px mx-auto grid bp-footer:grid-cols-3 grid-cols-1 gap-4 ">
-    <!-- bp-footer:grid-cols-3 grid-cols-1 -->
-    {{ collection:posts group_by="date|F Y"  limit="2" }}
-    <a href="{{ url }}"
-       class="group bg-white rounded hover:text-dark-orange transition-all flex flex-col active:text-orange sm:flex shadow-card hover:shadow-card-hover active:shadow-none active:bg-clicked-card-bg">
-        <div>
-            <div class=" w-378 h-378">
-                <img class=" w-full h-full " src="{{ featured_image }}">
-            </div>
-            <h5  class="my-8 mx-8 min-h-48 tracking-006em font-bold text-18-24px font-playfair ">{{title}}</h5>
-
-            <div class="ml-8 flex items-center gap-2 mb-8">
-
-                <img src="{{ author:avatar }}" class="h-9 w-9 rounded-full">
-                <div>
-                    <h6 class="text-black font-serif font-medium tracking-widest text-14-19px">{{author:name}}</h6>
-                    <p class="text-black font-sans2 tracking-002em text-12-14px">Publikuota {{ date  }}</p>
-                </div>
 
 
 
-                <div class=" mt-auto ml-auto " >
-                    <p class="pr-8 text-16-22px group-hover:underline hover:text-dark-orange active:text-orange flex gap-2 font-serif tracking-widest items-center font">Skaityti
-                        <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 6H21M21 6L15.5 0.5M21 6L15.5 11.5" stroke="currentColor"/>
-                        </svg>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </a>
+    <div class="container max-w-1215px mx-auto grid bp-footer:grid-cols-3 grid-cols-1 gap-4   ">
+        {{ collection:posts as="post" }}
+        {{ post sort="date:desc"  limit="2"}}
+            {{ partial:posts/card }}
+        {{ /post }}
 
-    {{ /collection:posts }}
-    <a href="/posts"
-       class="group bg-white text-grey-card rounded hover:text-dark-orange transition-all flex flex-col active:text-orange hover:shadow-card-hover shadow-card active:shadow-none active:bg-clicked-card-bg">
+        {{ /collection:posts }}
+        <a href="/posts"
+           class="group bg-white text-grey-card rounded hover:text-dark-orange transition-all flex flex-col active:text-orange hover:shadow-card-hover shadow-card active:shadow-none active:bg-clicked-card-bg">
         <div>
             <div class="flex  flex-col ">
                 <h2 class="mx-8 pt-8 mb-8 font-bold text-38-51px font-playfair  tracking-006em ">Daugiau patarimų</h2>
@@ -50,5 +27,7 @@
             </p>
         </div>
     </a>
-</div>
+    </div>
+
+
 
