@@ -65,6 +65,7 @@
 
 
         {{ collection:posts :taxonomy:tags="tags" :id:isnt="id" sort="date:desc"  as="post"}}
+
             {{ if  post | count  >= 3  }}
                 {{ total = 0 }}
                 {{ post limit="3" }}
