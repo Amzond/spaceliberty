@@ -5,13 +5,13 @@ title: 'Which tiles are the best ones? This is a long post name to check the UI 
 author: 3f009ef7-3519-487c-b09c-51a8a812a770
 featured_image: image-payload.png
 updated_by: 3f009ef7-3519-487c-b09c-51a8a812a770
-updated_at: 1657193903
+updated_at: 1657193970
 tags:
   - ui-test-tag
 post_content:
   -
     image:
-      - images/posts/img_0164.HEIC
+      - images/posts/5codigy-alert-idle-task.png
     type: one_image
     enabled: true
 ---
