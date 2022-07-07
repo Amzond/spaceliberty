@@ -19,7 +19,7 @@
         {{ partial:posts/tags/index }}
 
     </div>
-    {{ entries as="posts"  }}
+    {{ entries sort="date:desc" g as="posts"  }}
 
 
     <div class="relative container mx-auto grid bp-footer:grid-cols-3 grid-cols-1 gap-4 px-4 ">

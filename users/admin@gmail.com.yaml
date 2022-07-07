@@ -8,5 +8,5 @@ preferences:
     posts:
       columns:
         - title
-        - slug
         - date
+        - tags
