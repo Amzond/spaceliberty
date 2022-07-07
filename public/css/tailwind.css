@@ -600,6 +600,35 @@ line-height: 38px;
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+.photo_auht h6{
+font-family: 'Alegreya Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+letter-spacing: 0.02em;
+}
+
+.photo_auht h5 {
+font-family: 'Alegreya Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+
+letter-spacing: 0.02em;
+-webkit-text-decoration-line: underline;
+        text-decoration-line: underline;
+
+color: #000000;
+}
+
+.menuShadow {
+box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
+}
+
 .container {
   width: 100%;
 }
@@ -717,6 +746,11 @@ line-height: 38px;
   margin-bottom: 1.25rem !important;
 }
 
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .-mt-16 {
   margin-top: -4rem !important;
 }
@@ -817,6 +851,66 @@ line-height: 38px;
   margin-right: 0.25rem !important;
 }
 
+.mt-9 {
+  margin-top: 2.25rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
+.mt-9 {
+  margin-top: 2.25rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
+.mt-9 {
+  margin-top: 2.25rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
+.mt-9 {
+  margin-top: 2.25rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
+.mt-9 {
+  margin-top: 2.25rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
 .flex {
   display: flex !important;
 }
@@ -853,16 +947,20 @@ line-height: 38px;
   height: 675px !important;
 }
 
+.h-748 {
+  height: 748px !important;
+}
+
+.h-auto {
+  height: auto !important;
+}
+
 .max-h-380 {
   max-height: 378px !important;
 }
 
 .max-h-675 {
   max-height: 675px !important;
-}
-
-.max-h-748 {
-  max-height: 748px !important;
 }
 
 .min-h-48 {
@@ -885,6 +983,22 @@ line-height: 38px;
   width: 2.25rem !important;
 }
 
+.w-full {
+  width: 100% !important;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
 .max-w-648px {
   max-width: 648px !important;
 }
@@ -899,6 +1013,10 @@ line-height: 38px;
 
 .cursor-pointer {
   cursor: pointer !important;
+}
+
+.resize {
+  resize: both !important;
 }
 
 .grid-cols-1 {
@@ -945,6 +1063,10 @@ line-height: 38px;
   gap: 0.25rem !important;
 }
 
+.gap-8 {
+  gap: 2rem !important;
+}
+
 .truncate {
   overflow: hidden !important;
   text-overflow: ellipsis !important;
@@ -957,6 +1079,10 @@ line-height: 38px;
 
 .rounded-full {
   border-radius: 9999px !important;
+}
+
+.rounded {
+  border-radius: 0.25rem !important;
 }
 
 .border {
@@ -1010,6 +1136,21 @@ line-height: 38px;
 .bg-orange {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(242 148 107 / var(--tw-bg-opacity)) !important;
+}
+
+.object-contain {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
+.object-cover {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.object-fill {
+  -o-object-fit: fill !important;
+     object-fit: fill !important;
 }
 
 .p-2 {
@@ -1214,6 +1355,11 @@ line-height: 38px;
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
 }
 
+.text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
 .text-dark-orange {
   --tw-text-opacity: 1 !important;
   color: rgb(198 135 108 / var(--tw-text-opacity)) !important;
@@ -1221,11 +1367,6 @@ line-height: 38px;
 
 .text-grey-card {
   color: rgba(194, 194, 194, 1) !important;
-}
-
-.text-white {
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .underline {
@@ -1299,6 +1440,11 @@ line-height: 38px;
 .hover\:text-dark-orange:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(198 135 108 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .hover\:underline:hover {

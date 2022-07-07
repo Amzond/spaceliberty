@@ -8,17 +8,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
         <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
 
     </head>
     <body>
 
 
-    {{ partial:header2}}
+    {{ partial:header1}}
 
 
     <div id="wrapper" class="-mt-16 mb-32">
@@ -110,11 +107,16 @@
         image: 'https://i.ibb.co/Msz3qG7/360-panorama-test-optimize.png',
         is_stereo: false,
         width: '100%',
-		height: '800px'
+		height: '800px',
+		});
 
-    });
 
-
+        vrView.addHotspot('#vrview', {
+            pitch: 89, // In degrees. Up is positive.
+            yaw: 179, // In degrees. To the right is positive.
+            radius: 0.05, // Radius of the circular target in meters.
+            distance: 2 // Distance of target from camera in meters.
+        });
     }
 </script>
 

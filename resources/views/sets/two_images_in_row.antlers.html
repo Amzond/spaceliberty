@@ -2,7 +2,9 @@
     <div class="items-center ">
         <div class="image  hover:text-white">
         {{image1}}
-            <img class="w-full max-h-748 rounded"  src="{{ url }}">
+            <div class=" h-748">
+                <img class="h-full w-full rounded object-fill"  src="{{ url }}">
+            </div>
             <div class="overlay rounded">
                 <div class="mt-9">
                     <svg id="" class="mx-auto hov-icn " width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,15 +26,18 @@
             </div>
         {{/image1}}
         </div>
-        <div class="flex justify-center mt-2">
-            <p class="mr-1 text-16-22px">Photo by: </p><p class=" text-16-20px underline">{{image1_author}}</p>
+        <div class="flex justify-center mt-2 photo_auht">
+            <h6 class="mr-1 ">Photo by: </h6><h5 class=" ">{{image1_author}}</h5>
         </div>
 
     </div>
     <div class="items-center ">
-        <div class="image hover:text-white ">
+        <div class="image hover:text-white  ">
             {{image2}}
-            <img class="w-full max-h-748 rounded"  src="{{ url }}">
+            <div class="h-748">
+                <img class="w-full h-full rounded object-fill"  src="{{ url }}">
+            </div>
+
             <div class="overlay rounded">
                 <div class="mt-9">
                     <svg id="" class="mx-auto hov-icn " width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,8 +59,8 @@
             </div>
             {{/image2}}
         </div>
-        <div class="flex justify-center mt-2">
-            <p class="mr-1 text-16-22px">Photo by: </p><p class=" text-16-20px underline">{{image2_author}}</p>
+        <div class="flex justify-center mt-2 photo_auht">
+            <h6 class="mr-1 ">Photo by: </h6><h5 class=" ">{{image2_author}}</h5>
         </div>
 
 

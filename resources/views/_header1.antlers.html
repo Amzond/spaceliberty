@@ -1,0 +1,170 @@
+<div id="nav" class="w-full text-white bg-transparent flex z-10  py-4 sticky top-0" >
+
+    <div class="container flex items-center  mx-auto max-w-1215px px-4 ">
+        <div class="mr-8" >
+            <a href="/">
+                <img id="logo-w" src="/assets/site-images/logo-white.png" class="">
+                <img id="logo-o" src="/assets/site-images/logo-orange.png" class="hidden">
+            </a>
+        </div>
+
+        <div id="anchors" class="flex gap-4 ">
+
+            <div class="hover:bg-lang-bg-h active:bg-lang-bg-a hover:text-orange hover:underline active:text-dark-orange active:underline xs:hidden" onclick="showTooltip()" id="lang-btn">
+                <div class="cursor-pointer flex items-center px-2 py-1 font-ale-sans gap-1 font-normal text-16-20px 002em" >LT
+                    <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L3 3L5 1" stroke="currentColor"/>
+                    </svg></div>
+            </div>
+            <div class=" bp-footer:hidden" onclick="showMobileTooltip()" id="langm-btn">
+                <div class="cursor-pointer flex items-center px-2 py-1  font-ale-sans gap-1 font-normal text-16-20px 002em" >LT
+                    <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L3 3L5 1" stroke="currentColor"/>
+                    </svg></div>
+            </div>
+            <div id="lang" class="hidden origin-top-right absolute top-0 mt-16 bg-white shadow-lang-box p-2 rounded text-black"  style=" height:112px; width: 200px;">
+                <div class="bg-lang-bg mb-2 rounded hover:text-dark-orange active:text-orange hover:bg-lang-bg-h active:lang-bg-a">
+                    <a class="hover:underline active:underline flex items-center text-16-20px font-ale-sans font-normal 002em p-3" href="#">
+                        Lietuvių
+                        <svg class="ml-auto" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="currentColor" stroke-linecap="square"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="bg-lang-bg rounded hover:bg-lang-bg-h active:lang-bg-a hover:text-dark-orange active:text-orange">
+                    <a class="hover:underline active:underline flex items-center text-16-20px font-ale-sans font-normal 002em p-3 " href="#">
+                        English
+                        <svg class="ml-auto" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="currentColor" stroke-linecap="square"/>
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+
+            {{ nav:header}}
+            <div class="px-2 py-1 xs:hidden ">
+                <a class="hover:text-orange active:text-dark-orange" href="{{ url }}"><p class="font-ale-sans font-normal text-16-20px 002em">{{title}}</p></a>
+            </div>
+            {{ /nav:header}}
+        </div>
+        <div class="ml-auto flex h-11 items-center gap-4 ">
+            <a class="xs:hidden text-16-20px font-ale-sans font-normal hover:text-orange active:text-dark-orange" href="tel:{{globals:phone}}">{{globals:phone}}</a>
+            <div class="px-1.5 py-2.5 hover:bg-lang-bg-h active:bg-lang-bg-a ">
+                <a  class=" hover:text-orange active:text-dark-orange"href="#">
+                    <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.5" width="32" height="1" fill="currentColor"/>
+                        <rect y="11.5" width="32" height="1" fill="currentColor"/>
+                        <rect y="22.5" width="32" height="1" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="langm" class="hidden fixed bottom-0 bg-white p-8 font-pro rounded w-full z-40 translate-y-250 transition-all duration-500" onclick="hideDarkBackground()">
+    <div class="bg-lang-bg mb-2 rounded hover:text-dark-orange active:text-orange hover:bg-lang-bg-h active:lang-bg-a">
+        <a class="flex items-center text-16-20px font-ale-sans font-normal 002em p-3" href="">
+            Lietuvių
+            <svg class="ml-auto" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="black" stroke-linecap="square"/>
+            </svg>
+        </a>
+    </div>
+    <div class="bg-lang-bg rounded  hover:text-dark-orange active:text-orange hover:bg-lang-bg-h active:lang-bg-a">
+        <a class="flex items-center text-16-20px font-ale-sans font-normal 002em p-3" href="#">
+            English
+            <svg class="ml-auto" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="black" stroke-linecap="square"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+
+<div id="black-background" class="hidden w-full h-full fixed top-0 left-0 bg-cover-bg z-30" onclick="hideDarkBackground()">
+</div>
+
+<script>
+    window.onscroll = function () { Scroll(), hideDarkBackground(), HideToolTip()};
+
+    function Scroll() {
+        let logoW = document.getElementById('logo-w');
+        let logoO = document.getElementById('logo-o');
+        if( document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+             nav.classList.add("bg-white");
+             nav.classList.remove("bg-transparent");
+             nav.classList.remove("text-white");
+             nav.classList.add("menuShadow");
+             logoW.classList.add("hidden");
+             logoO.classList.remove("hidden");
+
+        }else{
+            nav.classList.remove("bg-white");
+            nav.classList.add("text-white");
+            nav.classList.add("bg-transparent");
+            nav.classList.remove("menuShadow");
+            logoW.classList.remove("hidden");
+            logoO.classList.add("hidden");
+
+
+        }
+    }
+
+
+     let canHideTooltip = true;
+     document.body.addEventListener("click", hideTooltip);
+
+
+     function hideTooltip(){
+         if(canHideTooltip === true){
+             let lang = document.getElementById('lang');
+             let langm = document.getElementById('langm');
+             let btn = document.getElementById('lang-btn');
+             lang.classList.add('hidden');
+             btn.classList.remove('underline');
+             langm.classList.add('translate-y-250');
+             langm.classList.add('hidden');
+             btn.classList.remove('text-dark-orange')
+         } else{
+             canHideTooltip = true;
+         }
+     }
+
+     function hideDarkBackground(){
+         let darkBackground = document.getElementById('black-background')
+         let langm = document.getElementById('langm');
+         let btn = document.getElementById('langm-btn');
+         darkBackground.classList.add('hidden');
+         if( document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+            darkBackground.classList.add('hidden');
+            langm.classList.add('hidden');
+            btn.classList.remove('underline');
+            btn.classList.remove('text-dark-orange');
+            btn.classList.remove('bg-lang-bg-a');
+         }
+
+     }
+    function showTooltip() {
+        canHideTooltip = false
+        let lang = document.getElementById('lang');
+        let btn = document.getElementById('lang-btn');
+        lang.classList.remove('hidden');
+        btn.classList.add('underline');
+        btn.classList.add('text-dark-orange')
+    }
+     function showMobileTooltip() {
+         canHideTooltip = false
+         let langm = document.getElementById('langm');
+         let btn = document.getElementById('langm-btn');
+         let darkBackground = document.getElementById('black-background');
+         langm.classList.remove('translate-y-250');
+         langm.classList.remove('hidden');
+         darkBackground.classList.remove('hidden');
+         btn.classList.add('underline');
+         btn.classList.add('text-dark-orange');
+         btn.classList.add('bg-lang-bg-a');
+     }
+</script>

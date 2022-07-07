@@ -167,3 +167,31 @@ line-height: 38px;
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
+
+.photo_auht h6{
+font-family: 'Alegreya Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+letter-spacing: 0.02em;
+}
+.photo_auht h5 {
+font-family: 'Alegreya Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+
+letter-spacing: 0.02em;
+text-decoration-line: underline;
+
+color: #000000;
+}
+
+.menuShadow {
+box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
+}
+
