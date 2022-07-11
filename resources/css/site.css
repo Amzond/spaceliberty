@@ -114,6 +114,7 @@ line-height: 38px;
     top: 0;
     left: 0;
     z-index: 1;
+
 }
 #wrapper{
     width: 1215px;
@@ -193,5 +194,10 @@ color: #000000;
 
 .menuShadow {
 box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
+}
+
+.shadow360-bottom {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 2;
 }
 

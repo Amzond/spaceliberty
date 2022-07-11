@@ -10,13 +10,13 @@
 
         <div id="anchors" class="flex gap-4 ">
 
-            <div class="hover:bg-lang-bg-h active:bg-lang-bg-a hover:text-orange hover:underline active:text-dark-orange active:underline xs:hidden" onclick="showTooltip()" id="lang-btn">
-                <div class="cursor-pointer flex items-center px-2 py-1 font-ale-sans gap-1 font-normal text-16-20px 002em" >LT
+            <div class="hover:bg-white-menu-bg-h active:bg-white-menu-bg-a hover:underline active:underline rounded-sm active:underline xs:hidden" onclick="showTooltip()" id="lang-btn">
+                <div class="cursor-pointer flex  items-center px-2 py-1 font-ale-sans gap-1 font-normal text-16-20px 002em" >LT
                     <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L3 3L5 1" stroke="currentColor"/>
                     </svg></div>
             </div>
-            <div class=" bp-footer:hidden" onclick="showMobileTooltip()" id="langm-btn">
+            <div class="bp-footer:hidden" onclick="showMobileTooltip()" id="langm-btn">
                 <div class="cursor-pointer flex items-center px-2 py-1  font-ale-sans gap-1 font-normal text-16-20px 002em" >LT
                     <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L3 3L5 1" stroke="currentColor"/>
@@ -43,15 +43,15 @@
             </div>
 
             {{ nav:header}}
-            <div class="px-2 py-1 xs:hidden ">
-                <a class="hover:text-orange active:text-dark-orange" href="{{ url }}"><p class="font-ale-sans font-normal text-16-20px 002em">{{title}}</p></a>
+            <div class=" xs:hidden flex">
+                <a class="px-2 py-1 rounded-sm hover:bg-white-menu-bg-h active:bg-white-menu-bg-a navText hover:underline active:underline" href="{{ url }}"><p class="font-ale-sans font-normal text-16-20px 002em">{{title}}</p></a>
             </div>
             {{ /nav:header}}
         </div>
         <div class="ml-auto flex h-11 items-center gap-4 ">
-            <a class="xs:hidden text-16-20px font-ale-sans font-normal hover:text-orange active:text-dark-orange" href="tel:{{globals:phone}}">{{globals:phone}}</a>
-            <div class="px-1.5 py-2.5 hover:bg-lang-bg-h active:bg-lang-bg-a ">
-                <a  class=" hover:text-orange active:text-dark-orange"href="#">
+            <a id="phone" class=" xs:hidden text-16-20px font-ale-sans font-normal hover:underline active:underline " href="tel:{{globals:phone}}">{{globals:phone}}</a>
+            <div id="menu-b-bg" class="px-1.5 py-2.5 active:bg-white-menu-bg-a  hover:bg-white-menu-bg-h ">
+                <a id="menu-b" class=" "href="#">
                     <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.5" width="32" height="1" fill="currentColor"/>
                         <rect y="11.5" width="32" height="1" fill="currentColor"/>
@@ -93,26 +93,75 @@
     function Scroll() {
         let logoW = document.getElementById('logo-w');
         let logoO = document.getElementById('logo-o');
+        let navText = document.getElementsByClassName('navText');
+        let langbtn = document.getElementById('lang-btn');
+        let phone =   document.getElementById('phone');
+        let menub =  document.getElementById('menu-b');
+        let menubbg = document.getElementById('menu-b-bg');
+
         if( document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+             menubbg.classList.remove("hover:bg-white-menu-bg-h");
+             menubbg.classList.remove("active:bg-white-menu-bg-a");
+             phone.classList.remove("hover:text-white");
+             phone.classList.add("hover:text-orange");
+             menub.classList.add("hover:text-orange");
+             menub.classList.remove("hover:text-white");
              nav.classList.add("bg-white");
              nav.classList.remove("bg-transparent");
              nav.classList.remove("text-white");
              nav.classList.add("menuShadow");
              logoW.classList.add("hidden");
              logoO.classList.remove("hidden");
+             langbtn.classList.add("hover:bg-lang-bg-h");
+             langbtn.classList.add("active:bg-lang-bg-a");
+             langbtn.classList.add('active:text-dark-orange');
+             langbtn.classList.add('hover:text-orange');
+             langbtn.classList.remove("hover:bg-white-menu-bg-h")
+             langbtn.classList.remove("active:bg-white-menu-bg-a")
+             for( let i = 0 ; i < navText.length ; i++ )
+            {
+
+                    navText[i].classList.add('hover:bg-lang-bg-h');
+                    navText[i].classList.add('active:bg-lang-bg-a');
+                    navText[i].classList.add('hover:text-orange');
+                    navText[i].classList.add('active:text-dark-orange');
+                    navText[i].classList.remove('hover:bg-white-menu-bg-h');
+                    navText[i].classList.remove('active:bg-white-menu-bg-a');
+            }
 
         }else{
+            menubbg.classList.add("hover:bg-white-menu-bg-h")
+            menubbg.classList.add("active:bg-white-menu-bg-a")
+            menub.classList.remove("hover:text-orange");
+            menub.classList.add("hover:text-white");
+            phone.classList.add("hover:text-white");
+            phone.classList.remove("hover:text-orange");
             nav.classList.remove("bg-white");
             nav.classList.add("text-white");
             nav.classList.add("bg-transparent");
             nav.classList.remove("menuShadow");
             logoW.classList.remove("hidden");
             logoO.classList.add("hidden");
+            langbtn.classList.remove("hover:bg-lang-bg-h")
+            langbtn.classList.remove("active:bg-lang-bg-a")
+            langbtn.classList.add("hover:bg-white-menu-bg-h")
+            langbtn.classList.add("active:bg-white-menu-bg-a")
+            langbtn.classList.remove('hover:text-orange');
+            langbtn.classList.remove('active:text-dark-orange');
+            for( let i = 0 ; i < navText.length ; i++ )
+            {
+                    navText[i].classList.remove('hover:bg-lang-bg-h');
+                    navText[i].classList.remove('active:bg-lang-bg-a');
+                    navText[i].classList.remove('hover:text-orange');
+                    navText[i].classList.remove('active:text-dark-orange');
+                    navText[i].classList.add('hover:bg-white-menu-bg-h');
+                    navText[i].classList.add('active:bg-white-menu-bg-a');
 
+
+            }
 
         }
     }
-
 
      let canHideTooltip = true;
      document.body.addEventListener("click", hideTooltip);
@@ -128,6 +177,8 @@
              langm.classList.add('translate-y-250');
              langm.classList.add('hidden');
              btn.classList.remove('text-dark-orange')
+
+
          } else{
              canHideTooltip = true;
          }

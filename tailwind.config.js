@@ -53,6 +53,8 @@ module.exports = {
             'post-share': 'rgba(0, 0, 0, 0.02)',
             'cta-bg': '#F4EFEF',
             'warm-grey': '#F5F4F2',
+            'white-menu-bg-h': 'rgba(255, 255, 255, 0.15)',
+            'white-menu-bg-a': 'rgba(255, 255, 255, 0.4)',
         },
         screens:{
             'xs': {'max': '1235px'},
