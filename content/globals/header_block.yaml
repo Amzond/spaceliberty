@@ -1,0 +1,12 @@
+title: 'Header block'
+data:
+  header_text: 'Tikrinimas ar veikia'
+  subheader_text: 'Interjero dizainas ir autorinė priežiurą Lietuvoje'
+  360_image: site-images/360_panorama-test-optimize.png
+  first_partner_logo: site-images/interjeras-1657650493.svg
+  partner_link1: 'https://www.google.com/'
+  second_partner_logo: site-images/respublika.svg
+  partner_link2: 'https://www.google.com/'
+  third_partner_logo:
+    - site-images/tv3.svg
+  partner_link3: 'https://www.google.com/'

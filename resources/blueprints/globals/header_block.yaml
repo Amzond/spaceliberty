@@ -1,0 +1,139 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: header_text
+        field:
+          character_limit: '25'
+          antlers: false
+          display: 'Header text'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: subheader_text
+        field:
+          antlers: false
+          display: 'Subheader text'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+          character_limit: '55'
+      -
+        handle: 360_image
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: '360 image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+          folder: site-images
+      -
+        handle: first_partner_logo
+        field:
+          mode: list
+          container: assets
+          folder: site-images
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'First partner logo'
+          type: assets
+          icon: assets
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: partner_link1
+        field:
+          display: 'Partner Link'
+          type: link
+          icon: link
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: second_partner_logo
+        field:
+          mode: list
+          container: assets
+          folder: site-images
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Second partner logo'
+          type: assets
+          icon: assets
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: partner_link2
+        field:
+          display: 'Partner link'
+          type: link
+          icon: link
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: third_partner_logo
+        field:
+          mode: list
+          container: assets
+          folder: site-images
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Third partner logo'
+          type: assets
+          icon: assets
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+          max_files: 1
+      -
+        handle: partner_link3
+        field:
+          display: 'Partner Link'
+          type: link
+          icon: link
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
