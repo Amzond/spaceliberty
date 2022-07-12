@@ -23,13 +23,13 @@
 
         <div id="anchors" class="flex gap-4 ">
 
-            <div class="hover:bg-lang-bg-h active:bg-lang-bg-a hover:text-orange hover:underline active:text-dark-orange active:underline xs:hidden" onclick="showTooltip()" id="lang-btn">
+            <div class="hover:bg-lang-bg-h active:bg-lang-bg-a hover:text-orange hover:underline active:text-dark-orange active:underline tablet:hidden mobile:hidden" onclick="showTooltip()" id="lang-btn">
                 <div class="cursor-pointer flex items-center px-2 py-1 font-ale-sans gap-1 font-normal text-16-20px 002em" >LT
                     <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L3 3L5 1" stroke="currentColor"/>
                     </svg></div>
             </div>
-            <div class=" bp-footer:hidden" onclick="showMobileTooltip()" id="langm-btn">
+            <div class=" desktop:hidden" onclick="showMobileTooltip()" id="langm-btn">
                 <div class="cursor-pointer flex items-center px-2 py-1  font-ale-sans gap-1 font-normal text-16-20px 002em" >LT
                     <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L3 3L5 1" stroke="currentColor"/>
@@ -56,13 +56,13 @@
             </div>
 
             {{ nav:header}}
-            <div class=" xs:hidden  flex">
+            <div class=" tablet:hidden mobile:hidden  flex">
                 <a class="px-2 py-1 rounded-sm hover:bg-lang-bg-h active:bg-lang-bg-a hover:underline active:underline hover:text-orange active:text-dark-orange" href="{{ url }}"><p class="font-ale-sans font-normal text-16-20px 002em">{{title}}</p></a>
             </div>
             {{ /nav:header}}
         </div>
         <div class="ml-auto flex h-11 items-center gap-4 ">
-            <a class="xs:hidden text-16-20px font-ale-sans font-normal hover:text-orange active:text-dark-orange" href="tel:{{globals:phone}}">{{globals:phone}}</a>
+            <a class="tablet:hidden mobile:hidden text-16-20px font-ale-sans font-normal hover:text-orange active:text-dark-orange" href="tel:{{globals:phone}}">{{globals:phone}}</a>
             <div class="px-1.5 py-2.5 hover:bg-lang-bg-h active:bg-lang-bg-a ">
                 <a  class=" hover:text-orange active:text-dark-orange"href="#">
                     <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">

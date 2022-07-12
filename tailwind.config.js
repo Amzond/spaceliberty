@@ -57,7 +57,9 @@ module.exports = {
             'white-menu-bg-a': 'rgba(255, 255, 255, 0.4)',
         },
         screens:{
-            'xs': {'max': '1235px'},
+            'desktop': {'min': '1025px'},
+            'tablet': {'min': '751px' ,'max': '1024px'},
+            'mobile': {'min': '300px' ,'max': '750px'},
             'lg': '851px',
             'bp-footer': '1234px',
         },

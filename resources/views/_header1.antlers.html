@@ -64,6 +64,7 @@
     </div>
 </div>
 
+
 <div id="langm" class="hidden fixed bottom-0 bg-white p-8 font-pro rounded w-full z-40 translate-y-250 transition-all duration-500" onclick="hideDarkBackground()">
     <div class="bg-lang-bg mb-2 rounded hover:text-dark-orange active:text-orange hover:bg-lang-bg-h active:lang-bg-a">
         <a class="flex items-center text-16-20px font-ale-sans font-normal 002em p-3" href="">
@@ -100,6 +101,7 @@
         let menubbg = document.getElementById('menu-b-bg');
 
         if( document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+
              menubbg.classList.remove("hover:bg-white-menu-bg-h");
              menubbg.classList.remove("active:bg-white-menu-bg-a");
              phone.classList.remove("hover:text-white");
@@ -118,9 +120,9 @@
              langbtn.classList.add('hover:text-orange');
              langbtn.classList.remove("hover:bg-white-menu-bg-h")
              langbtn.classList.remove("active:bg-white-menu-bg-a")
+
              for( let i = 0 ; i < navText.length ; i++ )
             {
-
                     navText[i].classList.add('hover:bg-lang-bg-h');
                     navText[i].classList.add('active:bg-lang-bg-a');
                     navText[i].classList.add('hover:text-orange');
@@ -130,6 +132,8 @@
             }
 
         }else{
+
+
             menubbg.classList.add("hover:bg-white-menu-bg-h")
             menubbg.classList.add("active:bg-white-menu-bg-a")
             menub.classList.remove("hover:text-orange");
@@ -156,8 +160,6 @@
                     navText[i].classList.remove('active:text-dark-orange');
                     navText[i].classList.add('hover:bg-white-menu-bg-h');
                     navText[i].classList.add('active:bg-white-menu-bg-a');
-
-
             }
 
         }
@@ -177,7 +179,7 @@
              langm.classList.add('translate-y-250');
              langm.classList.add('hidden');
              btn.classList.remove('text-dark-orange')
-
+             btn.classList.remove('bg-lang-bg-a');
 
          } else{
              canHideTooltip = true;
@@ -196,7 +198,6 @@
             btn.classList.remove('text-dark-orange');
             btn.classList.remove('bg-lang-bg-a');
          }
-
      }
     function showTooltip() {
         canHideTooltip = false
@@ -204,7 +205,19 @@
         let btn = document.getElementById('lang-btn');
         lang.classList.remove('hidden');
         btn.classList.add('underline');
-        btn.classList.add('text-dark-orange')
+
+        if( document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+
+           btn.classList.add('text-dark-orange')
+           btn.classList.add('bg-lang-bg-a')
+
+        }
+        else {
+           btn.classList.add('text-white');
+           btn.classList.add('bg-white-menu-bg-a');
+        }
+
+
     }
      function showMobileTooltip() {
          canHideTooltip = false
