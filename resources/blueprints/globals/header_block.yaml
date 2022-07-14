@@ -15,6 +15,7 @@ sections:
           read_only: false
           validate:
             - required
+            - 'max:25'
       -
         handle: subheader_text
         field:
@@ -27,6 +28,7 @@ sections:
           read_only: false
           validate:
             - required
+            - 'max:55'
           character_limit: '55'
       -
         handle: 360_image
