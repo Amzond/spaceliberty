@@ -1,5 +1,5 @@
 <html >
-    <head >
+    <head  >
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
         <script src="{{ mix src='/js/site.js' }}" defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -20,33 +20,41 @@
 
     <div id="wrapper" class="-mt-16 mb-32  ">
 
-        <div id="vrview" class="w-full background ">
 
-        </div>
-
-        <div class=" content  ">
-
-        <div class="mt-467 max-w-1215px  noselect grid grid-cols-1-3_0-7fr tablet:grid-cols-1 mobile:grid-cols-1 mobile:px-4 tablet:px-4"  >
-
-                <div class=" headImgText  " >
-                    <h3>{{header_block:header_text}}</h3>
-                    <h5>{{header_block:subheader_text}}</h5>
-                </div>
+            <div id="vrview" class="w-full background  ">
 
 
-            <div class="desktop:mt-175 mt-8  ">
-                <p class="mb-3.5">Kaip ir matyta:</p>
-                <div class="flex gap-8">
-                    <a href="{{header_block:partner_link1}}"><img src="{{header_block:first_partner_logo}}" ></a>
-                    <a href="{{header_block:partner_link2}}"><img src="{{header_block:second_partner_logo}}" ></a>
-                    <a href="{{header_block:partner_link3}}"><img src="{{header_block:third_partner_logo}}" ></a>
+            </div>
+
+
+        <div class="shadow360-bottom w-screen relative z-10">
+
+            <div class=" content   ">
+                <div class="mx-auto mt-467 max-w-1215px noselect grid grid-cols-1-3_0-7fr tablet:grid-cols-1 mobile:grid-cols-1 mobile:px-4 tablet:px-4  "  >
+
+                    <div class=" headImgText  " >
+                        <h3>{{header_block:header_text}}</h3>
+                        <h5>{{header_block:subheader_text}}</h5>
+                    </div>
+
+
+                    <div class="desktop:mt-175 mt-8  ">
+                        <p class="mb-3.5">Kaip ir matyta:</p>
+                        <div class="flex gap-8">
+                            <a href="{{header_block:partner_link1}}"><img src="{{header_block:first_partner_logo}}" ></a>
+                            <a href="{{header_block:partner_link2}}"><img src="{{header_block:second_partner_logo}}" ></a>
+                            <a href="{{header_block:partner_link3}}"><img src="{{header_block:third_partner_logo}}" ></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="absolute menuShadow-header w-screen z-10 top-0">
 
         </div>
-    </div>
 
+
+    </div>
 
 
         <div class="container max-w-1215px w-full items-center mx-auto px-4 mb-9">

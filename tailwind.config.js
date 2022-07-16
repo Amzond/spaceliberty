@@ -105,6 +105,9 @@ module.exports = {
             '1215px': '1215px',
             '648px': '648px',
         },
+        inset:{
+            '9': '9rem',
+        },
 
 
 
