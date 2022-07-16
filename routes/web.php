@@ -21,7 +21,8 @@ Route::get('/file/{any}', function ($any) {
     if (\Illuminate\Support\Facades\Storage::disk('public')->exists($any)) {
         return response()
             ->file(\Illuminate\Support\Facades\Storage::disk('public')->path($any), [
-                'Access-Control-Allow-Origin' => '*'
+  //              'Access-Control-Allow-Origin' => '*'
+
             ]);
     }
     abort(404);
