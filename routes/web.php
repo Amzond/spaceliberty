@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/file/{any}', function ($any) {
     if (\Illuminate\Support\Facades\Storage::disk('public')->exists($any)) {
         return response()
-            ->file(\Illuminate\Support\Facades\Storage::disk('public')->getDriver()->getAdapter()->getPathPrefix().$any, [
+            ->file(\Illuminate\Support\Facades\Storage::disk('public')->path($any), [
                 'Access-Control-Allow-Origin' => '*'
             ]);
     }
