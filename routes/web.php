@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 // Route::statamic('example', 'example-view', [
 //    'title' => 'Example'
 // ]);
+
+Route::get('/file/{any}', function ($any) {
+    if (\Illuminate\Support\Facades\Storage::disk('public')->exists($any)) {
+        return response()
+            ->file(\Illuminate\Support\Facades\Storage::disk('public')->getDriver()->getAdapter()->getPathPrefix().$any, [
+                'Access-Control-Allow-Origin' => '*'
+            ]);
+    }
+    abort(404);
+})->where('any', '.*');
