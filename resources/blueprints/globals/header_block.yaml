@@ -65,6 +65,8 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+          validate:
+            - required
       -
         handle: partner_link1
         field:
