@@ -141,3 +141,12 @@ sections:
           read_only: false
           validate:
             - required
+      -
+        handle: 360_image_link
+        field:
+          display: '360 image link'
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          read_only: false
