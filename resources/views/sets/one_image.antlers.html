@@ -2,7 +2,7 @@
     {{ image }}
 
 <!--    <div class="image w-full h-675 rounded " style="background-image: url({{ url }});">-->
-    <div class="image hover:text-white">
+    <div id="myImg" class="image hover:text-white">
        <img class="w-full max-h-675 rounded " src="{{url}}">
         <div class="overlay rounded">
             <div class="mt-9">
@@ -20,9 +20,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 25V15H20.5V25H19.5Z" fill="white"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M25 20.5H15V19.5H25V20.5Z" fill="white"/>
                 </svg>
-
             </div>
-
         </div>
     </div>
 
@@ -30,10 +28,43 @@
     <div class="mt-2 items-center flex justify-center photo_auht pb-4">
             <h6 class="">Photo by: </h6><h5 class=" ">{{photo_author}}</h5>
     </div>
-
-
-
 </div>
 
+<div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
 
 
