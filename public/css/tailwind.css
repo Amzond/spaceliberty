@@ -1089,6 +1089,30 @@ box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
   margin-bottom: 1.75rem !important;
 }
 
+.mt-16 {
+  margin-top: 4rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 2rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mt-16 {
+  margin-top: 4rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 2rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
 .block {
   display: block !important;
 }
@@ -1775,6 +1799,16 @@ box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
   .desktop\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
+
+  .desktop\:rounded-l {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+  }
+
+  .desktop\:rounded-r {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+  }
 }
 
 @media (min-width: 751px) and (max-width: 1024px) {
@@ -1801,6 +1835,16 @@ box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
 
   .tablet\:gap-16 {
     gap: 4rem !important;
+  }
+
+  .tablet\:rounded-l {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+  }
+
+  .tablet\:rounded-r {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
   }
 
   .tablet\:px-5 {
@@ -1841,6 +1885,16 @@ box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
 
   .mobile\:gap-16 {
     gap: 4rem !important;
+  }
+
+  .mobile\:rounded-t {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+  }
+
+  .mobile\:rounded-b {
+    border-bottom-right-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
   }
 
   .mobile\:px-5 {
