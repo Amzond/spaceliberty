@@ -12,6 +12,7 @@ module.exports = {
             'auto-fit': 'repeat(auto-fit, minmax(170px, 1fr))',
             '1-2fr': '0.6fr 1.3fr',
             '1-3_0-7fr': '1.3fr 0.7fr',
+            '0.9-1.10fr': '0.9fr 1.10fr',
 
         },
         fontFamily: {

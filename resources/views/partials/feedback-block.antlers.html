@@ -2,10 +2,10 @@
 {{ collection:feedbacks sort="order" as="feedback" }}
     {{ feedback }}
 <div class="Feedback">
-    <div class="grid desktop:grid-cols-2  w-full desktop:min-h-480 tablet:min-h-480 ">
+    <div class="grid desktop:grid-cols-2 tablet:grid-cols-0.9-1.10fr w-full desktop:min-h-480 tablet:min-h-480 ">
 
         <div class="max-h-480 relative">
-            <div class="desktop:hidden ">
+            <div class="desktop:hidden tablet:hidden ">
                 <div class="absolute mt-52 ml-4">
                     <a class="hover:text-orange active:text-dark-orange text-black" onclick="plus(-1)">
                         <svg class="" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,8 +32,8 @@
         </div>
 
         <div class="bg-white max-h-480 desktop:rounded-r tablet:rounded-r mobile:rounded-b">
-            <div class="desktop:mt-16 desktop:mx-16 tablet:mx-8 tablet:mt-8 mobile:mx-8 mobile:mt-8">
-                <div class=" mobile:hidden tablet:hidden flex">
+            <div class="desktop:mt-16 desktop:mx-16 tablet:mx-16 tablet:mt-16 mobile:mx-8 mobile:mt-8">
+                <div class=" mobile:hidden  flex">
                     <div class="mb-4 feedback-text">
                         <h3>Įkurtuvių istorijos ❤️</h3>
                     </div>
@@ -46,7 +46,7 @@
                             </svg>
                         </a>
                         <h3 class="curr">  </h3>
-                        <h3> iš </h3> <h3 class="of"> </h3>
+                        <h3 class="mx-0.5">  iš  </h3> <h3 class="of"> </h3>
 
                         <a class="mx-2 hover:text-dark-orange active:text-orange cursor-pointer"  onclick="plus(1)">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -64,9 +64,9 @@
                 <hr class=" tablet:hidden mobile:hidden" style="border: 1px solid #DEDEDE;">
             </div>
 
-            <div class="desktop:mt-12 desktop:mx-12 feedback-btn ">
+            <div class="desktop:mt-12 desktop:mx-12 tablet:mt-12 tablet:mx-12 feedback-btn ">
                 <a class="feedback-background" href="#">
-                    <div class="feedback-background desktop:p-2 tablet:pt-4 tablet:px-8 tablet:pb-8 mobile:pt-4 mobile:px-8 mobile:pb-8 rounded ">
+                    <div class="feedback-background desktop:p-2 tablet:p-2 mobile:pt-4 mobile:px-8 mobile:pb-8 rounded ">
                         <div class="flex ">
                             <div class="feedback-text  ">
                                 <h1>{{client_name}}</h1>
