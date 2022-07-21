@@ -335,15 +335,28 @@ letter-spacing: 0.1em;
 #rarrow-back-m:hover {fill:#FCE0CD}
 #rarrow-back-m:active {fill:#FCE0CD}
 
-.feedback-background {
-    background: #FFFFFF;
-}
-.feedback-background:active {
 
-    background: rgba(198, 135, 108, 0.1) !important;
+.feedback-background:active {
+    background: rgba(198, 135, 108, 0.5) ;
 }
 .feedback-background:hover {
-    background: rgba(242, 148, 107, 0.05) !important;
+    background: rgba(242, 148, 107, 0.05) ;
+}
+
+
+.feedback-btn:active h4{
+    color: #EE7F4F !important;
+    text-decoration-line: underline;
+}
+.feedback-btn:hover {
+    color: #C6876C !important;
+}
+
+.feedback-btn:hover {
+    color: #C6876C !important;
+}
+.feedback-btn:active {
+     color: #EE7F4F !important;
 }
 
 
