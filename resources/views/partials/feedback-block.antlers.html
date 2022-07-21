@@ -2,7 +2,7 @@
 {{ collection:feedbacks sort="order" as="feedback" }}
     {{ feedback }}
 <div class="Feedback">
-    <div class="grid desktop:grid-cols-2  w-full desktop:min-h-480  ">
+    <div class="grid desktop:grid-cols-2  w-full desktop:min-h-480 tablet:min-h-480 ">
 
         <div class="max-h-480 relative">
             <div class="desktop:hidden ">
@@ -28,7 +28,7 @@
 
 
 
-            <img class="w-full h-full object-cover desktop:rounded-l tablet:rounded-l mobile:rounded-t  " src="{{feedback_image:url}}">
+            <img class="w-full h-full object-cover desktop:rounded-l tablet:rounded-t mobile:rounded-t  " src="{{feedback_image:url}}">
         </div>
 
         <div class="bg-white max-h-480 desktop:rounded-r tablet:rounded-r mobile:rounded-b">

@@ -1280,6 +1280,54 @@ letter-spacing: 0.1em;
   margin-bottom: 2rem !important;
 }
 
+.mt-52 {
+  margin-top: 13rem !important;
+}
+
+.ml-4 {
+  margin-left: 1rem !important;
+}
+
+.mr-4 {
+  margin-right: 1rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1rem !important;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mb-8 {
+  margin-bottom: 2rem !important;
+}
+
+.mt-52 {
+  margin-top: 13rem !important;
+}
+
+.ml-4 {
+  margin-left: 1rem !important;
+}
+
+.mr-4 {
+  margin-right: 1rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1rem !important;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mb-8 {
+  margin-bottom: 2rem !important;
+}
+
 .block {
   display: block !important;
 }
@@ -1881,6 +1929,26 @@ letter-spacing: 0.1em;
   color: rgb(198 135 108 / var(--tw-text-opacity)) !important;
 }
 
+.hover\:text-orange:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(242 148 107 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-dark-orange:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(198 135 108 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-orange:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(242 148 107 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-dark-orange:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(198 135 108 / var(--tw-text-opacity)) !important;
+}
+
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline !important;
           text-decoration-line: underline !important;
@@ -1924,6 +1992,26 @@ letter-spacing: 0.1em;
 .active\:text-white:active {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.active\:text-dark-orange:active {
+  --tw-text-opacity: 1 !important;
+  color: rgb(198 135 108 / var(--tw-text-opacity)) !important;
+}
+
+.active\:text-orange:active {
+  --tw-text-opacity: 1 !important;
+  color: rgb(242 148 107 / var(--tw-text-opacity)) !important;
+}
+
+.active\:text-dark-orange:active {
+  --tw-text-opacity: 1 !important;
+  color: rgb(198 135 108 / var(--tw-text-opacity)) !important;
+}
+
+.active\:text-orange:active {
+  --tw-text-opacity: 1 !important;
+  color: rgb(242 148 107 / var(--tw-text-opacity)) !important;
 }
 
 .active\:text-dark-orange:active {
@@ -2066,12 +2154,48 @@ letter-spacing: 0.1em;
     margin-right: 3rem !important;
   }
 
+  .desktop\:mx-16 {
+    margin-left: 4rem !important;
+    margin-right: 4rem !important;
+  }
+
+  .desktop\:mx-12 {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
+
+  .desktop\:mx-16 {
+    margin-left: 4rem !important;
+    margin-right: 4rem !important;
+  }
+
+  .desktop\:mx-12 {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
+
   .desktop\:mt-175 {
     margin-top: 170px !important;
   }
 
   .desktop\:ml-auto {
     margin-left: auto !important;
+  }
+
+  .desktop\:mt-16 {
+    margin-top: 4rem !important;
+  }
+
+  .desktop\:mt-12 {
+    margin-top: 3rem !important;
+  }
+
+  .desktop\:mt-16 {
+    margin-top: 4rem !important;
+  }
+
+  .desktop\:mt-12 {
+    margin-top: 3rem !important;
   }
 
   .desktop\:mt-16 {
@@ -2128,6 +2252,26 @@ letter-spacing: 0.1em;
 
   .desktop\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .desktop\:rounded-l {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+  }
+
+  .desktop\:rounded-r {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+  }
+
+  .desktop\:rounded-l {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+  }
+
+  .desktop\:rounded-r {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
   }
 
   .desktop\:rounded-l {
@@ -2280,6 +2424,10 @@ letter-spacing: 0.1em;
     display: none !important;
   }
 
+  .tablet\:min-h-480 {
+    min-height: 480px !important;
+  }
+
   .tablet\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
   }
@@ -2342,6 +2490,26 @@ letter-spacing: 0.1em;
     border-bottom-right-radius: 0.25rem !important;
   }
 
+  .tablet\:rounded-t {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+  }
+
+  .tablet\:rounded-r {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+  }
+
+  .tablet\:rounded-t {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+  }
+
+  .tablet\:rounded-r {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+  }
+
   .tablet\:p-2 {
     padding: 0.5rem !important;
   }
@@ -2366,6 +2534,22 @@ letter-spacing: 0.1em;
 
   .tablet\:pt-8 {
     padding-top: 2rem !important;
+  }
+
+  .tablet\:pt-4 {
+    padding-top: 1rem !important;
+  }
+
+  .tablet\:pb-8 {
+    padding-bottom: 2rem !important;
+  }
+
+  .tablet\:pt-4 {
+    padding-top: 1rem !important;
+  }
+
+  .tablet\:pb-8 {
+    padding-bottom: 2rem !important;
   }
 
   .tablet\:pt-4 {
@@ -2470,6 +2654,26 @@ letter-spacing: 0.1em;
     border-bottom-left-radius: 0.25rem !important;
   }
 
+  .mobile\:rounded-t {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+  }
+
+  .mobile\:rounded-b {
+    border-bottom-right-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+  }
+
+  .mobile\:rounded-t {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+  }
+
+  .mobile\:rounded-b {
+    border-bottom-right-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+  }
+
   .mobile\:px-5 {
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
@@ -2486,6 +2690,22 @@ letter-spacing: 0.1em;
 
   .mobile\:pb-16 {
     padding-bottom: 4rem !important;
+  }
+
+  .mobile\:pt-4 {
+    padding-top: 1rem !important;
+  }
+
+  .mobile\:pb-8 {
+    padding-bottom: 2rem !important;
+  }
+
+  .mobile\:pt-4 {
+    padding-top: 1rem !important;
+  }
+
+  .mobile\:pb-8 {
+    padding-bottom: 2rem !important;
   }
 
   .mobile\:pt-4 {
