@@ -42,6 +42,7 @@ module.exports = {
             '003em': '0.03em',
         },
         colors:{
+            'active-orange': "#FCE0CD",
             'orange': '#F2946B',
             'dark-orange': '#C6876C',
             'lang-bg': 'rgba(0, 0, 0, 0.02)',
@@ -82,6 +83,7 @@ module.exports = {
             '335': '335px',
             '675': '675px',
             '748': '748px',
+            '268': '268px',
 
         },
         maxHeight:{
@@ -92,6 +94,7 @@ module.exports = {
         },
         minHeight:{
             '48': '48px',
+            '480': '480px',
 
         },
         margin:{

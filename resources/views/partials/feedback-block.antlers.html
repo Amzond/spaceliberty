@@ -1,25 +1,143 @@
+
 {{ collection:feedbacks as="feedback" }}
     {{ feedback }}
-<div class="grid desktop:grid-cols-2 tablet:grid-cols-2 w-full  ">
-        <div class="max-h-480">
-            <img class="w-full h-full object-cover desktop:rounded-l tablet:rounded-l mobile:rounded-t " src="{{feedback_image:url}}">
-        </div>
-        <div class="bg-white max-h-480 desktop:rounded-r tablet:rounded-r mobile:rounded-b">
-            <div class="mt-16 mx-16">
-                <div class="feedback-text mb-8 ">
-                    <p class="" >{{feedback_text}}</p>
+<div class="Feedback">
+    <div class="grid desktop:grid-cols-2 tablet:grid-cols-2 w-full desktop:min-h-480  ">
+
+        <div class="max-h-480 relative">
+            <div class="desktop:hidden tablet:hidden ">
+                <div class="absolute mt-32 ml-4">
+                    <a class="hover:text-orange active:text-dark-orange text-black" onclick="plus(-1)">
+                        <svg class="" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle id="larrow-back-m" cx="14" cy="14" r="14"/>
+                            <path d="M20.6818 14H7.31819M7.31819 14L10.8182 10.5M7.31819 14L10.8182 17.5" stroke="currentColor"/>
+                        </svg>
+
+                    </a>
                 </div>
-                <hr class="mb-8 tablet:hidden mobile:hidden" style="border: 1px solid #DEDEDE;">
-                <div class="feedback-text mb-2">
-                    <h1>{{client_name}}</h1>
-                </div>
-                <div class="feedback-text mb-8">
-                    <h2>{{location}}, {{ year }}</h2>
+                <div class="absolute rightArrow mt-32 mr-4">
+                    <a class="  cursor-pointer hover:text-orange active:text-dark-orange text-black"  onclick="plus(1)">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle id="rarrow-back-m" cx="14" cy="14" r="14" />
+                            <path  d="M7.31818 14H20.6818M20.6818 14L17.1818 10.5M20.6818 14L17.1818 17.5" stroke="currentColor" />
+                        </svg>
+
+                    </a>
                 </div>
             </div>
 
 
+
+            <img class="w-full h-full object-cover desktop:rounded-l tablet:rounded-l mobile:rounded-t mobile:h-268 " src="{{feedback_image:url}}">
         </div>
+
+        <div class="bg-white max-h-480 desktop:rounded-r tablet:rounded-r mobile:rounded-b">
+            <div class="desktop:mt-16 desktop:mx-16 tablet:mx-12 tablet:mt-12 mobile:mx-8 mobile:mt-8">
+                <div class=" mobile:hidden flex">
+                    <div class="mb-4 feedback-text">
+                        <h3>Įkurtuvių istorijos ❤️</h3>
+                    </div>
+                    <div class="ml-auto flex ">
+
+                        <a class="mx-2 hover:text-dark-orange active:text-orange cursor-pointer" onclick="plus(-1)">
+                            <svg class="" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="14" cy="14" r="14" fill="currentColor" fill-opacity="0.04"/>
+                                <path d="M20.6818 14H7.31819M7.31819 14L10.8182 10.5M7.31819 14L10.8182 17.5" stroke="currentColor"/>
+                            </svg>
+                        </a>
+                        <h3 class="curr">  </h3>
+                        <h3> iš </h3> <h3 class="of"> </h3>
+
+                        <a class="mx-2 hover:text-dark-orange active:text-orange cursor-pointer"  onclick="plus(1)">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="14" cy="14" r="14" fill="currentColor" fill-opacity="0.04"/>
+                                <path d="M7.31818 14H20.6818M20.6818 14L17.1818 10.5M20.6818 14L17.1818 17.5" stroke="currentColor"/>
+                            </svg>
+
+                        </a>
+
+                    </div>
+                </div>
+                <div class="feedback-text mb-8 ">
+                    <p class="" >{{feedback_text}}</p>
+                </div>
+                <hr class=" tablet:hidden mobile:hidden" style="border: 1px solid #DEDEDE;">
+            </div>
+
+            <div class="desktop:mt-12 desktop:mx-12 tablet:mx-10 tablet:mt-10  ">
+                <a class="" href="#">
+                    <div class="feedback-background desktop:p-2 tablet:p-2 mobile:pt-4 mobile:px-8 mobile:pb-8 ">
+                        <div class="flex ">
+                            <div class="feedback-text ">
+                                <h1>{{client_name}}</h1>
+                            </div>
+
+                            <div class="items-center flex ml-auto">
+                                <h4 class="feedback-text mx-2 tablet:hidden mobile:hidden">Žiūrėti projektą</h4>
+                                <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 6H21M21 6L15.5 0.5M21 6L15.5 11.5" stroke="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="feedback-text  ">
+                            <h2>{{location}}, {{ year }}</h2>
+                        </div>
+
+                    </div>
+
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
 </div>
-    {{ /feedback }}
+{{ /feedback }}
 {{ /collection:feedbacks as="feedback" }}
+
+
+<script>
+    let feedbackIndex = 1;
+    showFeedback(feedbackIndex);
+
+
+    function plus(n) {
+        showFeedback(feedbackIndex += n);
+    }
+
+    function showFeedback(n) {
+        let i;
+        let slides = document.getElementsByClassName("Feedback");
+
+
+        if ( n > slides.length )
+        {
+            feedbackIndex = 1;
+        }
+
+        if ( n < 1 )
+            {
+            feedbackIndex = slides.length;
+        }
+
+        for (i = 0 ; i < slides.length ; i++ ){
+            slides[i].style.display = "none";
+        }
+        let curr = document.getElementsByClassName("curr")[feedbackIndex-1];
+         let of = document.getElementsByClassName("of")[feedbackIndex-1];
+         curr.innerHTML = feedbackIndex;
+         of.innerHTML = slides.length;
+         slides[feedbackIndex-1].style.display = "block";
+
+    }
+
+
+
+</script>
+
+
+
