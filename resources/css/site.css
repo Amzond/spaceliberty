@@ -260,7 +260,7 @@ box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    color: #000000;
+
 }
 .feedback-text h1{
     font-family: 'Playfair Display';
@@ -269,7 +269,7 @@ box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.06em;
-    color: #000000;
+
 }
 .feedback-text h2{
     font-family: 'Alegreya Sans';
@@ -278,10 +278,73 @@ box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.02em;
-    color: #000000;
+
+}
+.feedback-text h3{
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+
+}
+.feedback-text h4{
+font-family: 'Alegreya';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0.1em;
+
 }
 
 
+
+
+
+@media only screen and (max-width: 750px) {
+.feedback-text p{
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+}
+.feedback-background:active {
+    background: rgba(252, 224, 205, 1);
+}
+
+}
+.Feedback {
+    display: none;
+}
+.rightArrow {
+    right: 0;
+}
+#arrow-color-m {stroke:#000000}
+#arrow-color-m:hover {stroke:#EE7F4F}
+#arrow-color-m:active {stroke:#C6876C}
+
+#larrow-back-m {fill:white}
+#larrow-back-m:hover {fill:#FCE0CD}
+#larrow-back-m:active {fill:#FCE0CD}
+
+#rarrow-back-m {fill:white}
+#rarrow-back-m:hover {fill:#FCE0CD}
+#rarrow-back-m:active {fill:#FCE0CD}
+
+.feedback-background {
+    background: #FFFFFF;
+}
+.feedback-background:active {
+
+    background: rgba(198, 135, 108, 0.1) !important;
+}
+.feedback-background:hover {
+    background: rgba(242, 148, 107, 0.05) !important;
+}
 
 
 /* ----------------------------------------------------- MODAL IMG CSS --------------------------------------------- */

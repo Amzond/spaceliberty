@@ -13,6 +13,8 @@ sections:
           read_only: false
           input_type: text
           antlers: false
+          validate:
+            - required
       -
         handle: feedback_image
         field:
@@ -78,6 +80,8 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+          validate:
+            - required
       -
         handle: location
         field:
