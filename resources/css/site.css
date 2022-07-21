@@ -257,7 +257,7 @@ box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
     font-family: 'Alegreya Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
     letter-spacing: 0.03em;
 
@@ -313,7 +313,10 @@ letter-spacing: 0.1em;
 
 }
 .feedback-background:active {
-    background: rgba(252, 224, 205, 1);
+    background: #FCE0CD;
+}
+.feedback-btn:active {
+     color: #000000 !important;
 }
 
 }

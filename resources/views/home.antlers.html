@@ -56,16 +56,19 @@
 
 
         <div class="container max-w-1215px w-full items-center mx-auto px-4 mb-9">
+                <div class="mb-32 feedback-text ">
+                    <h3 class="desktop:hidden tablet:hidden mb-8 ">Įkurtuvių istorijos ❤️</h3>
+                    {{ partial:partials/feedback-block }}
+                </div>
+
+
                 <h3 class="mb-8 text-28-37px font-playfair font-bold tracking-006em">Naujausi straipsniai 👇</h3>
                 <div>
                     {{ partial:posts/cardsMain }}
                 </div>
                 {{content}}
 
-                <div class="mt-32 feedback-text ">
-                    <h3 class="desktop:hidden tablet:hidden mb-8 ">Įkurtuvių istorijos ❤️</h3>
-                    {{ partial:partials/feedback-block }}
-                </div>
+
 
         </div>
 

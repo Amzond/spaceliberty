@@ -36,7 +36,7 @@ sections:
       -
         handle: feedback_text
         field:
-          character_limit: '200'
+          character_limit: '250'
           antlers: false
           display: 'Feedback Text'
           type: textarea
@@ -46,7 +46,7 @@ sections:
           read_only: false
           validate:
             - required
-            - 'max:200'
+            - 'max:250'
       -
         handle: client_name
         field:
