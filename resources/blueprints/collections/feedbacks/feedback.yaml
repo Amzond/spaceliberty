@@ -36,38 +36,17 @@ sections:
       -
         handle: feedback_text
         field:
-          always_show_set_button: false
-          buttons:
-            - h2
-            - h3
-            - bold
-            - italic
-            - unorderedlist
-            - orderedlist
-            - removeformat
-            - quote
-            - anchor
-            - image
-            - table
-          save_html: false
-          toolbar_mode: fixed
-          link_noopener: false
-          link_noreferrer: false
-          target_blank: false
-          reading_time: false
-          fullscreen: true
-          allow_source: true
-          enable_input_rules: true
-          enable_paste_rules: true
+          character_limit: '200'
           antlers: false
-          display: 'Feedback text'
-          type: bard
-          icon: bard
+          display: 'Feedback Text'
+          type: textarea
+          icon: textarea
           listable: hidden
           instructions_position: above
           read_only: false
           validate:
             - required
+            - 'max:200'
       -
         handle: client_name
         field:
@@ -117,4 +96,13 @@ sections:
         handle: slug
         field:
           type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - feedbacks
+          max_items: 1
+          listable: false
           localizable: true
