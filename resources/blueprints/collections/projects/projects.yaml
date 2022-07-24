@@ -1,0 +1,58 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: featured_image
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Featured Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+          max_files: 1
+      -
+        handle: style_tags
+        field:
+          type: terms
+          taxonomies:
+            - style_tags
+          display: Style_Tags
+          mode: select
+      -
+        handle: object_tags
+        field:
+          type: terms
+          taxonomies:
+            - object_tags
+          display: Object_Tags
+          mode: select
+title: Projects

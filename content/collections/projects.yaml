@@ -1,0 +1,8 @@
+title: Projects
+taxonomies:
+  - style_tags
+  - object_tags
+revisions: false
+date_behavior:
+  past: public
+  future: private

@@ -1,0 +1,41 @@
+<html>
+
+<header>
+    <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+    <script src="{{ mix src='/js/site.js' }}" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@100&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</header>
+
+
+{{ partial:header2}}
+<div class="container w-full items-center mx-auto max-w-1215px mb-32">
+    <div class="px-4">
+        <h2 class="mb-4 mt-16 text-38-51px font-playfair font-bold tracking-006em">Dizano blogas</h2>
+
+    </div>
+
+
+    <div>
+
+    </div>
+    {{ partial:projects/Obj_tags/index }}
+
+    {{ collection:projects as="project" }}
+
+
+    <div class="  mx-auto grid grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1 px-4 gap-4  ">
+        {{ project  }}
+            {{ partial:projects/project_card }}
+        {{ /project }}
+    </div>
+    {{ /collection:projects }}
+</div>
+{{ partial:footer2 }}
+
+</html>
+
+
+
