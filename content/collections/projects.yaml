@@ -1,8 +1,12 @@
 title: Projects
+template: default
+layout: layout
 taxonomies:
   - style_tags
   - object_tags
 revisions: false
+route: '/projects/{slug}'
+sort_dir: asc
 date_behavior:
   past: public
   future: private

@@ -364,6 +364,64 @@ letter-spacing: 0.1em;
 }
 
 
+.projects_card p{
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+}
+.projects_card h3{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.06em;
+}
+
+.projects_card h1{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+.projects_card h2{
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+
+}
+.project-shadow {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%) !important;
+
+}
+.project-container {
+      position: relative;
+      text-align: center;
+      color: white;
+
+}
+.bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+
+
+
+
 /* ----------------------------------------------------- MODAL IMG CSS --------------------------------------------- */
 /* Style the Image Used to Trigger the Modal */
 #myImg {

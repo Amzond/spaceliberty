@@ -10,10 +10,33 @@ sections:
           validate:
             - required
       -
-        handle: content
+        handle: years
         field:
-          type: markdown
-          localizable: true
+          input_type: text
+          antlers: false
+          display: Years
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: location
+        field:
+          input_type: text
+          antlers: false
+          display: Location
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
   sidebar:
     display: Sidebar
     fields:
