@@ -301,9 +301,6 @@ letter-spacing: 0.1em;
 }
 
 
-
-
-
 @media only screen and (max-width: 750px) {
 .feedback-text p{
     font-family: 'Alegreya';
@@ -323,6 +320,9 @@ letter-spacing: 0.1em;
 }
 .Feedback {
     display: none;
+}
+.style {
+    display: none ;
 }
 .rightArrow {
     right: 0;
@@ -410,14 +410,44 @@ letter-spacing: 0.1em;
       position: relative;
       text-align: center;
       color: white;
-
+}
+.style-container {
+      position: relative;
+      color: white;
 }
 .bottom {
   position: absolute;
   bottom: 0px;
   left: 0px;
 }
-
+.top-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.bot-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.styles-text h1{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+.styles-text h2{
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
 
 
 

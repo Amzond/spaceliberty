@@ -753,6 +753,10 @@ letter-spacing: 0.1em;
     display: none;
 }
 
+.style {
+    display: none ;
+}
+
 .rightArrow {
     right: 0;
 }
@@ -847,13 +851,49 @@ letter-spacing: 0.1em;
       position: relative;
       text-align: center;
       color: white;
+}
 
+.style-container {
+      position: relative;
+      color: white;
 }
 
 .bottom {
   position: absolute;
   bottom: 0px;
   left: 0px;
+}
+
+.top-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.bot-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.styles-text h1{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+.styles-text h2{
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
 }
 
 /* ----------------------------------------------------- MODAL IMG CSS --------------------------------------------- */
@@ -1091,6 +1131,10 @@ letter-spacing: 0.1em;
   z-index: 20 !important;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2 !important;
+}
+
 .m-8 {
   margin: 2rem !important;
 }
@@ -1138,51 +1182,6 @@ letter-spacing: 0.1em;
 .my-5 {
   margin-top: 1.25rem !important;
   margin-bottom: 1.25rem !important;
-}
-
-.mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.mx-8 {
-  margin-left: 2rem !important;
-  margin-right: 2rem !important;
-}
-
-.mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.mx-8 {
-  margin-left: 2rem !important;
-  margin-right: 2rem !important;
-}
-
-.mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.mx-8 {
-  margin-left: 2rem !important;
-  margin-right: 2rem !important;
-}
-
-.mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.mx-8 {
-  margin-left: 2rem !important;
-  margin-right: 2rem !important;
-}
-
-.mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
 }
 
 .-mt-16 {
@@ -1253,10 +1252,6 @@ letter-spacing: 0.1em;
   margin-right: 1rem !important;
 }
 
-.ml-52 {
-  margin-left: 13rem !important;
-}
-
 .mt-auto {
   margin-top: auto !important;
 }
@@ -1297,54 +1292,6 @@ letter-spacing: 0.1em;
   margin-right: 0.25rem !important;
 }
 
-.mt-8 {
-  margin-top: 2rem !important;
-}
-
-.ml-auto {
-  margin-left: auto !important;
-}
-
-.mt-8 {
-  margin-top: 2rem !important;
-}
-
-.ml-auto {
-  margin-left: auto !important;
-}
-
-.mt-8 {
-  margin-top: 2rem !important;
-}
-
-.ml-auto {
-  margin-left: auto !important;
-}
-
-.mb-auto {
-  margin-bottom: auto !important;
-}
-
-.mt-8 {
-  margin-top: 2rem !important;
-}
-
-.ml-auto {
-  margin-left: auto !important;
-}
-
-.mt-72 {
-  margin-top: 18rem !important;
-}
-
-.ml-auto {
-  margin-left: auto !important;
-}
-
-.mb-72 {
-  margin-bottom: 18rem !important;
-}
-
 .block {
   display: block !important;
 }
@@ -1373,6 +1320,10 @@ letter-spacing: 0.1em;
   height: 100% !important;
 }
 
+.h-460 {
+  height: 460px !important;
+}
+
 .h-378 {
   height: 378px !important;
 }
@@ -1383,10 +1334,6 @@ letter-spacing: 0.1em;
 
 .h-40 {
   height: 10rem !important;
-}
-
-.h-full {
-  height: 100% !important;
 }
 
 .max-h-480 {
@@ -1403,10 +1350,6 @@ letter-spacing: 0.1em;
 
 .max-h-748 {
   max-height: 748px !important;
-}
-
-.max-h-380 {
-  max-height: 378px !important;
 }
 
 .min-h-48 {
@@ -1431,10 +1374,6 @@ letter-spacing: 0.1em;
 
 .w-9 {
   width: 2.25rem !important;
-}
-
-.w-full {
-  width: 100% !important;
 }
 
 .max-w-1215px {
@@ -1509,46 +1448,6 @@ letter-spacing: 0.1em;
   gap: 0.25rem !important;
 }
 
-.gap-8 {
-  gap: 2rem !important;
-}
-
-.gap-2 {
-  gap: 0.5rem !important;
-}
-
-.gap-8 {
-  gap: 2rem !important;
-}
-
-.gap-2 {
-  gap: 0.5rem !important;
-}
-
-.gap-8 {
-  gap: 2rem !important;
-}
-
-.gap-2 {
-  gap: 0.5rem !important;
-}
-
-.gap-8 {
-  gap: 2rem !important;
-}
-
-.gap-2 {
-  gap: 0.5rem !important;
-}
-
-.gap-8 {
-  gap: 2rem !important;
-}
-
-.gap-2 {
-  gap: 0.5rem !important;
-}
-
 .overflow-x-hidden {
   overflow-x: hidden !important;
 }
@@ -1569,10 +1468,6 @@ letter-spacing: 0.1em;
 
 .rounded-full {
   border-radius: 9999px !important;
-}
-
-.rounded {
-  border-radius: 0.25rem !important;
 }
 
 .border {
@@ -1630,11 +1525,6 @@ letter-spacing: 0.1em;
 .bg-orange {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(242 148 107 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-white {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
 .object-cover {
@@ -1985,11 +1875,6 @@ letter-spacing: 0.1em;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-.active\:text-orange:active {
-  --tw-text-opacity: 1 !important;
-  color: rgb(242 148 107 / var(--tw-text-opacity)) !important;
-}
-
 .active\:underline:active {
   -webkit-text-decoration-line: underline !important;
           text-decoration-line: underline !important;
@@ -2068,14 +1953,6 @@ letter-spacing: 0.1em;
 
   .desktop\:mt-12 {
     margin-top: 3rem !important;
-  }
-
-  .desktop\:mb-auto {
-    margin-bottom: auto !important;
-  }
-
-  .desktop\:mt-auto {
-    margin-top: auto !important;
   }
 
   .desktop\:hidden {
@@ -2210,66 +2087,12 @@ letter-spacing: 0.1em;
     margin-right: 1.5rem !important;
   }
 
-  .mobile\:my-8 {
-    margin-top: 2rem !important;
-    margin-bottom: 2rem !important;
-  }
-
-  .mobile\:mx-6 {
-    margin-left: 1.5rem !important;
-    margin-right: 1.5rem !important;
-  }
-
-  .mobile\:my-8 {
-    margin-top: 2rem !important;
-    margin-bottom: 2rem !important;
-  }
-
-  .mobile\:mx-6 {
-    margin-left: 1.5rem !important;
-    margin-right: 1.5rem !important;
-  }
-
-  .mobile\:my-8 {
-    margin-top: 2rem !important;
-    margin-bottom: 2rem !important;
-  }
-
-  .mobile\:mx-6 {
-    margin-left: 1.5rem !important;
-    margin-right: 1.5rem !important;
-  }
-
-  .mobile\:my-8 {
-    margin-top: 2rem !important;
-    margin-bottom: 2rem !important;
-  }
-
-  .mobile\:mx-6 {
-    margin-left: 1.5rem !important;
-    margin-right: 1.5rem !important;
-  }
-
-  .mobile\:my-8 {
-    margin-top: 2rem !important;
-    margin-bottom: 2rem !important;
-  }
-
-  .mobile\:mx-6 {
-    margin-left: 1.5rem !important;
-    margin-right: 1.5rem !important;
-  }
-
   .mobile\:mt-2 {
     margin-top: 0.5rem !important;
   }
 
   .mobile\:mt-8 {
     margin-top: 2rem !important;
-  }
-
-  .mobile\:ml-auto {
-    margin-left: auto !important;
   }
 
   .mobile\:flex {

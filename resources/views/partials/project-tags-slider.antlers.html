@@ -1,0 +1,89 @@
+<div class=" mx-auto grid grid-cols-3  gap-8 mb-8 ">
+
+    {{taxonomy:style_tags sort="order" as="style" }}
+    {{ style }}
+    <a href="{{url}}" class=" style group bg-white rounded styles-text style-container z-1">
+        <div class="h-460  ">
+            <img class="w-full h-full object-cover rounded " src="{{featured_image}}">
+
+            <div class="top-right w-full  ">
+                <div class="mx-8 mt-8 mb-2 flex">
+                    <div>
+                        <h1 class="">{{title}}</h1>
+                    </div>
+                    <div class="ml-auto flex z-2 " >
+
+                        <div  class=" mx-2 hover:text-dark-orange active:text-orange cursor-pointer " onclick="cancelEvent(event), nextStyle(-1)">
+                            <svg class="" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="14" cy="14" r="14" fill="currentColor" fill-opacity="0.04"/>
+                                <path d="M20.6818 14H7.31819M7.31819 14L10.8182 10.5M7.31819 14L10.8182 17.5" stroke="currentColor"/>
+                            </svg>
+                        </div>
+
+
+                        <div  class="mx-2 hover:text-dark-orange active:text-orange cursor-pointer "  onclick="cancelEvent(event), nextStyle(1)">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="14" cy="14" r="14" fill="currentColor" fill-opacity="0.04"/>
+                                <path d="M7.31818 14H20.6818M20.6818 14L17.1818 10.5M20.6818 14L17.1818 17.5" stroke="currentColor"/>
+                            </svg>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mx-8">
+                    <h2>{{subtext}}</h2>
+                </div>
+            </div>
+            <div class="bot-right">
+                <h3>
+                    Ziureti daugiau
+                </h3>
+            </div>
+        </div>
+    </a>
+    {{/style}}
+    {{ /taxonomy:style_tags}}
+   <div class="col-span-2">
+
+
+   </div>
+
+</div>
+
+<script>
+
+    function cancelEvent(e){
+        e.preventDefault();
+    }
+
+    let StyleIndex = 1;
+    showStyle(StyleIndex);
+
+    function nextStyle(n) {
+        showStyle(StyleIndex += n);
+    }
+
+    function showStyle(n) {
+        let i;
+        let slides = document.getElementsByClassName("style");
+
+
+        if ( n > slides.length )
+        {
+            StyleIndex = 1;
+        }
+
+        if ( n < 1 )
+        {
+            StyleIndex = slides.length;
+        }
+
+        for (i = 0 ; i < slides.length ; i++ ){
+            slides[i].style.display = "none";
+        }
+
+         slides[StyleIndex-1].style.display = "block";
+    }
+
+</script>
