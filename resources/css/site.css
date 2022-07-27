@@ -371,6 +371,7 @@ letter-spacing: 0.1em;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.1em;
+
 }
 .projects_card h3{
     font-family: 'Playfair Display';
@@ -379,6 +380,15 @@ letter-spacing: 0.1em;
     font-size: 28px;
     line-height: 37px;
     letter-spacing: 0.06em;
+}
+.more_projects-m h3{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    color: #000000;
 }
 
 .projects_card h1{
@@ -430,6 +440,7 @@ letter-spacing: 0.1em;
   bottom: 0px;
   right: 0px;
 }
+
 .styles-text h1{
     font-family: 'Playfair Display';
     font-style: normal;
@@ -447,6 +458,19 @@ letter-spacing: 0.1em;
     line-height: 24px;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+}
+.styles-text h3{
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.styles-shadow {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 79.02%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 34.35%) !important ;
+
 }
 
 

@@ -8,25 +8,50 @@
     {{ project  }}
     {{ partial:projects/project_card }}
     {{ /project }}
-    <a href="{{url}}" class="group bg-white rounded hover:text-dark-orange transition-all flex flex-col active:text-orange    ">
-        <div class="mobile:flex projects_card relative items-center m-8  rounded mobile:my-8 mobile:mx-6 ">
-            <div class="max-h-380  bg-white mobile:flex ">
-                <div>
-                    <h3>Daugiau užbaigtų namų</h3>
+    {{ /collection:projects }}
+    <a href="/projects" class="group desktop:hidden tablet:hidden bg-white rounded hover:text-dark-orange transition-all flex flex-col active:text-orange    ">
+        <div class=" more_projects-m   items-center m-8  rounded mobile:my-8 mobile:mx-6 ">
+            <div class="max-h-380  bg-white mobile:flex items-center ">
+                <div class="  ">
+                    <h3 class="group-hover:text-dark-orange group-active:text-orange">Visi darbai</h3>
                 </div>
 
-                <div class="flex w-full h-full  ">
-                    <div class=" ml-auto mt-auto  ">
-                        <p href="#" class="flex gap-2  items-center group-hover:underline ">Žiūrėti
+                <div class=" ml-auto  ">
+                        <p  class="flex gap-2  items-center group-hover:underline ">Žiūrėti
                             <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 6H21M21 6L15.5 0.5M21 6L15.5 11.5" stroke="currentColor"/>
                             </svg>
                         </p>
-                    </div>
                 </div>
+
             </div>
         </div>
     </a>
-    {{ /collection:projects }}
+
+    <a href="/projects" class="mobile:hidden group style-container bg-white rounded projects_card styles-box-shadow hover:shadow-styles-box-shadow-h active:shadow-none rounded">
+        <div class="max-h-380  rounded">
+
+            <div class="top-right w-full h-full rounded">
+                <div class="mx-8 mt-8 flex more_projects">
+                    <div>
+                        <h3 class="text-black group-hover:text-dark-orange group-active:text-orange">Daugiau užbaigtų namų</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bot-right m-8 projects_card  ">
+                <p class="group-hover:text-dark-orange group-active:text-orange flex text-black items-center group-hover:underline gap-2">
+                    Žiūrėti
+                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 6H21M21 6L15.5 0.5M21 6L15.5 11.5" stroke="currentColor"/>
+                    </svg>
+                </p>
+
+            </div>
+
+        </div>
+    </a>
+
+
 </div>
 

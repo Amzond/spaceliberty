@@ -36,4 +36,13 @@ sections:
           required: true
           validate:
             - required
+      -
+        handle: orderliness
+        field:
+          display: Orderliness
+          type: integer
+          icon: integer
+          listable: hidden
+          instructions_position: above
+          read_only: false
 title: Object_Tags

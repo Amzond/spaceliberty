@@ -71,7 +71,8 @@ module.exports = {
             'card': '24px 33px 100px rgba(188, 121, 60, 0.1)',
             'card-hover': ' 24px 33px 100px rgba(188, 121, 60, 0.15)',
             'toolTip': '12px 12px 16px rgba(188, 121, 60, 0.03)',
-
+            'styles-box-shadow': '24px 33px 100px rgba(188, 121, 60, 0.1)',
+            'styles-box-shadow-h': '24px 33px 100px rgba(188, 121, 60, 0.15)',
         },
         width: {
             '378': '378px',
