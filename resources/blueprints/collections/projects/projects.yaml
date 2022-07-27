@@ -70,6 +70,12 @@ sections:
             - style_tags
           display: Style_Tags
           mode: select
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          create: true
+          validate:
+            - required
       -
         handle: object_tags
         field:

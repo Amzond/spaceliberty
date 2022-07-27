@@ -1,4 +1,4 @@
-<div class=" mx-auto grid grid-cols-3  gap-8 mb-8 ">
+<div class=" mx-auto grid grid-cols-3 mobile:grid-cols-1  gap-8 mb-8 ">
 
     {{taxonomy:style_tags sort="order" as="style" }}
     {{ style }}
@@ -51,8 +51,8 @@
     {{/style}}
     {{ /taxonomy:style_tags}}
 
-   <div class="col-span-2">
-        <div class="mx-auto grid grid-cols-3 gap-8">
+   <div class="col-span-2 mobile:grid-cols-1">
+        <div class="mx-auto grid grid-cols-3 mobile:grid-cols-1 gap-8">
             {{ taxonomy:object_tags sort="orderliness" as="object" limit="3"}}
             {{ object }}
             <a href="{{url}}" class="group style-container styles-text bg-white rounded text-black styles-box-shadow hover:shadow-styles-box-shadow-h active:shadow-none rounded">
