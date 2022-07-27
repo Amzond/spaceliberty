@@ -6,5 +6,7 @@ featured_image: 1-1655999082.svg
 object_tags:
   - nuosavi-namai
 updated_by: 3f009ef7-3519-487c-b09c-51a8a812a770
-updated_at: 1658733418
+updated_at: 1658928958
+years: '111'
+location: '111'
 ---

@@ -1,0 +1,19 @@
+{{ partial:header2}}
+<div class="container w-full items-center mx-auto max-w-1215px mb-32">
+
+    <div>
+
+        {{ partial:projects/Obj_tags/index }}
+
+    </div>
+    {{ entries as="projects"  }}
+
+
+    <div class="  mx-auto grid grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1 gap-4 px-4 ">
+        {{ projects }}
+        {{ partial:projects/project_card }}
+        {{ /projects }}
+    </div>
+    {{ /entries }}
+</div>
+{{ partial:footer2 }}

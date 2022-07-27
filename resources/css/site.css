@@ -326,6 +326,11 @@ letter-spacing: 0.1em;
 }
 .rightArrow {
     right: 0;
+    top: 50%;
+}
+.leftArrow {
+    left: 0;
+    top: 50%;
 }
 #arrow-color-m {stroke:#000000}
 #arrow-color-m:hover {stroke:#EE7F4F}
