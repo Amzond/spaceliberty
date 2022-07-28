@@ -37,6 +37,161 @@ sections:
           read_only: false
           validate:
             - required
+      -
+        handle: project_content
+        field:
+          collapse: false
+          sets:
+            text:
+              display: Text
+              fields:
+                -
+                  handle: text_field
+                  field:
+                    always_show_set_button: false
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                    save_html: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
+                    antlers: false
+                    display: Text
+                    type: bard
+                    icon: bard
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+            one_image:
+              display: 'One image'
+              fields:
+                -
+                  handle: image
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    max_files: 1
+                    display: Image
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                -
+                  handle: photo_author
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Image author'
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                    validate:
+                      - required
+            two_images:
+              display: 'Two images'
+              fields:
+                -
+                  handle: image1
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: 'First image'
+                    type: assets
+                    icon: assets
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                -
+                  handle: image2
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: 'Second image'
+                    type: assets
+                    icon: assets
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                -
+                  handle: image1_author
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'First image author'
+                    type: text
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                    validate:
+                      - required
+                -
+                  handle: image2_author
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Second image author'
+                    type: text
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                    validate:
+                      - required
+            feedback:
+              display: Feedback
+              fields:
+                -
+                  handle: feedback
+                  field:
+                    mode: default
+                    create: false
+                    collections:
+                      - feedbacks
+                    display: Feedback
+                    type: entries
+                    icon: entries
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+          display: 'Project content'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          read_only: false
   sidebar:
     display: Sidebar
     fields:

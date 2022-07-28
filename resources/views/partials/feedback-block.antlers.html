@@ -4,7 +4,7 @@
 <div class="Feedback">
     <div class="grid desktop:grid-cols-2 tablet:grid-cols-0.9-1.10fr w-full desktop:min-h-480 tablet:min-h-480 ">
 
-        <div class="max-h-480 relative">
+        <div class="max-h-480 h-full relative">
             <div class="desktop:hidden tablet:hidden ">
                 <div class="absolute leftArrow  ml-4">
                     <a class="hover:text-orange active:text-dark-orange text-black" onclick="plus(-1)">
@@ -27,7 +27,7 @@
             </div>
 
 
-            <img class="w-full h-full object-cover desktop:rounded-l tablet:rounded-t mobile:rounded-t  " src="{{feedback_image:url}}">
+            <img class="w-full h-full object-cover mobile:object-fit desktop:rounded-l tablet:rounded-t mobile:rounded-t  " src="{{feedback_image:url}}">
         </div>
 
         <div class="bg-white max-h-480 desktop:rounded-r tablet:rounded-r mobile:rounded-b">
@@ -47,7 +47,7 @@
                         <h3 class="curr">  </h3>
                         <h3 class="mx-0.5">  iš  </h3> <h3 class="of"> </h3>
 
-                        <a class="mx-2 hover:text-dark-orange active:text-orange cursor-pointer"  onclick="plus(1)">
+                        <a class="ml-2 hover:text-dark-orange active:text-orange cursor-pointer"  onclick="plus(1)">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="14" cy="14" r="14" fill="currentColor" fill-opacity="0.04"/>
                                 <path d="M7.31818 14H20.6818M20.6818 14L17.1818 10.5M20.6818 14L17.1818 17.5" stroke="currentColor"/>
