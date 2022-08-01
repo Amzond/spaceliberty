@@ -1,10 +1,9 @@
-<div class=" mx-auto grid grid-cols-3 mobile:grid-cols-1  desktop:gap-8 tablet:gap-8 mobile:gap-y-8 mb-8 ">
+<div class="mx-auto grid grid-cols-3  tablet:grid-cols-2 mobile:grid-cols-1  desktop:gap-8 tablet:gap-8 mobile:gap-y-8 mb-8 ">
 
     {{taxonomy:style_tags sort="order" as="style" }}
     {{ style }}
     <a href="{{url}}" class=" rounded style group bg-white rounded shadow-styles-box-shadow hover:shadow-styles-box-shadow-h active:shadow-none styles-text style-container ">
-        <div class="h-460 w-full rounded ">
-
+        <div class="h-460 mobile:h-380 w-full rounded ">
             <img class="w-full h-full object-cover rounded " src="{{featured_image}}">
 
             <div class="top-right w-full h-full styles-shadow  rounded ">
@@ -50,8 +49,9 @@
     {{/style}}
     {{ /taxonomy:style_tags}}
 
-   <div class="col-span-2 mobile:grid-cols-1">
-        <div class="mx-auto grid grid-cols-3 mobile:grid-cols-1 gap-8">
+
+    <div class="col-span-2 tablet:hidden mobile:hidden">
+        <div class="  mx-auto grid desktop:grid-cols-3 gap-8">
             {{ taxonomy:object_tags sort="orderliness" as="object" limit="3"}}
             {{ object }}
             <a href="/projects{{url}}" class="group style-container styles-text bg-white rounded text-black styles-box-shadow hover:shadow-styles-box-shadow-h active:shadow-none rounded">
@@ -81,9 +81,41 @@
             {{ /object }}
             {{ /taxonomy:object_tags }}
         </div>
+    </div>
 
-   </div>
 
+
+
+    {{ taxonomy:object_tags sort="orderliness" as="object" limit="3"}}
+    {{ object }}
+    <div>
+    <a href="/projects{{url}}" class="desktop:hidden group gap-8 style-container styles-text bg-white rounded text-black styles-box-shadow hover:shadow-styles-box-shadow-h active:shadow-none rounded">
+        <div class=" h-460 mobile:h-380 rounded">
+            <img class="w-full h-full object-cover rounded " src="{{featured_image}}">
+
+            <div class="top-right w-full h-full styles-shadow rounded">
+                <div class="desktop:mx-8 desktop:mt-8 tablet:mx-8 tablet:mt-8 mobile:mx-4 mobile:mt-4 flex">
+                    <div>
+                        <h1 class="">{{title}}</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bot-right m-8 styles-text  ">
+                <h3 class="flex items-center group-hover:underline gap-2">
+                    Žiūrėti
+                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 6H21M21 6L15.5 0.5M21 6L15.5 11.5" stroke="currentColor"/>
+                    </svg>
+                </h3>
+
+            </div>
+
+        </div>
+    </a>
+    </div>
+    {{ /object }}
+    {{ /taxonomy:object_tags }}
 
 </div>
 
