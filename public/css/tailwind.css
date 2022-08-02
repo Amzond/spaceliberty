@@ -1317,6 +1317,16 @@ letter-spacing: 0.1em;
   margin-right: 1.25rem !important;
 }
 
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.mx-5 {
+  margin-left: 1.25rem !important;
+  margin-right: 1.25rem !important;
+}
+
 .-mt-16 {
   margin-top: -4rem !important;
 }
@@ -1517,6 +1527,14 @@ letter-spacing: 0.1em;
   margin-bottom: 4rem !important;
 }
 
+.-mt-20 {
+  margin-top: -5rem !important;
+}
+
+.mb-16 {
+  margin-bottom: 4rem !important;
+}
+
 .block {
   display: block !important;
 }
@@ -1587,6 +1605,14 @@ letter-spacing: 0.1em;
 
 .h-56 {
   height: 14rem !important;
+}
+
+.h-200 {
+  height: 200px !important;
+}
+
+.h-full {
+  height: 100% !important;
 }
 
 .h-200 {
@@ -1715,6 +1741,10 @@ letter-spacing: 0.1em;
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
 }
 
 .flex-col {
@@ -2350,6 +2380,14 @@ letter-spacing: 0.1em;
 
   .desktop\:h-748 {
     height: 748px !important;
+  }
+
+  .desktop\:h-720 {
+    height: 720px !important;
+  }
+
+  .desktop\:h-56 {
+    height: 14rem !important;
   }
 
   .desktop\:h-720 {
