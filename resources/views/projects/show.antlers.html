@@ -50,15 +50,34 @@
 
 
 <div class="bg-black w-full h-200 mb-16  " >
-    <div class="container w-full items-center mx-auto max-w-1215px text-orange grid grid-cols-4">
+    <div class="container  px-4 w-full  mx-auto max-w-1215px text-orange grid grid-cols-4 project-show-black-part my-8">
         <div class="">
-            <h1> Objektas</h1>
+            <h1 class="mb-4"> Objektas:</h1>
+            <div class="">
+                {{style_tags}}
+                <a href="{{url}}" class="mr-1.5 py-0.5 px-1 active:bg-dark-orange hover:bg-orange  ">
+                    {{title}}
+                </a>
+                {{/style_tags}}
+                <p class="my-2">
+                    {{object_size}}
+                </p>
+                <p>{{location}}</p>
+            </div>
         </div>
-        <div>
-            <h1> Stilistika</h1>
+        <div class="">
+            <h1 class="mb-4"> Stilistika:</h1>
+             <div class="">
+                 {{object_tags}}
+                 <a href="{{url}}" class="mr-1.5 py-0.5 px-1 active:bg-dark-orange hover:bg-orange  ">
+                     {{title}}
+                 </a>
+                 {{/object_tags}}
+             </div>
         </div>
-        <div>
-            <h1> Paslaugos</h1>
+        <div class="">
+            <h1 class="mb-4"> Paslaugos:</h1>
+
         </div>
         <div>
 
@@ -67,13 +86,45 @@
 
 </div>
 <div class="container w-full items-center mx-auto max-w-1215px px-4">
-
-
-
     <div class="bard">
         {{project_content }}
             {{partial src="sets/{type}" }}
         {{/project_content }}
+    </div>
+</div>
+
+<div class="mt-32 mb-32">
+    <h3 class="mb-8 text-28-37px font-playfair font-bold tracking-006em">Daugiau projektų</h3>
+    <div class="container max-w-1215px mx-auto grid grid-cols-3 tablet:grid-cols-1 mobile:grid-cols-1 gap-4  ">
+
+        {{ collection:projects :taxonomy:object_tags="object_tags" :id:isnt="id" sort="date:desc"  as="project"}}
+
+        {{ if  project | count  >= 3  }}
+        {{ total = 0 }}
+        {{ project limit="3" }}
+        {{ partial:projects/project_card }}
+        {{ /project }}
+        {{ /if }}
+        {{ if  project | count  == 2  }}
+        {{ total = 1 }}
+        {{ project limit="2" }}
+        {{ partial:projects/project_card }}
+        {{ /project }}
+        {{ /if }}
+        {{ if  project | count  ==  1 }}
+        {{ total = 2 }}
+        {{ project limit="1" }}
+        {{ partial:projects/project_card }}
+        {{ /project }}
+        {{ /if }}
+        {{ /collection:projects }}
+        {{ if total != 0 }}
+        {{ collection:projects :id:isnt="id" :taxonomy:object_tags:not="object_tags" sort="date:desc" limit={total}  as="project"}}
+        {{ project  }}
+        {{ partial:projects/project_card }}
+        {{ /project }}
+        {{ /collection:projects }}
+        {{ /if }}
     </div>
 </div>
 

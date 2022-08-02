@@ -17,7 +17,7 @@ sections:
           display: Years
           type: text
           icon: text
-          width: 50
+          width: 33
           listable: hidden
           instructions_position: above
           read_only: false
@@ -31,7 +31,21 @@ sections:
           display: Location
           type: text
           icon: text
-          width: 50
+          width: 33
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: object_size
+        field:
+          input_type: text
+          antlers: false
+          display: 'Object size'
+          type: text
+          icon: text
+          width: 33
           listable: hidden
           instructions_position: above
           read_only: false

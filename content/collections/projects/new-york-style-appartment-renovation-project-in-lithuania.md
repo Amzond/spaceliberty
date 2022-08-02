@@ -75,5 +75,6 @@ object_tags:
   - nuomai
   - nuosavi-namai
 updated_by: 3f009ef7-3519-487c-b09c-51a8a812a770
-updated_at: 1659394960
+updated_at: 1659441940
+object_size: '62,31 m2'
 ---
