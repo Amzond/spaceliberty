@@ -123,6 +123,8 @@ color: #FFFFFF;
 text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 1024px) {
+
+
 .headImgText h3{
     font-family: 'Playfair Display';
     font-style: normal;
@@ -142,7 +144,10 @@ text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
      letter-spacing: 0.1em;
      color: #FFFFFF;
  }
+
+
 }
+
 .headImgText h5{
 font-family: 'Alegreya';
 font-style: normal;
@@ -242,7 +247,6 @@ box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
 .shadow360-bottom {
     height: 318px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-
 
 }
 
@@ -402,8 +406,7 @@ letter-spacing: 0.1em;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    display: flex;
-    align-items: flex-end;
+    text-align: start;
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
@@ -417,6 +420,36 @@ letter-spacing: 0.1em;
     color: #FFFFFF;
 
 }
+.project-show-title h3{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 77px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    text-align: start;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25), 8px 15px 42px rgba(0, 0, 0, 0.63);
+}
+@media only screen and (max-width: 1024px) {
+    .project-show-title h3{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 37px;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25), 8px 15px 42px rgba(0, 0, 0, 0.63);
+    }
+
+
+}
+
+
+
 .project-shadow {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%) !important;
 
@@ -434,6 +467,11 @@ letter-spacing: 0.1em;
   position: absolute;
   bottom: 0px;
   left: 0px;
+}
+.bottom-center {
+  position: absolute;
+  bottom: 0px;
+  left: 17%;
 }
 .top-right {
   position: absolute;
@@ -477,7 +515,9 @@ letter-spacing: 0.1em;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 79.02%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 34.35%) !important ;
 
 }
-
+.projects-show-shadow {
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%, #000000 100%);
+}
 
 
 

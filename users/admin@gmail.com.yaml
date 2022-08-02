@@ -10,3 +10,4 @@ preferences:
         - title
         - date
         - tags
+      per_page: 100

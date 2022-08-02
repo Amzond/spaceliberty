@@ -109,8 +109,8 @@ sections:
                     read_only: false
                     validate:
                       - required
-            two_images:
-              display: 'Two images'
+            two_images_in_row:
+              display: 'Two images in row'
               fields:
                 -
                   handle: image1
