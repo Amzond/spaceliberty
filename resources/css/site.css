@@ -546,7 +546,29 @@ border-radius: 2px;
 .projects-show-shadow {
    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%, #000000 100%);
 }
-
+.details-btn {
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.details-btn-border {
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+}
+.details-btn-border:hover {
+    border: 1px solid #EE7F4F;
+    border-radius: 4px;
+}
+.details-btn-border:active {
+    border: 1px solid #C6876C;;
+    border-radius: 4px;
+}
 
 
 /* ----------------------------------------------------- MODAL IMG CSS --------------------------------------------- */

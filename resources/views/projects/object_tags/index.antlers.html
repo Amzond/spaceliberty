@@ -85,6 +85,8 @@
     function ChangeColor(){
         let all = document.getElementById('o_all');
         let tags = document.getElementById('o_tags');
+        let s_all = document.getElementById('s_all');
+
 
         let aElements = document.getElementsByClassName('aElements');
 
@@ -92,13 +94,16 @@
             all.classList.remove('bg-white');
             all.classList.add('bg-orange');
             all.classList.add('text-white');
+            s_all.classList.remove('bg-white');
+            s_all.classList.add('bg-orange');
+            s_all.classList.add('text-white');
+
         }
         else {
             for( let i = 0 ; i < aElements.length ; i++ )
             {
                 if (aElements[i].pathname == "{{ url }}" ){
 
-                console.log(aElements[i]);
                 aElements[i].classList.remove('bg-white');
                 aElements[i].classList.add('bg-orange');
                 aElements[i].classList.add('text-white');

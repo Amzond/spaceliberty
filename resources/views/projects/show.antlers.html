@@ -12,7 +12,7 @@
                     <h3 >{{title}}</h3>
                 </div>
                 <div class="flex gap-4 desktop:mt-32 mx-5">
-                    <a href="#" class="rounded-full hover:bg-lang-bg-h active:bg-lang-bg-a hover:text-dark-orange active:text-orange flex items-center">
+                    <a href="#" class="rounded-full hover:text-dark-orange active:text-orange flex items-center">
 
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="22" cy="22.1294" rx="22" ry="21.8706" fill="currentColor" fill-opacity="0.15"/>
@@ -28,19 +28,14 @@
                                 </clipPath>
                             </defs>
                         </svg>
-
-
-
                     </a>
 
-                    <a href="#" class="rounded-full hover:bg-lang-bg-h active:bg-lang-bg-a hover:text-dark-orange active:text-orange flex items-center">
+                    <a href="#" class="rounded-full hover:text-dark-orange active:text-orange flex items-center">
 
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="22" cy="22.1294" rx="22" ry="21.8706" fill="currentColor" fill-opacity="0.15"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6757 18.8332C16.5178 19.5782 12.8827 24.8704 11.1805 28.3716C10.3725 30.0336 10 31.2921 10 31.4689C10.6498 30.4599 11.3115 29.6328 12.0079 28.9556C14.4639 26.5675 17.3521 26.0434 21.6757 25.9818C22.0008 25.9771 22.3339 25.9751 22.6757 25.9751V32.5677L34 22.1294L22.6757 11.6912V18.8332ZM23.6757 13.9687V19.7136L22.7965 19.82C18.663 20.3201 15.7143 23.0777 13.7576 25.9187C13.5595 26.2063 13.3726 26.4933 13.1967 26.7772C13.7142 26.4644 14.2568 26.201 14.83 25.9814C17.0262 25.1401 19.5822 24.981 22.6757 24.981H23.6757V30.2902L32.5292 22.1294L23.6757 13.9687Z" fill="currentColor"/>
                         </svg>
-
-
                     </a>
                 </div>
             </div>
@@ -49,9 +44,9 @@
 </div>
 
 
-<div class="bg-black w-full h-200 mb-16  " >
-    <div class="container  px-4 w-full  mx-auto max-w-1215px text-orange grid grid-cols-4 project-show-black-part my-8">
-        <div class="">
+<div  class=" bg-black w-full h-200  mobile:hidden tablet:hidden " >
+    <div class="container  px-4 w-full  mx-auto max-w-1215px text-orange grid grid-cols-4 project-show-black-part my-8  ">
+        <div class=" ">
             <h1 class="mb-4"> Objektas:</h1>
             <div class="">
                 {{style_tags}}
@@ -85,13 +80,61 @@
     </div>
 
 </div>
-<div class="container w-full items-center mx-auto max-w-1215px px-4">
+
+<div id="project_details_btn" class=" desktop:hidden bg-black w-full    h-80">
+    <div class=" hover:bg-orange  active:bg-dark-orange rounded py-2 flex  justify-center  text-white m-5 details-btn-border cursor-pointer" onclick="showDetails()">
+        <h1 class="details-btn ">
+            Projekto detales
+        </h1>
+    </div>
+</div>
+<div id="details" class="hidden px-4 bg-black w-full project-show-black-part">
+    <div class=" mt-5">
+        <h1 class="mb-4"> Objektas:</h1>
+        <div class="">
+            {{style_tags}}
+            <a href="{{url}}" class="mr-1.5 py-0.5 px-1 active:bg-dark-orange hover:bg-orange  ">
+                {{title}}
+            </a>
+            {{/style_tags}}
+            <p class="my-2">
+                {{object_size}}
+            </p>
+            <p>{{location}}</p>
+        </div>
+    </div>
+    <div class="mt-5">
+        <h1 class="mb-4"> Stilistika:</h1>
+        <div class="">
+            {{object_tags}}
+            <a href="{{url}}" class="mr-1.5 py-0.5 px-1 active:bg-dark-orange hover:bg-orange  ">
+                {{title}}
+            </a>
+            {{/object_tags}}
+        </div>
+    </div>
+    <div class="mt-5">
+        <h1 class="mb-4"> Paslaugos:</h1>
+
+    </div>
+</div>
+
+<div id="close_pd" class="hidden desktop:hidden bg-black w-full h-80">
+    <div class=" hover:bg-orange  active:bg-dark-orange rounded py-2 flex  justify-center  text-white m-5 details-btn-border cursor-pointer" onclick="closeDetails()">
+        <h1 class="details-btn ">
+            Uždaryti detailes
+        </h1>
+    </div>
+</div>
+
+
+<div class="container w-full items-center mx-auto max-w-1215px px-4 mt-16">
     <div class="bard">
         {{project_content }}
             {{partial src="sets/{type}" }}
         {{/project_content }}
     </div>
-</div>
+
 
 <div class="mt-32 mb-32">
     <h3 class="mb-8 text-28-37px font-playfair font-bold tracking-006em">Daugiau projektų</h3>
@@ -127,11 +170,32 @@
         {{ /if }}
     </div>
 </div>
-
-
-
+</div>
 
 {{partial:footer2}}
+
+<script>
+
+    function showDetails() {
+        var det_btn = document.getElementById('project_details_btn');
+        var det_m = document.getElementById('details');
+        var det_close = document.getElementById('close_pd');
+        det_btn.classList.add('hidden');
+        det_m.classList.remove('hidden');
+        det_close.classList.remove('hidden');
+    }
+    function closeDetails() {
+        var det_btn = document.getElementById('project_details_btn');
+        var det_m = document.getElementById('details');
+        var det_close = document.getElementById('close_pd');
+        det_btn.classList.remove('hidden');
+        det_m.classList.add('hidden');
+        det_close.classList.add('hidden');
+
+
+    }
+
+</script>
 
 
 
