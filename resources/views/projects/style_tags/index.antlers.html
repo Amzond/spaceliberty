@@ -1,5 +1,4 @@
 
-
 <div class="mt-16">
     <div class="px-4">
         <h2 class="mb-4 mt-16 text-38-51px font-playfair font-bold tracking-006em">Mūsų darbai</h2>
@@ -51,21 +50,21 @@
                 <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="currentColor" stroke-linecap="square"/>
             </svg>
         </a>
-        {{ taxonomy:object_tags collection="projects"  }}
+        {{ taxonomy:style_tags collection="projects"  }}
         <a id="" href="{{ url }}" class=" tracking-002em font-sans2 py-3 flex w-full relative pr-5 pl-4  rounded mb-2 bg-toolTip-bg items-center hover:bg-lang-bg-h active:bg-lang-bg-a hover:text-dark-orange active:text-orange" >
             <p class="truncate ">{{ title }}</p>
             <svg class="ml-auto" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.75 6.5L3.75 4L0.75 1.5" stroke="currentColor" stroke-linecap="square"/>
             </svg>
         </a>
-        {{ /taxonomy:object_tags }}
+        {{ /taxonomy:style_tags }}
     </div>
 
 </div>
 </div>
+
 <div id="dark-bg" class="hidden w-full h-full fixed top-0 left-0 bg-cover-bg z-30" onclick="hideDarkBackground2()">
 </div>
-
 
 <script>
     let hideToolTip = true;
