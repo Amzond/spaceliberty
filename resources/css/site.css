@@ -154,6 +154,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 24px;
+color: #FFFFFF;
 }
 
 
@@ -182,6 +183,7 @@ line-height: 24px;
 
 .background{
     position: absolute;
+/*    position: relative;*/
     top: 0;
     left: 0;
     z-index: 1;
@@ -247,6 +249,7 @@ box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
 .shadow360-bottom {
     height: 318px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
 
 }
 
@@ -487,15 +490,32 @@ border-radius: 2px;
       text-align: center;
       color: white;
 }
+.header-container {
+    position: relative;
+}
+
+
 .style-container {
       position: relative;
       color: white;
 }
+.bottom-down-center {
+    position: absolute;
+    bottom: 0px;
+
+}
+
 .bottom {
   position: absolute;
   bottom: 0px;
   left: 0px;
 }
+.bottom-center {
+  position: absolute;
+  bottom: 0px;
+  left: 17%;
+}
+
 .bottom-center {
   position: absolute;
   bottom: 0px;
@@ -625,7 +645,7 @@ border-radius: 2px;
 /* Modal Content (Image) */
 .modal-content {
   margin: auto;
-  display: block;
+  display: absolute;
   width: 90%;
   height: 100%;
 
