@@ -1,5 +1,7 @@
 {{ partial:header3}}
 
+
+
 <div class="desktop:h-720 tablet:h-700 mobile:h-700 w-full -mt-20 project-container  ">
         <img class=" w-full h-full object-cover " src="{{ featured_image }}">
 
@@ -88,12 +90,12 @@
         </h1>
     </div>
 </div>
-<div id="details" class="hidden px-4 bg-black w-full project-show-black-part">
+<div id="details" class="hidden px-4 bg-black w-full project-show-black-part desktop:hidden">
     <div class=" mt-5">
         <h1 class="mb-4"> Objektas:</h1>
         <div class="">
             {{style_tags}}
-            <a href="{{url}}" class="mr-1.5 py-0.5 px-1 active:bg-dark-orange hover:bg-orange  ">
+            <a href="{{url}}" class="mr-1.5 py-0.5 px-1 active:bg-dark-orange hover:bg-orange border-current " >
                 {{title}}
             </a>
             {{/style_tags}}
@@ -191,8 +193,6 @@
         det_btn.classList.remove('hidden');
         det_m.classList.add('hidden');
         det_close.classList.add('hidden');
-
-
     }
 
 </script>
