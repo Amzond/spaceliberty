@@ -11,6 +11,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
 
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
     </head>
     <body>
 
@@ -80,7 +82,12 @@
                 <div>
                     {{ partial:posts/cardsMain }}
                 </div>
-                {{content}}
+            <div class="m-32">
+
+
+
+            </div>
+
 
 
 
@@ -93,6 +100,10 @@
     </body>
 
 </html>
+
+
+
+
 <script>
     window.addEventListener('load', onVrViewLoad);
 
