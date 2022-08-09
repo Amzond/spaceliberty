@@ -55,7 +55,7 @@ featured_image: images/posts/2sprint-retrospective2.png
 style_tags:
   - boho
 object_tags:
-  - plus-one
+  - nauja-statyba
 updated_by: 3f009ef7-3519-487c-b09c-51a8a812a770
 updated_at: 1659005714
 ---
