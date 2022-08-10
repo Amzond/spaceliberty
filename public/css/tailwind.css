@@ -1351,6 +1351,11 @@ border: 1px solid  #C6876C;;
   margin-bottom: 1.25rem !important;
 }
 
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .-mt-16 {
   margin-top: -4rem !important;
 }
@@ -1467,6 +1472,26 @@ border: 1px solid  #C6876C;;
   margin-top: 2.25rem !important;
 }
 
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
+.mt-9 {
+  margin-top: 2.25rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
 .block {
   display: block !important;
 }
@@ -1519,6 +1544,10 @@ border: 1px solid  #C6876C;;
   height: 80px !important;
 }
 
+.h-full {
+  height: 100% !important;
+}
+
 .max-h-480 {
   max-height: 480px !important;
 }
@@ -1557,6 +1586,10 @@ border: 1px solid  #C6876C;;
 
 .w-9 {
   width: 2.25rem !important;
+}
+
+.w-full {
+  width: 100% !important;
 }
 
 .max-w-1215px {
@@ -1639,6 +1672,10 @@ border: 1px solid  #C6876C;;
   gap: 0.25rem !important;
 }
 
+.gap-8 {
+  gap: 2rem !important;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden !important;
 }
@@ -1659,6 +1696,10 @@ border: 1px solid  #C6876C;;
 
 .rounded-full {
   border-radius: 9999px !important;
+}
+
+.rounded {
+  border-radius: 0.25rem !important;
 }
 
 .border {
@@ -1727,9 +1768,19 @@ border: 1px solid  #C6876C;;
   background-color: rgb(242 148 107 / var(--tw-bg-opacity)) !important;
 }
 
+.object-contain {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
 .object-cover {
   -o-object-fit: cover !important;
      object-fit: cover !important;
+}
+
+.object-fill {
+  -o-object-fit: fill !important;
+     object-fit: fill !important;
 }
 
 .p-2 {
@@ -2046,6 +2097,11 @@ border: 1px solid  #C6876C;;
   color: rgb(198 135 108 / var(--tw-text-opacity)) !important;
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline !important;
           text-decoration-line: underline !important;
@@ -2248,6 +2304,10 @@ border: 1px solid  #C6876C;;
 
   .desktop\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .desktop\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
   .desktop\:gap-8 {

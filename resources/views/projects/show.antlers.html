@@ -13,8 +13,8 @@
                 <div class="mx-5 tablet:my-5 mobile:my-5 project-show-title">
                     <h3 >{{title}}</h3>
                 </div>
-                <div class="flex gap-4 desktop:mt-32 mx-5">
-                    <a href="#" class="rounded-full hover:text-dark-orange active:text-orange flex items-center">
+                <div class="flex gap-4 ml-auto desktop:mt-32 mx-5">
+                    <a href="#" class=" rounded-full hover:text-dark-orange active:text-orange flex items-center">
 
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="22" cy="22.1294" rx="22" ry="21.8706" fill="currentColor" fill-opacity="0.15"/>
@@ -140,7 +140,7 @@
 
 <div class="mt-32 mb-32">
     <h3 class="mb-8 text-28-37px font-playfair font-bold tracking-006em">Daugiau projektų</h3>
-    <div class="container max-w-1215px mx-auto grid grid-cols-3 tablet:grid-cols-1 mobile:grid-cols-1 gap-4  ">
+    <div class="container max-w-1215px mx-auto grid grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1 gap-4  ">
 
         {{ collection:projects :taxonomy:object_tags="object_tags" :id:isnt="id" sort="date:desc"  as="project"}}
 
