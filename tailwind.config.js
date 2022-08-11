@@ -65,6 +65,7 @@ module.exports = {
             'mobile': {'min': '300px' ,'max': '750px'},
             'lg': '851px',
             'bp-footer': '1234px',
+            '1215px-screen': '1215px',
         },
         boxShadow:{
             'lang-box': '16px 16px 44px rgba(0, 0, 0, 0.25)',
@@ -79,6 +80,7 @@ module.exports = {
             '335': '335px',
             '1215px': '1215px',
             '548': '548px',
+            '1025px': '1025px',
         },
         height:{
             '378': '378px',
@@ -114,6 +116,7 @@ module.exports = {
             '470': '470px',
             '175': '170px',
             '325': '325px',
+            '38': '38px',
 
         },
         maxWidth:{
