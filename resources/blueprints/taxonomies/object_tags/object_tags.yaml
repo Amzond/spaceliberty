@@ -26,6 +26,7 @@ sections:
           read_only: false
           validate:
             - required
+          folder: images/object-tags-images
   sidebar:
     display: Sidebar
     fields:

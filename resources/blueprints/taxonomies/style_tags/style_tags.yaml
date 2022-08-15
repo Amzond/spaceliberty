@@ -26,6 +26,7 @@ sections:
           read_only: false
           validate:
             - required
+          folder: images/style-tags-images
       -
         handle: subtext
         field:
