@@ -58,6 +58,7 @@ module.exports = {
             'warm-grey': '#F5F4F2',
             'white-menu-bg-h': 'rgba(255, 255, 255, 0.15)',
             'white-menu-bg-a': 'rgba(255, 255, 255, 0.4)',
+            'blue-clickable': 'rgba(51, 0, 86, 1)',
         },
         screens:{
             'desktop': {'min': '1025px'},
