@@ -5,3 +5,797 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+.bard h3 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    margin-bottom: 16px;
+}
+
+.bard p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    margin-bottom: 32px;
+}
+
+.Pheader h3 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+.PcardTitle h5 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+
+}
+
+.PcardAuthor h6 {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+.PcardAuthor p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.white-menu a {
+    color: #FFFFFF;
+}
+
+.white-menu a:hover {
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2px;
+
+}
+
+.white-menu a:active {
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+
+}
+
+.bg-none {
+    background: none;
+}
+
+.orange-menu a {
+    color: #000000;
+
+}
+
+.orange-menu a:hover {
+    color: #C6876C;
+    background: rgba(242, 148, 107, 0.05);
+    border-radius: 2px;
+
+}
+
+.orange-menu a:active {
+    color: #EE7F4F;
+    background: rgba(198, 135, 108, 0.1);
+    border-radius: 2px;
+
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+
+}
+
+.content h3 {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+
+    color: #FFFFFF;
+
+}
+
+.headImgText h3 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 100px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+    .headImgText h3 {
+        font-family: 'Playfair Display', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 54px;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .headImgText h5 {
+        font-family: 'Alegreya', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px !important;
+        line-height: 24px !important;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+
+
+}
+
+.headImgText h5 {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.content h5 {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.content p {
+
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.background {
+    position: absolute;
+    /*    position: relative;*/
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#wrapper {
+    height: 800px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    height: 114px;
+    width: 100%;
+    opacity: 0;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome, Edge, Opera and Firefox */
+}
+
+.photo_auht h6 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.photo_auht h5 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+
+    letter-spacing: 0.02em;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+
+    color: #000000;
+}
+
+.menuShadow {
+    box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
+}
+
+.shadow360-bottom {
+    height: 318px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+
+}
+
+.menuShadow-header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    height: 100px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    opacity: 0.2;
+}
+
+.project-menu-shadow {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.feedback-text p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #000000;
+
+}
+
+.feedback-text h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+
+}
+
+.feedback-text h2 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+
+}
+
+.feedback-text h3 {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+
+}
+
+.feedback-text h4 {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+
+}
+
+@media only screen and (max-width: 750px) {
+    .feedback-text p {
+        font-family: 'Alegreya', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+
+    }
+
+    .feedback-background:active {
+        background: #FCE0CD;
+    }
+
+    .feedback-btn:active {
+        color: #000000 !important;
+    }
+
+}
+
+.Feedback {
+    display: none;
+}
+
+.style {
+    display: none;
+}
+
+.rightArrow {
+    right: 0;
+    top: 47%;
+}
+
+.leftArrow {
+    left: 0;
+    top: 47%;
+}
+
+#arrow-color-m {
+    stroke: #000000
+}
+
+#arrow-color-m:hover {
+    stroke: #EE7F4F
+}
+
+#arrow-color-m:active {
+    stroke: #C6876C
+}
+
+#larrow-back-m {
+    fill: white
+}
+
+#larrow-back-m:hover {
+    fill: #FCE0CD
+}
+
+#larrow-back-m:active {
+    fill: #FCE0CD
+}
+
+#rarrow-back-m {
+    fill: white
+}
+
+#rarrow-back-m:hover {
+    fill: #FCE0CD
+}
+
+#rarrow-back-m:active {
+    fill: #FCE0CD
+}
+
+.feedback-background:active {
+    background: rgba(198, 135, 108, 0.5);
+}
+
+.feedback-background:hover {
+    background: rgba(242, 148, 107, 0.05);
+}
+
+.feedback-btn:active h4 {
+    color: #EE7F4F !important;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+}
+
+.feedback-btn:hover {
+    color: #C6876C !important;
+}
+
+.feedback-btn:active {
+    color: #EE7F4F !important;
+}
+
+.projects_card p {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+
+}
+
+.projects_card h3 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.06em;
+}
+
+.more_projects-m h3 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+.projects_card h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: start;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+.projects_card h2 {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+
+}
+
+.project-show-title h3 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 77px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    text-align: start;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25), 8px 15px 42px rgba(0, 0, 0, 0.63);
+}
+
+@media only screen and (max-width: 1024px) {
+    .project-show-title h3 {
+        font-family: 'Playfair Display', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 37px;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25), 8px 15px 42px rgba(0, 0, 0, 0.63);
+    }
+
+
+}
+
+.project-show-black-part h1 {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: #EE7F4F;
+}
+
+.project-show-black-part a {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+}
+
+.project-show-black-part a:hover {
+
+    border: 1px solid #EE7F4F;
+
+}
+
+.project-show-black-part a:active {
+
+    border: 1px solid #C6876C;;
+
+}
+
+.project-show-black-part p {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.project-shadow {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%) !important;
+
+}
+
+.project-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header-container {
+    position: relative;
+}
+
+.style-container {
+    position: relative;
+    color: white;
+}
+
+.bottom-down-center {
+    position: absolute;
+    bottom: 0px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.bottom-center {
+    position: absolute;
+    bottom: 0px;
+    left: 17%;
+}
+
+.top-right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.bot-right {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.styles-text h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+.styles-text h2 {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.styles-text h3 {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.styles-shadow {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 79.02%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 34.35%) !important;
+}
+
+.menu-questions-text {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #000000;
+}
+
+.projects-show-shadow {
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%, #000000 100%);
+}
+
+.details-btn {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.details-btn-border {
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+.details-btn-border:hover {
+    border: 1px solid #EE7F4F;
+    border-radius: 4px;
+}
+
+.details-btn-border:active {
+    border: 1px solid #C6876C;;
+    border-radius: 4px;
+}
+
+/* ----------------------------------------------------- MODAL IMG CSS --------------------------------------------- */
+
+/* Style the Image Used to Trigger the Modal */
+
+#myImg {
+
+}
+
+.image:hover .overlay {
+    opacity: 1;
+
+}
+
+.image {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.image:hover .hov-icn {
+    display: block;
+
+}
+
+.image:hover .act-icn {
+    display: none;
+}
+
+.image:active .act-icn {
+    display: block;
+}
+
+.image:active .hov-icn {
+    display: none;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000000
+}
+
+/* Modal Content (Image) */
+
+.modal-content {
+    margin: auto;
+    display: absolute;
+    width: 90%;
+    height: 100%;
+
+
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
