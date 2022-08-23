@@ -1,6 +1,8 @@
 /*
 ! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
-*//*
+*/
+
+/*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
@@ -8,10 +10,14 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
 }
 
 ::before,
@@ -27,12 +33,17 @@
 */
 
 html {
-  line-height: 1.5; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -moz-tab-size: 4; /* 3 */
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
   -o-tab-size: 4;
-     tab-size: 4; /* 3 */
-  font-family: Alegreya, sans-serif; /* 4 */
+     tab-size: 4;
+  /* 3 */
+  font-family: Alegreya, sans-serif;
+  /* 4 */
 }
 
 /*
@@ -41,8 +52,10 @@ html {
 */
 
 body {
-  margin: 0; /* 1 */
-  line-height: inherit; /* 2 */
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
 }
 
 /*
@@ -52,9 +65,12 @@ body {
 */
 
 hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
-  border-top-width: 1px; /* 3 */
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
 }
 
 /*
@@ -107,8 +123,10 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /*
@@ -146,9 +164,12 @@ sup {
 */
 
 table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
-  border-collapse: collapse; /* 3 */
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
 }
 
 /*
@@ -162,12 +183,18 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: inherit; /* 1 */
-  color: inherit; /* 1 */
-  margin: 0; /* 2 */
-  padding: 0; /* 3 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
 }
 
 /*
@@ -188,9 +215,12 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  -webkit-appearance: button; /* 1 */
-  background-color: transparent; /* 2 */
-  background-image: none; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
 }
 
 /*
@@ -232,8 +262,10 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 [type='search'] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /*
@@ -250,8 +282,10 @@ Remove the inner padding in Chrome and Safari on macOS.
 */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /*
@@ -313,19 +347,25 @@ textarea {
 */
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1; /* 1 */
-  color: #9ca3af; /* 2 */
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1; /* 1 */
-  color: #9ca3af; /* 2 */
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
 }
 
 input::placeholder,
 textarea::placeholder {
-  opacity: 1; /* 1 */
-  color: #9ca3af; /* 2 */
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
 }
 
 /*
@@ -340,6 +380,7 @@ button,
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
+
 :disabled {
   cursor: default;
 }
@@ -358,8 +399,10 @@ audio,
 iframe,
 embed,
 object {
-  display: block; /* 1 */
-  vertical-align: middle; /* 2 */
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
 }
 
 /*
@@ -425,843 +468,74 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.bard h3{
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.06em;
-    margin-bottom: 16px;
-}
-
-.bard p{
-    font-family: 'Alegreya Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    margin-bottom:32px;
-}
-
-.Pheader h3{
-font-family: 'Playfair Display';
-font-style: normal;
-font-weight: 700;
-font-size: 28px;
-line-height: 37px;
-letter-spacing: 0.06em;
-color: #000000;
-}
-
-.PcardTitle h5{
-font-family: 'Playfair Display';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 24px;
-letter-spacing: 0.06em;
-
-}
-
-.PcardAuthor h6{
-font-family: 'Alegreya';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 19px;
-letter-spacing: 0.1em;
-color: #000000;
-}
-
-.PcardAuthor p{
-font-family: 'Alegreya Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.02em;
-color: #000000;
-}
-
-.white-menu a{
-    color: #FFFFFF;
-}
-
-.white-menu a:hover{
-    color: #FFFFFF;
-    background: rgba(255, 255, 255, 0.15);
-     border-radius: 2px;
-
-}
-
-.white-menu a:active{
-    color: #FFFFFF;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 2px;
-
-}
-
-.bg-none{
-    background: none;
-}
-
-.orange-menu a{
-    color: #000000;
-
-}
-
-.orange-menu a:hover{
-    color: #C6876C;
-    background: rgba(242, 148, 107, 0.05);
-    border-radius: 2px;
-
-}
-
-.orange-menu a:active{
-    color: #EE7F4F;
-    background: rgba(198, 135, 108, 0.1);
-    border-radius: 2px;
-
-}
-
-.content{
-    position: relative;
-    z-index: 2;
-
-}
-
-.content h3{
-font-family: 'Alegreya';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 38px;
-
-color: #FFFFFF;
-
-}
-
-.headImgText h3{
-font-family: 'Playfair Display';
-font-style: normal;
-font-weight: 700;
-font-size: 90px;
-line-height: 100px;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-@media only screen and (max-width: 1024px) {
-
-
-.headImgText h3{
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 54px;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-}
-.headImgText h5{
-     font-family: 'Alegreya';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 18px !important;
-     line-height: 24px !important;
-     letter-spacing: 0.1em;
-     color: #FFFFFF;
- }
-
-
-}
-
-.headImgText h5{
-font-family: 'Alegreya';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-color: #FFFFFF;
-}
-
-.content h5{
-    font-family: 'Alegreya';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 38px;
-    color: #FFFFFF;
-}
-
-.content p{
-
-    font-family: 'Alegreya Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-}
-
-.background{
-    position: absolute;
-/*    position: relative;*/
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-#wrapper{
-    height: 800px;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  height: 114px;
-  width: 100%;
-  opacity: 0;
-
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-}
-
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
-.photo_auht h6{
-font-family: 'Alegreya Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-text-align: center;
-letter-spacing: 0.02em;
-}
-
-.photo_auht h5 {
-font-family: 'Alegreya Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-
-
-letter-spacing: 0.02em;
--webkit-text-decoration-line: underline;
-        text-decoration-line: underline;
-
-color: #000000;
-}
-
-.menuShadow {
-box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
-}
-
-.shadow360-bottom {
-    height: 318px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-
-
-}
-
-.menuShadow-header {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-    height: 100px;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-    opacity: 0.2;
-}
-
-.project-menu-shadow {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
-}
-
-.feedback-text p{
-    font-family: 'Alegreya Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    color: #000000;
-
-}
-
-.feedback-text h1{
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.06em;
-
-}
-
-.feedback-text h2{
-    font-family: 'Alegreya Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-
-}
-
-.feedback-text h3{
-    font-family: 'Alegreya';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.1em;
-
-}
-
-.feedback-text h4{
-font-family: 'Alegreya';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-letter-spacing: 0.1em;
-
-}
-
-@media only screen and (max-width: 750px) {
-.feedback-text p{
-    font-family: 'Alegreya';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-
-}
-.feedback-background:active {
-    background: #FCE0CD;
-}
-.feedback-btn:active {
-     color: #000000 !important;
-}
-
-}
-
-.Feedback {
-    display: none;
-}
-
-.style {
-    display: none ;
-}
-
-.rightArrow {
-    right: 0;
-    top: 47%;
-}
-
-.leftArrow {
-    left: 0;
-    top: 47%;
-}
-
-#arrow-color-m {stroke:#000000}
-
-#arrow-color-m:hover {stroke:#EE7F4F}
-
-#arrow-color-m:active {stroke:#C6876C}
-
-#larrow-back-m {fill:white}
-
-#larrow-back-m:hover {fill:#FCE0CD}
-
-#larrow-back-m:active {fill:#FCE0CD}
-
-#rarrow-back-m {fill:white}
-
-#rarrow-back-m:hover {fill:#FCE0CD}
-
-#rarrow-back-m:active {fill:#FCE0CD}
-
-.feedback-background:active {
-    background: rgba(198, 135, 108, 0.5) ;
-}
-
-.feedback-background:hover {
-    background: rgba(242, 148, 107, 0.05) ;
-}
-
-.feedback-btn:active h4{
-    color: #EE7F4F !important;
-    -webkit-text-decoration-line: underline;
-            text-decoration-line: underline;
-}
-
-.feedback-btn:hover {
-    color: #C6876C !important;
-}
-
-.feedback-btn:active {
-     color: #EE7F4F !important;
-}
-
-.projects_card p{
-    font-family: 'Alegreya';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.1em;
-
-}
-
-.projects_card h3{
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 37px;
-    letter-spacing: 0.06em;
-}
-
-.more_projects-m h3{
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.06em;
-    color: #000000;
-}
-
-.projects_card h1{
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: start;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-}
-
-.projects_card h2{
-    font-family: 'Alegreya';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.1em;
-    color: #FFFFFF;
-
-}
-
-.project-show-title h3{
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 58px;
-    line-height: 77px;
-    display: flex;
-    align-items: flex-end;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-    text-align: start;
-    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25), 8px 15px 42px rgba(0, 0, 0, 0.63);
-}
-
-@media only screen and (max-width: 1024px) {
-    .project-show-title h3{
-        font-family: 'Playfair Display';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 37px;
-        letter-spacing: 0.06em;
-        color: #FFFFFF;
-        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25), 8px 15px 42px rgba(0, 0, 0, 0.63);
-    }
-
-
-}
-
-.project-show-black-part h1{
-    font-family: 'Alegreya';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.1em;
-    color: #EE7F4F;
-}
-
-.project-show-black-part a{
-font-family: 'Alegreya Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-border: 1px solid #FFFFFF;
-border-radius: 2px;
-}
-
-.project-show-black-part a:hover{
-
-border: 1px solid #EE7F4F;
-
-}
-
-.project-show-black-part a:active{
-
-border: 1px solid  #C6876C;;
-
-}
-
-.project-show-black-part p{
-    font-family: 'Alegreya';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-
-.project-shadow {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%) !important;
-
-}
-
-.project-container {
-      position: relative;
-      text-align: center;
-      color: white;
-}
-
-.header-container {
-    position: relative;
-}
-
-.style-container {
-      position: relative;
-      color: white;
-}
-
-.bottom-down-center {
-    position: absolute;
-    bottom: 0px;
-}
-
-.bottom {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
-
-.bottom-center {
-  position: absolute;
-  bottom: 0px;
-  left: 17%;
-}
-
-.top-right {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-.bot-right {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
-
-.styles-text h1{
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-}
-
-.styles-text h2{
-    font-family: 'Alegreya';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.1em;
-    color: #FFFFFF;
-}
-
-.styles-text h3{
-    font-family: 'Alegreya';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.1em;
-    color: #FFFFFF;
-}
-
-.styles-shadow {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 79.02%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 34.35%) !important ;
-}
-
-.menu-questions-text{
-font-family: 'Alegreya Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-/* identical to box height, or 138% */
-
-text-align: center;
-letter-spacing: 0.02em;
-
-color: #000000;
-}
-
-.projects-show-shadow {
-
-   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%, #000000 100%);
-}
-
-.details-btn {
-    font-family: 'Alegreya';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.1em;
-}
-
-.details-btn-border {
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-}
-
-.details-btn-border:hover {
-    border: 1px solid #EE7F4F;
-    border-radius: 4px;
-}
-
-.details-btn-border:active {
-    border: 1px solid #C6876C;;
-    border-radius: 4px;
-}
-
-/* ----------------------------------------------------- MODAL IMG CSS --------------------------------------------- */
-
-/* Style the Image Used to Trigger the Modal */
-
-#myImg {
-
-}
-
-.image:hover .overlay{
-    opacity: 1;
-
-}
-
-.image {
-   position: relative;
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: center center;
-   cursor: pointer;
-}
-
-.image:hover .hov-icn {
-  display: block;
-
-}
-
-.image:hover .act-icn {
- display: none;
-}
-
-.image:active .act-icn {
- display: block;
-}
-
-.image:active .hov-icn {
-  display: none;
-}
-
-/* The Modal (background) */
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: #000000
-}
-
-/* Modal Content (Image) */
-
-.modal-content {
-  margin: auto;
-  display: absolute;
-  width: 90%;
-  height: 100%;
-
-
-
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-
-.modal-content, #caption {
-  -webkit-animation-name: zoom;
-          animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
+@import "site";
 
 .container {
   width: 100%;
 }
 
 @media (min-width: 300px) {
-
   .container {
     max-width: 300px;
   }
 }
 
 @media (min-width: 640px) {
-
   .container {
     max-width: 640px;
   }
 }
 
 @media (min-width: 751px) {
-
   .container {
     max-width: 751px;
   }
 }
 
 @media (min-width: 768px) {
-
   .container {
     max-width: 768px;
   }
 }
 
 @media (min-width: 851px) {
-
   .container {
     max-width: 851px;
   }
 }
 
 @media (min-width: 1025px) {
-
   .container {
     max-width: 1025px;
   }
 }
 
 @media (min-width: 1215px) {
-
   .container {
     max-width: 1215px;
   }
 }
 
 @media (min-width: 1234px) {
-
   .container {
     max-width: 1234px;
   }
 }
 
 @media (min-width: 1280px) {
-
   .container {
     max-width: 1280px;
   }
 }
 
 @media (min-width: 1536px) {
-
   .container {
     max-width: 1536px;
   }
+}
+
+.pointer-events-none {
+  pointer-events: none !important;
 }
 
 .fixed {
@@ -1994,6 +1268,10 @@ color: #000000;
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
 }
 
+.text-blue-clickable {
+  color: rgba(51, 0, 86, 1) !important;
+}
+
 .text-dark-orange {
   --tw-text-opacity: 1 !important;
   color: rgb(198 135 108 / var(--tw-text-opacity)) !important;
@@ -2002,10 +1280,6 @@ color: #000000;
 .text-white {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
-}
-
-.text-blue-clickable {
-  color: rgba(51, 0, 86, 1) !important;
 }
 
 .text-orange {
@@ -2061,6 +1335,762 @@ color: #000000;
   display: -webkit-box !important;
   -webkit-box-orient: vertical !important;
   -webkit-line-clamp: 2 !important;
+}
+
+.bard h3 {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
+}
+
+.bard p {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  margin-bottom: 32px;
+}
+
+.Pheader h3 {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.PcardTitle h5 {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+}
+
+.PcardAuthor h6 {
+  font-family: 'Alegreya', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.PcardAuthor p {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.white-menu a {
+  color: #FFFFFF;
+}
+
+.white-menu a:hover {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+.white-menu a:active {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+}
+
+.bg-none {
+  background: none;
+}
+
+.orange-menu a {
+  color: #000000;
+}
+
+.orange-menu a:hover {
+  color: #C6876C;
+  background: rgba(242, 148, 107, 0.05);
+  border-radius: 2px;
+}
+
+.orange-menu a:active {
+  color: #EE7F4F;
+  background: rgba(198, 135, 108, 0.1);
+  border-radius: 2px;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.content h3 {
+  font-family: 'Alegreya', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+.headImgText h3 {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 100px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 1024px) {
+  .headImgText h3 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .headImgText h5 {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+  }
+}
+
+.headImgText h5 {
+  font-family: 'Alegreya', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.content h5 {
+  font-family: 'Alegreya', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+.content p {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.background {
+  position: absolute;
+  /*    position: relative;*/
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#wrapper {
+  height: 800px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  height: 114px;
+  width: 100%;
+  opacity: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                     supported by Chrome, Edge, Opera and Firefox */
+}
+
+.photo_auht h6 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.photo_auht h5 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+.menuShadow {
+  box-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25);
+}
+
+.shadow360-bottom {
+  height: 318px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.menuShadow-header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  height: 100px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  opacity: 0.2;
+}
+
+.project-menu-shadow {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.feedback-text p {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.feedback-text h1 {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+}
+
+.feedback-text h2 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+
+.feedback-text h3 {
+  font-family: 'Alegreya', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+}
+
+.feedback-text h4 {
+  font-family: 'Alegreya', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+}
+
+@media only screen and (max-width: 750px) {
+  .feedback-text p {
+    font-family: 'Alegreya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .feedback-background:active {
+    background: #FCE0CD;
+  }
+
+  .feedback-btn:active {
+    color: #000000 !important;
+  }
+}
+
+.Feedback {
+  display: none;
+}
+
+.style {
+  display: none;
+}
+
+.rightArrow {
+  right: 0;
+  top: 47%;
+}
+
+.leftArrow {
+  left: 0;
+  top: 47%;
+}
+
+#arrow-color-m {
+  stroke: #000000
+}
+
+#arrow-color-m:hover {
+  stroke: #EE7F4F
+}
+
+#arrow-color-m:active {
+  stroke: #C6876C
+}
+
+#larrow-back-m {
+  fill: white
+}
+
+#larrow-back-m:hover {
+  fill: #FCE0CD
+}
+
+#larrow-back-m:active {
+  fill: #FCE0CD
+}
+
+#rarrow-back-m {
+  fill: white
+}
+
+#rarrow-back-m:hover {
+  fill: #FCE0CD
+}
+
+#rarrow-back-m:active {
+  fill: #FCE0CD
+}
+
+.feedback-background:active {
+  background: rgba(198, 135, 108, 0.5);
+}
+
+.feedback-background:hover {
+  background: rgba(242, 148, 107, 0.05);
+}
+
+.feedback-btn:active h4 {
+  color: #EE7F4F !important;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+.feedback-btn:hover {
+  color: #C6876C !important;
+}
+
+.feedback-btn:active {
+  color: #EE7F4F !important;
+}
+
+.projects_card p {
+  font-family: 'Alegreya', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+}
+
+.projects_card h3 {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 0.06em;
+}
+
+.more_projects-m h3 {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.projects_card h1 {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: start;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+.projects_card h2 {
+  font-family: 'Alegreya', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.project-show-title h3 {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 77px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  text-align: start;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25), 8px 15px 42px rgba(0, 0, 0, 0.63);
+}
+
+@media only screen and (max-width: 1024px) {
+  .project-show-title h3 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25), 8px 15px 42px rgba(0, 0, 0, 0.63);
+  }
+}
+
+.project-show-black-part h1 {
+  font-family: 'Alegreya', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #EE7F4F;
+}
+
+.project-show-black-part a {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+}
+
+.project-show-black-part a:hover {
+  border: 1px solid #EE7F4F;
+}
+
+.project-show-black-part a:active {
+  border: 1px solid #C6876C;
+}
+
+.project-show-black-part p {
+  font-family: 'Alegreya', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.project-shadow {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%) !important;
+}
+
+.project-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.header-container {
+  position: relative;
+}
+
+.style-container {
+  position: relative;
+  color: white;
+}
+
+.bottom-down-center {
+  position: absolute;
+  bottom: 0px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.bottom-center {
+  position: absolute;
+  bottom: 0px;
+  left: 17%;
+}
+
+.top-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.bot-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.styles-text h1 {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+.styles-text h2 {
+  font-family: 'Alegreya', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.styles-text h3 {
+  font-family: 'Alegreya', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.styles-shadow {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 79.02%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 34.35%) !important;
+}
+
+.menu-questions-text {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.projects-show-shadow {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%, #000000 100%);
+}
+
+.details-btn {
+  font-family: 'Alegreya', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.details-btn-border {
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+}
+
+.details-btn-border:hover {
+  border: 1px solid #EE7F4F;
+  border-radius: 4px;
+}
+
+.details-btn-border:active {
+  border: 1px solid #C6876C;
+  border-radius: 4px;
+}
+
+/* ----------------------------------------------------- MODAL IMG CSS --------------------------------------------- */
+
+/* Style the Image Used to Trigger the Modal */
+
+#myImg {
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+
+.image {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.image:hover .hov-icn {
+  display: block;
+}
+
+.image:hover .act-icn {
+  display: none;
+}
+
+.image:active .act-icn {
+  display: block;
+}
+
+.image:active .hov-icn {
+  display: none;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000000
+}
+
+/* Modal Content (Image) */
+
+.modal-content {
+  margin: auto;
+  display: absolute;
+  width: 90%;
+  height: 100%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
 }
 
 .hover\:border-transparent:hover {
@@ -2178,14 +2208,12 @@ color: #000000;
 }
 
 @media (min-width: 640px) {
-
   .sm\:flex {
     display: flex !important;
   }
 }
 
 @media (min-width: 851px) {
-
   .lg\:min-h-screen {
     min-height: 100vh !important;
   }
@@ -2210,7 +2238,6 @@ color: #000000;
 }
 
 @media (min-width: 1025px) {
-
   .desktop\:m-8 {
     margin: 2rem !important;
   }
@@ -2324,7 +2351,6 @@ color: #000000;
 }
 
 @media (min-width: 751px) and (max-width: 1024px) {
-
   .tablet\:col-span-2 {
     grid-column: span 2 / span 2 !important;
   }
@@ -2447,7 +2473,6 @@ color: #000000;
 }
 
 @media (min-width: 300px) and (max-width: 750px) {
-
   .mobile\:m-4 {
     margin: 1rem !important;
   }
@@ -2565,4 +2590,3 @@ color: #000000;
     padding-bottom: 2rem !important;
   }
 }
-
