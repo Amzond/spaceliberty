@@ -559,12 +559,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px !important;
 }
 
-.bottom-0 {
-  bottom: 0px !important;
-}
-
 .left-0 {
   left: 0px !important;
+}
+
+.bottom-0 {
+  bottom: 0px !important;
 }
 
 .z-10 {
@@ -739,6 +739,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-32 {
   margin-top: 8rem !important;
+}
+
+.mb-36px {
+  margin-bottom: 36px !important;
 }
 
 .mt-2 {
@@ -1163,7 +1167,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .font-playfair {
-  font-family: Playfair Display, serif !important;
+  font-family: Playfair Display, sans-serif !important;
 }
 
 .font-sans {
@@ -1225,6 +1229,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-14-17px {
   font-size: 14px !important;
   line-height: 17px !important;
+}
+
+.text-80-107px {
+  font-size: 80px !important;
+  line-height: 107px !important;
+}
+
+.text-40-54px {
+  font-size: 40px !important;
+  line-height: 54px !important;
 }
 
 .font-bold {
@@ -1337,8 +1351,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-line-clamp: 2 !important;
 }
 
-.bard h3 {
-  font-family: 'Playfair Display', sans-serif;
+.bard h3{
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1347,18 +1361,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 16px;
 }
 
-.bard p {
-  font-family: 'Alegreya Sans', sans-serif;
+.bard p{
+  font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  margin-bottom: 32px;
+  margin-bottom:32px;
 }
 
-.Pheader h3 {
-  font-family: 'Playfair Display', sans-serif;
+.Pheader h3{
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -1367,8 +1381,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #000000;
 }
 
-.PcardTitle h5 {
-  font-family: 'Playfair Display', sans-serif;
+.PcardTitle h5{
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1376,8 +1390,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.06em;
 }
 
-.PcardAuthor h6 {
-  font-family: 'Alegreya', sans-serif;
+.PcardAuthor h6{
+  font-family: 'Alegreya';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1386,8 +1400,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #000000;
 }
 
-.PcardAuthor p {
-  font-family: 'Alegreya Sans', sans-serif;
+.PcardAuthor p{
+  font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1396,49 +1410,49 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #000000;
 }
 
-.white-menu a {
+.white-menu a{
   color: #FFFFFF;
 }
 
-.white-menu a:hover {
+.white-menu a:hover{
   color: #FFFFFF;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 2px;
 }
 
-.white-menu a:active {
+.white-menu a:active{
   color: #FFFFFF;
   background: rgba(255, 255, 255, 0.4);
   border-radius: 2px;
 }
 
-.bg-none {
+.bg-none{
   background: none;
 }
 
-.orange-menu a {
+.orange-menu a{
   color: #000000;
 }
 
-.orange-menu a:hover {
+.orange-menu a:hover{
   color: #C6876C;
   background: rgba(242, 148, 107, 0.05);
   border-radius: 2px;
 }
 
-.orange-menu a:active {
+.orange-menu a:active{
   color: #EE7F4F;
   background: rgba(198, 135, 108, 0.1);
   border-radius: 2px;
 }
 
-.content {
+.content{
   position: relative;
   z-index: 2;
 }
 
-.content h3 {
-  font-family: 'Alegreya', sans-serif;
+.content h3{
+  font-family: 'Alegreya';
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -1446,8 +1460,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #FFFFFF;
 }
 
-.headImgText h3 {
-  font-family: 'Playfair Display', sans-serif;
+.headImgText h3{
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
   font-size: 90px;
@@ -1458,8 +1472,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media only screen and (max-width: 1024px) {
-  .headImgText h3 {
-    font-family: 'Playfair Display', sans-serif;
+  .headImgText h3{
+    font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -1469,8 +1483,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .headImgText h5 {
-    font-family: 'Alegreya', sans-serif;
+  .headImgText h5{
+    font-family: 'Alegreya';
     font-style: normal;
     font-weight: 400;
     font-size: 18px !important;
@@ -1480,8 +1494,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.headImgText h5 {
-  font-family: 'Alegreya', sans-serif;
+.headImgText h5{
+  font-family: 'Alegreya';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1489,8 +1503,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #FFFFFF;
 }
 
-.content h5 {
-  font-family: 'Alegreya', sans-serif;
+.content h5{
+  font-family: 'Alegreya';
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -1498,8 +1512,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #FFFFFF;
 }
 
-.content p {
-  font-family: 'Alegreya Sans', sans-serif;
+.content p{
+  font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1508,7 +1522,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #FFFFFF;
 }
 
-.background {
+.background{
   position: absolute;
   /*    position: relative;*/
   top: 0;
@@ -1516,7 +1530,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 1;
 }
 
-#wrapper {
+#wrapper{
   height: 800px;
 }
 
@@ -1541,11 +1555,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   /* Internet Explorer/Edge */
   user-select: none;
   /* Non-prefixed version, currently
-                                     supported by Chrome, Edge, Opera and Firefox */
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
-.photo_auht h6 {
-  font-family: 'Alegreya Sans', sans-serif;
+.photo_auht h6{
+  font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1555,14 +1569,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .photo_auht h5 {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.02em;
   -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #000000;
 }
 
@@ -1586,8 +1600,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-.feedback-text p {
-  font-family: 'Alegreya Sans', sans-serif;
+.feedback-text p{
+  font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -1596,8 +1610,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #000000;
 }
 
-.feedback-text h1 {
-  font-family: 'Playfair Display', sans-serif;
+.feedback-text h1{
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1605,8 +1619,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.06em;
 }
 
-.feedback-text h2 {
-  font-family: 'Alegreya Sans', sans-serif;
+.feedback-text h2{
+  font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1614,8 +1628,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.02em;
 }
 
-.feedback-text h3 {
-  font-family: 'Alegreya', sans-serif;
+.feedback-text h3{
+  font-family: 'Alegreya';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1623,8 +1637,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.1em;
 }
 
-.feedback-text h4 {
-  font-family: 'Alegreya', sans-serif;
+.feedback-text h4{
+  font-family: 'Alegreya';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1633,8 +1647,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media only screen and (max-width: 750px) {
-  .feedback-text p {
-    font-family: 'Alegreya', sans-serif;
+  .feedback-text p{
+    font-family: 'Alegreya';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -1655,7 +1669,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .style {
-  display: none;
+  display: none ;
 }
 
 .rightArrow {
@@ -1669,53 +1683,53 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 #arrow-color-m {
-  stroke: #000000
+  stroke:#000000
 }
 
 #arrow-color-m:hover {
-  stroke: #EE7F4F
+  stroke:#EE7F4F
 }
 
 #arrow-color-m:active {
-  stroke: #C6876C
+  stroke:#C6876C
 }
 
 #larrow-back-m {
-  fill: white
+  fill:white
 }
 
 #larrow-back-m:hover {
-  fill: #FCE0CD
+  fill:#FCE0CD
 }
 
 #larrow-back-m:active {
-  fill: #FCE0CD
+  fill:#FCE0CD
 }
 
 #rarrow-back-m {
-  fill: white
+  fill:white
 }
 
 #rarrow-back-m:hover {
-  fill: #FCE0CD
+  fill:#FCE0CD
 }
 
 #rarrow-back-m:active {
-  fill: #FCE0CD
+  fill:#FCE0CD
 }
 
 .feedback-background:active {
-  background: rgba(198, 135, 108, 0.5);
+  background: rgba(198, 135, 108, 0.5) ;
 }
 
 .feedback-background:hover {
-  background: rgba(242, 148, 107, 0.05);
+  background: rgba(242, 148, 107, 0.05) ;
 }
 
-.feedback-btn:active h4 {
+.feedback-btn:active h4{
   color: #EE7F4F !important;
   -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .feedback-btn:hover {
@@ -1726,8 +1740,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #EE7F4F !important;
 }
 
-.projects_card p {
-  font-family: 'Alegreya', sans-serif;
+.projects_card p{
+  font-family: 'Alegreya';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1735,8 +1749,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.1em;
 }
 
-.projects_card h3 {
-  font-family: 'Playfair Display', sans-serif;
+.projects_card h3{
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -1744,8 +1758,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.06em;
 }
 
-.more_projects-m h3 {
-  font-family: 'Playfair Display', sans-serif;
+.more_projects-m h3{
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1754,8 +1768,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #000000;
 }
 
-.projects_card h1 {
-  font-family: 'Playfair Display', sans-serif;
+.projects_card h1{
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1765,8 +1779,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #FFFFFF;
 }
 
-.projects_card h2 {
-  font-family: 'Alegreya', sans-serif;
+.projects_card h2{
+  font-family: 'Alegreya';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1775,8 +1789,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #FFFFFF;
 }
 
-.project-show-title h3 {
-  font-family: 'Playfair Display', sans-serif;
+.project-show-title h3{
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
   font-size: 58px;
@@ -1790,8 +1804,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media only screen and (max-width: 1024px) {
-  .project-show-title h3 {
-    font-family: 'Playfair Display', sans-serif;
+  .project-show-title h3{
+    font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
@@ -1802,8 +1816,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.project-show-black-part h1 {
-  font-family: 'Alegreya', sans-serif;
+.project-show-black-part h1{
+  font-family: 'Alegreya';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1812,8 +1826,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #EE7F4F;
 }
 
-.project-show-black-part a {
-  font-family: 'Alegreya Sans', sans-serif;
+.project-show-black-part a{
+  font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1824,16 +1838,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 2px;
 }
 
-.project-show-black-part a:hover {
+.project-show-black-part a:hover{
   border: 1px solid #EE7F4F;
 }
 
-.project-show-black-part a:active {
-  border: 1px solid #C6876C;
+.project-show-black-part a:active{
+  border: 1px solid  #C6876C;
 }
 
-.project-show-black-part p {
-  font-family: 'Alegreya', sans-serif;
+.project-show-black-part p{
+  font-family: 'Alegreya';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1889,8 +1903,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.styles-text h1 {
-  font-family: 'Playfair Display', sans-serif;
+.styles-text h1{
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1899,8 +1913,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #FFFFFF;
 }
 
-.styles-text h2 {
-  font-family: 'Alegreya', sans-serif;
+.styles-text h2{
+  font-family: 'Alegreya';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1909,8 +1923,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #FFFFFF;
 }
 
-.styles-text h3 {
-  font-family: 'Alegreya', sans-serif;
+.styles-text h3{
+  font-family: 'Alegreya';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1920,11 +1934,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .styles-shadow {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 79.02%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 34.35%) !important;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 79.02%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 34.35%) !important ;
 }
 
-.menu-questions-text {
-  font-family: 'Alegreya Sans', sans-serif;
+.menu-questions-text{
+  font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1940,7 +1954,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .details-btn {
-  font-family: 'Alegreya', sans-serif;
+  font-family: 'Alegreya';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1973,7 +1987,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 #myImg {
 }
 
-.image:hover .overlay {
+.image:hover .overlay{
   opacity: 1;
 }
 
@@ -2041,28 +2055,28 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .modal-content, #caption {
   -webkit-animation-name: zoom;
-  animation-name: zoom;
+          animation-name: zoom;
   -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 @-webkit-keyframes zoom {
   from {
-    transform: scale(0)
+    transform:scale(0)
   }
 
   to {
-    transform: scale(1)
+    transform:scale(1)
   }
 }
 
 @keyframes zoom {
   from {
-    transform: scale(0)
+    transform:scale(0)
   }
 
   to {
-    transform: scale(1)
+    transform:scale(1)
   }
 }
 
@@ -2087,7 +2101,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /* 100% Image Width on Smaller Screens */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
   }
@@ -2590,3 +2604,4 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 2rem !important;
   }
 }
+
