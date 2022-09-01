@@ -567,6 +567,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px !important;
 }
 
+.top-8 {
+  top: 2rem !important;
+}
+
+.left-8 {
+  left: 2rem !important;
+}
+
+.bottom-8 {
+  bottom: 2rem !important;
+}
+
+.right-8 {
+  right: 2rem !important;
+}
+
 .z-10 {
   z-index: 10 !important;
 }
@@ -809,6 +825,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 460px !important;
 }
 
+.h-430px {
+  height: 430px !important;
+}
+
+.h-140px {
+  height: 140px !important;
+}
+
 .h-378 {
   height: 378px !important;
 }
@@ -885,6 +909,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .origin-top-right {
   transform-origin: top right !important;
+}
+
+.origin-center {
+  transform-origin: center !important;
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
 .transform {
@@ -1211,6 +1244,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem !important;
 }
 
+.text-lg {
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+}
+
 .text-38-51px {
   font-size: 38px !important;
   line-height: 51px !important;
@@ -1266,7 +1304,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .tracking-widest {
-  letter-spacing: 0.1em !important;
+  letter-spacing: .1em !important;
+}
+
+.tracking-wider {
+  letter-spacing: .05em !important;
 }
 
 .tracking-003em {
@@ -2107,6 +2149,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.bg-style-card-shadow {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.style-card {
+  border: 1px solid transparent;
+  filter: drop-shadow(16px 16px 44px rgba(0, 0, 0, 0.25));
+}
+
+.style-card:hover {
+  filter: drop-shadow(16px 16px 44px rgba(200, 132, 69, 0.4));
+}
+
+.style-card:active {
+  filter: none;
+  border: 1px solid #EE7F4F;
+}
+
+.style-card:active p {
+  color: #EE7F4F !important;
+}
+
+.style-card:active .icon-arrow {
+  color: #EE7F4F !important;
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent !important;
 }
@@ -2604,4 +2672,3 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 2rem !important;
   }
 }
-

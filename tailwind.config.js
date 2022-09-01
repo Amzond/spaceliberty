@@ -7,6 +7,15 @@ module.exports = {
     ],
     important: true,
     theme: {
+        letterSpacing: {
+            tightest: '-.075em',
+            tighter: '-.05em',
+            tight: '-.025em',
+            normal: '0',
+            wide: '.025em',
+            wider: '.05em',
+            widest: '.1em',
+        },
         extend: {
             gridTemplateColumns: {
                 'auto-fit': 'repeat(auto-fit, minmax(170px, 1fr))',
@@ -44,6 +53,7 @@ module.exports = {
             },
             colors: {
                 'active-orange': "#FCE0CD",
+                'light-orange': '#EE7F4F',
                 'orange': '#F2946B',
                 'dark-orange': '#C6876C',
                 'lang-bg': 'rgba(0, 0, 0, 0.02)',
@@ -96,6 +106,8 @@ module.exports = {
                 '700': '700px',
                 '80': '80px',
                 '800': '800px',
+                '430px': '430px',
+                '140px': '140px',
             },
             maxHeight: {
                 '380': '378px',
@@ -106,7 +118,6 @@ module.exports = {
             minHeight: {
                 '48': '48px',
                 '480': '480px',
-
             },
             margin: {
                 '306': '306px',
@@ -124,9 +135,8 @@ module.exports = {
             },
             inset: {
                 '9': '9rem',
+                '8': '2rem',
             },
-
-
         }
     },
     plugins: [
