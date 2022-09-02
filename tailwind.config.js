@@ -59,6 +59,7 @@ module.exports = {
             'white-menu-bg-h': 'rgba(255, 255, 255, 0.15)',
             'white-menu-bg-a': 'rgba(255, 255, 255, 0.4)',
             'blue-clickable': 'rgba(51, 0, 86, 1)',
+            'img-top-shadow': 'linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%)',
         },
         screens:{
             'desktop': {'min': '1025px'},
@@ -75,6 +76,7 @@ module.exports = {
             'toolTip': '12px 12px 16px rgba(188, 121, 60, 0.03)',
             'styles-box-shadow': '24px 33px 100px rgba(188, 121, 60, 0.1)',
             'styles-box-shadow-h': '24px 33px 100px rgba(188, 121, 60, 0.15)',
+
         },
         width: {
             '378': '378px',
@@ -96,6 +98,7 @@ module.exports = {
             '700': '700px',
             '80': '80px',
             '800': '800px',
+            '90': '90px',
 
 
         },

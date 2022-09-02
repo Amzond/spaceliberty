@@ -1,7 +1,7 @@
 <div class="grid desktop:grid-cols-2 gap-8 h-full">
     <div class="items-center ">
-        <div class="image  hover:text-white">
         {{image1}}
+        <div class="image hover:text-white" onclick="fullscreen( '{{url}}' )">
             <div class="  w-full desktop:h-748 max-h-748 ">
                 <img class=" desktop:h-748 w-full max-h-748 rounded object-cover"  src="{{ url }}">
             </div>
@@ -24,17 +24,23 @@
                     </svg>
                 </div>
             </div>
-        {{/image1}}
         </div>
+        {{/image1}}
         <div class="flex justify-center mt-2 photo_auht">
             <h6 class="mr-1 ">Photo by: </h6><h5 class=" ">{{image1_author}}</h5>
         </div>
 
     </div>
+
+
+
+
+
     <div class="items-center ">
-        <div class="image hover:text-white  ">
-            {{image2}}
-            <div class="w-full desktop:h-748 max-h-748  ">
+        {{image2}}
+        <div class="image hover:text-white  " onclick="fullscreen( '{{url}}' )">
+
+            <div class="w-full desktop:h-748 max-h-748  " >
                 <img class=" max-h-748 w-full desktop:h-748 rounded object-cover"  src="{{ url }}">
             </div>
 
@@ -57,8 +63,9 @@
                     </svg>
                 </div>
             </div>
-            {{/image2}}
+
         </div>
+        {{/image2}}
         <div class="flex justify-center mt-2 photo_auht">
             <h6 class="mr-1 ">Photo by: </h6><h5 class=" ">{{image2_author}}</h5>
         </div>
@@ -66,3 +73,38 @@
 
     </div>
 </div>
+
+
+
+<div id="myModal" class="modal items-center">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content items-center" id="img01" >
+
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+
+
+var modalImg = document.getElementById("img01");
+
+function fullscreen(url ) {
+    modal.style.display = "block";
+    modalImg.src = url;
+    nav.classList.add('hidden');
+
+}
+
+
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+  nav.classList.remove('hidden');
+}
+</script>
+
