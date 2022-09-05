@@ -69,6 +69,7 @@ module.exports = {
                 'white-menu-bg-h': 'rgba(255, 255, 255, 0.15)',
                 'white-menu-bg-a': 'rgba(255, 255, 255, 0.4)',
                 'blue-clickable': 'rgba(51, 0, 86, 1)',
+                'img-top-shadow': 'linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%)',
             },
             screens: {
                 'desktop': {'min': '1025px'},
