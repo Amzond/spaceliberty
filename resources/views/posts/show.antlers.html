@@ -88,40 +88,42 @@
 
 
 <div id="images-modal" class="fixed flex z-10 top-0 left-0 w-full h-full overflow-hidden bg-black hidden">
-    <img id="modal-img" class="h-full m-auto zoom-animation" src="" alt="" />
 
-    <div class="absolute top-0 left-0 w-full h-80 bg-img-top-shadow lg:px-32 px-5 py-4 flex items-center">
-        <div>
-            <p id="images-count" class="sans text-18-24px font-medium text-white tracking-widest">Image 2 of 12</p>
-            <div class="flex items-center">
-                <p id="image-author" class="sans text-16-20px text-white tracking-002em">Photo by: Author name</p>
+    <div class="relative w-full h-full">
+        <img id="modal-img" class="h-full m-auto zoom-animation" src="" alt="" />
+        <div class="absolute top-0 left-0 w-full h-80 bg-img-top-shadow lg:px-32 px-5 py-4 flex items-center">
+            <div>
+                <p id="images-count" class="sans text-18-24px font-medium text-white tracking-widest">Image 2 of 12</p>
+                <div class="flex items-center">
+                    <p id="image-author" class="sans text-16-20px text-white tracking-002em">Photo by: Author name</p>
+                </div>
+            </div>
+            <div
+                class="p-3 flex items-center justify-center cursor-pointer bg-white-menu-bg-h hover:bg-white-menu-bg-a active:bg-white rounded-full text-white active:text-light-orange ml-auto"
+                onclick="closeModal()"
+            >
+                <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 0.5L21.5 21.5" stroke="currentColor"/>
+                    <path d="M0.5 21.5L21.5 0.500005" stroke="currentColor"/>
+                </svg>
             </div>
         </div>
-        <div
-            class="p-3 flex items-center justify-center cursor-pointer bg-white-menu-bg-h hover:bg-white-menu-bg-a active:bg-white rounded-full text-white active:text-light-orange ml-auto"
-            onclick="closeModal()"
-        >
-            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.5 0.5L21.5 21.5" stroke="currentColor"/>
-                <path d="M0.5 21.5L21.5 0.500005" stroke="currentColor"/>
-            </svg>
-        </div>
-    </div>
-    <div class="absolute bottom-8 left-2/4 -translate-x-2/4 bg-black-0.25 p-2 rounded flex items-center gap-2">
-        {{post_content }}
+        <div class="absolute bottom-8 left-0 right-0 mx-auto w-fit max-w-full lg:max-w-1215px bg-black-0.25 p-2 rounded flex items-center gap-2">
+            {{post_content }}
             {{ if type == "one_image" }}
-                {{ image }}
-                    <img class="h-14 cursor-pointer" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{photo_author}}')">
-                {{ /image }}
+            {{ image }}
+            <img class="h-14 cursor-pointer" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{photo_author}}')">
+            {{ /image }}
             {{ elseif type == "two_images_in_row"}}
-                {{image1}}
-                    <img class="h-14 cursor-pointer" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image1_author}}')">
-                {{/image1}}
-                {{image2}}
-                    <img class="h-14 cursor-pointer" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image2_author}}')">
-                {{/image2}}
+            {{image1}}
+            <img class="h-14 cursor-pointer" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image1_author}}')">
+            {{/image1}}
+            {{image2}}
+            <img class="h-14 cursor-pointer" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image2_author}}')">
+            {{/image2}}
             {{ /if }}
-        {{/post_content }}
+            {{/post_content }}
+        </div>
     </div>
 </div>
 
