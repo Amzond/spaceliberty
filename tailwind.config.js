@@ -16,6 +16,12 @@ module.exports = {
             wider: '.05em',
             widest: '.1em',
         },
+        screens: {
+            sm: '640px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1280px',
+        },
         extend: {
             gridTemplateColumns: {
                 'auto-fit': 'repeat(auto-fit, minmax(170px, 1fr))',
@@ -69,7 +75,7 @@ module.exports = {
                 'white-menu-bg-h': 'rgba(255, 255, 255, 0.15)',
                 'white-menu-bg-a': 'rgba(255, 255, 255, 0.4)',
                 'blue-clickable': 'rgba(51, 0, 86, 1)',
-                'img-top-shadow': 'linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%)',
+                'black-0.25': 'rgba(0, 0, 0, 0.25)',
             },
             screens: {
                 'desktop': {'min': '1025px'},
@@ -109,6 +115,7 @@ module.exports = {
                 '800': '800px',
                 '430px': '430px',
                 '140px': '140px',
+                '15': '3.75rem',
             },
             maxHeight: {
                 '380': '378px',
@@ -129,6 +136,7 @@ module.exports = {
                 '325': '325px',
                 '38': '38px',
                 '36px': '36px',
+                'auto': 'auto'
             },
             maxWidth: {
                 '1215px': '1215px',
@@ -137,12 +145,20 @@ module.exports = {
             inset: {
                 '9': '9rem',
                 '8': '2rem',
+                '32': '8rem',
+                '5': '1.25rem',
+                '2/4': '50%',
             },
+            padding: {
+                '32': '8rem',
+            },
+            translate: {
+                '2/4': '50%',
+            }
         }
     },
     plugins: [
         require('@tailwindcss/typography'),
         require('@tailwindcss/line-clamp'),
-
     ],
 }

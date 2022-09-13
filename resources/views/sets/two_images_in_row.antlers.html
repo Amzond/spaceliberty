@@ -1,11 +1,11 @@
 <div class="grid desktop:grid-cols-2 gap-8 h-full">
     <div class="items-center ">
         {{image1}}
-        <div class="image hover:text-white" onclick="fullscreen( '{{url}}' )">
-            <div class="  w-full desktop:h-748 max-h-748 ">
-                <img class=" desktop:h-748 w-full max-h-748 rounded object-cover"  src="{{ url }}">
+        <div class="image hover:text-white">
+            <div class="w-full desktop:h-748 max-h-748">
+                <img id="{{ id }}" class="desktop:h-748 w-full max-h-748 rounded object-cover project-image"  src="{{ url }}" alt="">
             </div>
-            <div class="overlay rounded">
+            <div class="overlay rounded pointer-events-none">
                 <div class="mt-9">
                     <svg id="" class="mx-auto hov-icn " width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="22" cy="22" r="22" fill="currentColor" fill-opacity="0.15"/>
@@ -25,26 +25,22 @@
                 </div>
             </div>
         </div>
-        {{/image1}}
         <div class="flex justify-center mt-2 photo_auht">
-            <h6 class="mr-1 ">Photo by: </h6><h5 class=" ">{{image1_author}}</h5>
+            <h6 class="mr-1 ">Photo by: </h6><h5 class="{{ id }}">{{image1_author}}</h5>
         </div>
+        {{/image1}}
 
     </div>
-
-
-
-
 
     <div class="items-center ">
         {{image2}}
-        <div class="image hover:text-white  " onclick="fullscreen( '{{url}}' )">
+        <div class="image hover:text-white">
 
             <div class="w-full desktop:h-748 max-h-748  " >
-                <img class=" max-h-748 w-full desktop:h-748 rounded object-cover"  src="{{ url }}">
+                <img id="{{ id }}" class=" max-h-748 w-full desktop:h-748 rounded object-cover project-image"  src="{{ url }}" alt="">
             </div>
 
-            <div class="overlay rounded">
+            <div class="overlay rounded pointer-events-none">
                 <div class="mt-9">
                     <svg id="" class="mx-auto hov-icn " width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="22" cy="22" r="22" fill="currentColor" fill-opacity="0.15"/>
@@ -65,46 +61,11 @@
             </div>
 
         </div>
-        {{/image2}}
         <div class="flex justify-center mt-2 photo_auht">
-            <h6 class="mr-1 ">Photo by: </h6><h5 class=" ">{{image2_author}}</h5>
+            <h6 class="mr-1 ">Photo by: </h6><h5 class="{{ id }}">{{image2_author}}</h5>
         </div>
+        {{/image2}}
 
 
     </div>
 </div>
-
-
-
-<div id="myModal" class="modal items-center">
-    <!-- The Close Button -->
-    <span class="close">&times;</span>
-    <!-- Modal Content (The Image) -->
-    <img class="modal-content items-center" id="img01" >
-
-</div>
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-
-
-var modalImg = document.getElementById("img01");
-
-function fullscreen(url ) {
-    modal.style.display = "block";
-    modalImg.src = url;
-    nav.classList.add('hidden');
-
-}
-
-
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-  nav.classList.remove('hidden');
-}
-</script>
-

@@ -1,17 +1,3 @@
-<head >
-    <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
-    <script src="{{ mix src='/js/site.js' }}" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@100&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-</body>
-
 {{ partial:header2}}
 
 <div class="container w-full items-center mx-auto max-w-1215px px-4">
@@ -45,6 +31,8 @@
             {{partial src="sets/{type}" }}
         {{/post_content }}
     </div>
+
+
 
     <div class="items-center flex bg-cta-bg px-8 py-4 mt-30 xs:hidden">
 
@@ -99,3 +87,176 @@
 {{partial:footer2}}
 
 
+<div id="images-modal" class="fixed flex z-10 top-0 left-0 w-full h-full overflow-hidden bg-black hidden">
+
+    <div class="relative w-full h-full">
+        <img id="modal-img" class="h-full m-auto zoom-animation object-contain" src="" alt="" />
+        <div class="absolute top-0 left-0 w-full h-80 bg-img-top-shadow lg:px-32 px-5 py-4 flex items-center">
+            <div>
+                <p id="images-count" class="sans text-18-24px font-medium text-white tracking-widest">Image 2 of 12</p>
+                <div class="flex items-center">
+                    <p id="image-author" class="sans text-16-20px text-white tracking-002em">Photo by: Author name</p>
+                </div>
+            </div>
+            <div
+                class="p-3 flex items-center justify-center cursor-pointer bg-white-menu-bg-h hover:bg-white-menu-bg-a active:bg-white rounded-full text-white active:text-light-orange ml-auto"
+                onclick="closeModal()"
+            >
+                <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 0.5L21.5 21.5" stroke="currentColor"/>
+                    <path d="M0.5 21.5L21.5 0.500005" stroke="currentColor"/>
+                </svg>
+            </div>
+        </div>
+        <div id="images-scrollable" class="absolute bottom-8 left-0 right-0 mx-auto w-fit max-w-full lg:max-w-1215px bg-black-0.25 p-2 rounded flex items-center gap-2 overflow-hidden">
+            {{post_content }}
+            {{ if type == "one_image" }}
+            {{ image }}
+            <img class="h-11 lg:h-14 cursor-pointer rounded-sm border border-transparent modal-images" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{photo_author}}', this)">
+            {{ /image }}
+            {{ elseif type == "two_images_in_row"}}
+            {{image1}}
+            <img class="h-11 lg:h-14 cursor-pointer rounded-sm border border-transparent modal-images" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image1_author}}', this)">
+            {{/image1}}
+            {{image2}}
+            <img class="h-11 lg:h-14 cursor-pointer rounded-sm border border-transparent modal-images" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image2_author}}', this)">
+            {{/image2}}
+            {{ /if }}
+            {{/post_content }}
+        </div>
+    </div>
+</div>
+
+<script type="application/javascript">
+    const projectImages = document.getElementsByClassName('project-image');
+    const modal = document.getElementById('images-modal');
+    const modalImg = document.getElementById('modal-img');
+    const imagesCountDiv = document.getElementById('images-count');
+    const authorNameDiv = document.getElementById('image-author');
+    const modalImages = document.getElementsByClassName('modal-images');
+    const scrollableContainer = document.getElementById('images-scrollable');
+
+    window.addEventListener('keydown', handleArrowNavigation);
+
+    let selectedImageIdx = 0;
+    let imageModalOpened = false;
+
+    function handleArrowNavigation(event) {
+        if (!imageModalOpened) {
+            return;
+        }
+
+        if (event.key === 'ArrowRight') {
+            onArrowRight();
+        } else if (event.key === 'ArrowLeft') {
+            onArrowLeft();
+        } else if (event.key === 'Escape') {
+            closeModal();
+        }
+    }
+
+    function onArrowRight() {
+        if (projectImages.length - 1 === selectedImageIdx) {
+            return;
+        }
+
+        selectedImageIdx++;
+        handleProjectImageClick(projectImages[selectedImageIdx], selectedImageIdx);
+        scrollTo(modalImages[selectedImageIdx]);
+    }
+
+    function scrollTo (el) {
+        const elLeft = el.offsetLeft + el.offsetWidth;
+        const elParentLeft = scrollableContainer.offsetLeft + scrollableContainer.offsetWidth;
+
+        // check if element not in view
+        if (elLeft >= elParentLeft + scrollableContainer.scrollLeft) {
+            scrollableContainer.scrollLeft = elLeft - elParentLeft;
+        } else if (elLeft <= scrollableContainer.offsetLeft + scrollableContainer.scrollLeft) {
+            scrollableContainer.scrollLeft = el.offsetLeft - scrollableContainer.offsetLeft;
+        }
+    }
+
+    function onArrowLeft() {
+        if (selectedImageIdx === 0) {
+            return;
+        }
+
+        selectedImageIdx--;
+        handleProjectImageClick(projectImages[selectedImageIdx], selectedImageIdx);
+        scrollTo(modalImages[selectedImageIdx]);
+    }
+
+    for (const index in projectImages) {
+        const image = projectImages[index];
+        image.onclick = () => {
+            handleProjectImageClick(image, index);
+            scrollTo(modalImages[index]);
+        };
+    }
+
+    function handleProjectImageClick(imageElement, index) {
+        selectedImageIdx = Number(index);
+        imagesCountDiv.innerHTML = `Image ${Number(index) + 1} of ${projectImages.length}`;
+        const authorNameElement = document.getElementsByClassName(imageElement.id)[0];
+        authorNameDiv.innerHTML = `Photo by: ${authorNameElement.innerHTML}`;
+        modalImg.src = imageElement.src;
+
+        for (const modalImage of modalImages) {
+            if (imageElement.src.includes(modalImage.src)) {
+                setImageSelected(modalImage);
+            } else {
+                setImageNotSelected(modalImage);
+            }
+        }
+
+        openModal();
+    }
+
+    function openModal() {
+        imageModalOpened = true;
+        modal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+        imageModalOpened = false;
+        modal.classList.add('hidden');
+    }
+
+    function setImageSelected(imageElement) {
+        if (imageElement.classList.contains('border-dark-orange')) {
+            return;
+        }
+
+        imageElement.classList.add('border-dark-orange');
+        imageElement.classList.remove('border-transparent')
+    }
+
+    function setImageNotSelected(imageElement) {
+        if (!imageElement.classList.contains('border-dark-orange')) {
+            return;
+        }
+
+        imageElement.classList.remove('border-dark-orange');
+        imageElement.classList.add('border-transparent');
+    }
+
+    function selectImage(imageSrc, authorName, element) {
+        for (const modalImage of modalImages) {
+            setImageNotSelected(modalImage);
+        }
+
+        setImageSelected(element);
+        let index = 0;
+        for (const idx in projectImages) {
+            if (projectImages[idx].src.includes(imageSrc)) {
+                index = Number(idx);
+                break;
+            }
+        }
+        selectedImageIdx = index;
+        modalImg.src = imageSrc;
+        imagesCountDiv.innerHTML = `Image ${index + 1} of ${projectImages.length}`;
+        authorNameDiv.innerHTML = `Photo by: ${authorName}`;
+    }
+</script>

@@ -99,6 +99,7 @@ sections:
                     read_only: false
                     width: 50
                     folder: images/posts
+                    max_files: 1
                 -
                   handle: image2
                   field:
@@ -115,6 +116,7 @@ sections:
                     read_only: false
                     width: 50
                     folder: images/posts
+                    max_files: 1
                 -
                   handle: image1_author
                   field:
@@ -145,7 +147,6 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
-          max_sets: 1
   sidebar:
     display: Sidebar
     fields:
