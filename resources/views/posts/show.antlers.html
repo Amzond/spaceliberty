@@ -90,7 +90,7 @@
 <div id="images-modal" class="fixed flex z-10 top-0 left-0 w-full h-full overflow-hidden bg-black hidden">
 
     <div class="relative w-full h-full">
-        <img id="modal-img" class="h-full m-auto zoom-animation" src="" alt="" />
+        <img id="modal-img" class="h-full m-auto zoom-animation object-contain" src="" alt="" />
         <div class="absolute top-0 left-0 w-full h-80 bg-img-top-shadow lg:px-32 px-5 py-4 flex items-center">
             <div>
                 <p id="images-count" class="sans text-18-24px font-medium text-white tracking-widest">Image 2 of 12</p>
@@ -108,18 +108,18 @@
                 </svg>
             </div>
         </div>
-        <div class="absolute bottom-8 left-0 right-0 mx-auto w-fit max-w-full lg:max-w-1215px bg-black-0.25 p-2 rounded flex items-center gap-2">
+        <div id="images-scrollable" class="absolute bottom-8 left-0 right-0 mx-auto w-fit max-w-full lg:max-w-1215px bg-black-0.25 p-2 rounded flex items-center gap-2 overflow-hidden">
             {{post_content }}
             {{ if type == "one_image" }}
             {{ image }}
-            <img class="h-14 cursor-pointer" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{photo_author}}')">
+            <img class="h-11 lg:h-14 cursor-pointer rounded-sm border border-transparent modal-images" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{photo_author}}', this)">
             {{ /image }}
             {{ elseif type == "two_images_in_row"}}
             {{image1}}
-            <img class="h-14 cursor-pointer" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image1_author}}')">
+            <img class="h-11 lg:h-14 cursor-pointer rounded-sm border border-transparent modal-images" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image1_author}}', this)">
             {{/image1}}
             {{image2}}
-            <img class="h-14 cursor-pointer" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image2_author}}')">
+            <img class="h-11 lg:h-14 cursor-pointer rounded-sm border border-transparent modal-images" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image2_author}}', this)">
             {{/image2}}
             {{ /if }}
             {{/post_content }}
@@ -133,22 +133,120 @@
     const modalImg = document.getElementById('modal-img');
     const imagesCountDiv = document.getElementById('images-count');
     const authorNameDiv = document.getElementById('image-author');
+    const modalImages = document.getElementsByClassName('modal-images');
+    const scrollableContainer = document.getElementById('images-scrollable');
+
+    window.addEventListener('keydown', handleArrowNavigation);
+
+    let selectedImageIdx = 0;
+    let imageModalOpened = false;
+
+    function handleArrowNavigation(event) {
+        if (!imageModalOpened) {
+            return;
+        }
+
+        if (event.key === 'ArrowRight') {
+            onArrowRight();
+        } else if (event.key === 'ArrowLeft') {
+            onArrowLeft();
+        } else if (event.key === 'Escape') {
+            closeModal();
+        }
+    }
+
+    function onArrowRight() {
+        if (projectImages.length - 1 === selectedImageIdx) {
+            return;
+        }
+
+        selectedImageIdx++;
+        handleProjectImageClick(projectImages[selectedImageIdx], selectedImageIdx);
+        scrollTo(modalImages[selectedImageIdx]);
+    }
+
+    function scrollTo (el) {
+        const elLeft = el.offsetLeft + el.offsetWidth;
+        const elParentLeft = scrollableContainer.offsetLeft + scrollableContainer.offsetWidth;
+
+        // check if element not in view
+        if (elLeft >= elParentLeft + scrollableContainer.scrollLeft) {
+            scrollableContainer.scrollLeft = elLeft - elParentLeft;
+        } else if (elLeft <= scrollableContainer.offsetLeft + scrollableContainer.scrollLeft) {
+            scrollableContainer.scrollLeft = el.offsetLeft - scrollableContainer.offsetLeft;
+        }
+    }
+
+    function onArrowLeft() {
+        if (selectedImageIdx === 0) {
+            return;
+        }
+
+        selectedImageIdx--;
+        handleProjectImageClick(projectImages[selectedImageIdx], selectedImageIdx);
+        scrollTo(modalImages[selectedImageIdx]);
+    }
 
     for (const index in projectImages) {
         const image = projectImages[index];
         image.onclick = () => {
-            imagesCountDiv.innerHTML = `Image ${Number(index) + 1} of ${projectImages.length}`;
-            // todo set author name
-            modalImg.src = image.src;
-            modal.classList.remove('hidden');
+            handleProjectImageClick(image, index);
+            scrollTo(modalImages[index]);
         };
     }
 
+    function handleProjectImageClick(imageElement, index) {
+        selectedImageIdx = Number(index);
+        imagesCountDiv.innerHTML = `Image ${Number(index) + 1} of ${projectImages.length}`;
+        const authorNameElement = document.getElementsByClassName(imageElement.id)[0];
+        authorNameDiv.innerHTML = `Photo by: ${authorNameElement.innerHTML}`;
+        modalImg.src = imageElement.src;
+
+        for (const modalImage of modalImages) {
+            if (imageElement.src.includes(modalImage.src)) {
+                setImageSelected(modalImage);
+            } else {
+                setImageNotSelected(modalImage);
+            }
+        }
+
+        openModal();
+    }
+
+    function openModal() {
+        imageModalOpened = true;
+        modal.classList.remove('hidden');
+    }
+
     function closeModal() {
+        imageModalOpened = false;
         modal.classList.add('hidden');
     }
 
-    function selectImage(imageSrc, authorName) {
+    function setImageSelected(imageElement) {
+        if (imageElement.classList.contains('border-dark-orange')) {
+            return;
+        }
+
+        imageElement.classList.add('border-dark-orange');
+        imageElement.classList.remove('border-transparent')
+    }
+
+    function setImageNotSelected(imageElement) {
+        if (!imageElement.classList.contains('border-dark-orange')) {
+            return;
+        }
+
+        imageElement.classList.remove('border-dark-orange');
+        imageElement.classList.add('border-transparent');
+    }
+
+    function selectImage(imageSrc, authorName, element) {
+        for (const modalImage of modalImages) {
+            setImageNotSelected(modalImage);
+        }
+
+        setImageSelected(element);
         let index = 0;
         for (const idx in projectImages) {
             if (projectImages[idx].src.includes(imageSrc)) {
@@ -156,6 +254,7 @@
                 break;
             }
         }
+        selectedImageIdx = index;
         modalImg.src = imageSrc;
         imagesCountDiv.innerHTML = `Image ${index + 1} of ${projectImages.length}`;
         authorNameDiv.innerHTML = `Photo by: ${authorName}`;

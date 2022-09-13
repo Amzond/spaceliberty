@@ -839,10 +839,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 80px !important;
 }
 
-.h-14 {
-  height: 3.5rem !important;
-}
-
 .h-378 {
   height: 378px !important;
 }
@@ -911,6 +907,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-1215px {
   max-width: 1215px !important;
+}
+
+.max-w-full {
+  max-width: 100% !important;
 }
 
 .origin-top-right {
@@ -1037,6 +1037,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgba(51, 0, 86, 1) !important;
 }
 
+.border-transparent {
+  border-color: transparent !important;
+}
+
+.border-dark-orange {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(198 135 108 / var(--tw-border-opacity)) !important;
+}
+
 .border-current {
   border-color: currentColor !important;
 }
@@ -1100,6 +1109,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-orange {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(242 148 107 / var(--tw-bg-opacity)) !important;
+}
+
+.object-contain {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
 }
 
 .object-cover {
@@ -2327,17 +2341,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:flex {
     display: flex !important;
   }
-
-  .sm\:w-fit {
-    width: -webkit-fit-content !important;
-    width: -moz-fit-content !important;
-    width: fit-content !important;
-  }
 }
 
 @media (min-width: 851px) {
+  .lg\:h-14 {
+    height: 3.5rem !important;
+  }
+
   .lg\:min-h-screen {
     min-height: 100vh !important;
+  }
+
+  .lg\:max-w-1215px {
+    max-width: 1215px !important;
   }
 
   .lg\:px-80 {

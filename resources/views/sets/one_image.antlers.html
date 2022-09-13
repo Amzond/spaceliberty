@@ -1,8 +1,8 @@
 <div class="items-center text-center  ">
     {{ image }}
     <div class="image hover:text-white" onClick="">
-        <img class="w-full max-h-675 rounded object-cover project-image" src="{{url}}">
-        <div class="overlay rounded">
+        <img id="{{ id }}" class="w-full max-h-675 rounded object-cover project-image" src="{{url}}" alt="">
+        <div class="overlay rounded pointer-events-none">
             <div class="mt-9">
                 <svg id="" class="mx-auto hov-icn " width="44" height="44" viewBox="0 0 44 44" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@
 
 
     <div class="mt-2 items-center flex justify-center photo_auht pb-4">
-        <h6 class="">Photo by: </h6><h5 class="">{{photo_author}}</h5>
+        <h6 class="">Photo by: </h6><h5 class="{{ id }}">{{photo_author}}</h5>
     </div>
 
     {{ /image }}
