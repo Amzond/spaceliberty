@@ -167,20 +167,16 @@
         let yDiff = yDown - yUp;
 
         if (Math.abs(xDiff) > Math.abs(yDiff)) {
-            if (Math.abs(xDiff) > 5) {
-                if (xDiff > 0) {
-                    onArrowRight();
-                } else {
-                    onArrowLeft();
-                }
+            if (xDiff > 0) {
+                onArrowRight();
+            } else {
+                onArrowLeft();
             }
         } else {
-            if (Math.abs(yDiff) > 5) {
-                if (yDiff > 0) {
-                    /* up swipe */
-                } else {
-                    closeModal();
-                }
+            if (yDiff > 0) {
+                /* up swipe */
+            } else {
+                closeModal();
             }
         }
         /* reset values */
