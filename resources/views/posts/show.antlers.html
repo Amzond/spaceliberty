@@ -167,15 +167,15 @@
 
         if ( Math.abs(xDiff) > Math.abs(yDiff) ) {
             if ( xDiff > 0 ) {
-                onArrowLeft();
-            } else {
                 onArrowRight();
+            } else {
+                onArrowLeft();
             }
         } else {
             if ( yDiff > 0 ) {
-                closeModal();
-            } else {
                 /* up swipe */
+            } else {
+                closeModal();
             }
         }
         /* reset values */
