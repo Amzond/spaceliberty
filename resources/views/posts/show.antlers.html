@@ -167,7 +167,7 @@
         let yDiff = yDown - yUp;
 
         if (Math.abs(xDiff) > Math.abs(yDiff)) {
-            if (Math.abs(xDiff) > 20) {
+            if (Math.abs(xDiff) > 5) {
                 if (xDiff > 0) {
                     onArrowRight();
                 } else {
@@ -175,7 +175,7 @@
                 }
             }
         } else {
-            if (Math.abs(yDiff) > 20) {
+            if (Math.abs(yDiff) > 5) {
                 if (yDiff > 0) {
                     /* up swipe */
                 } else {
