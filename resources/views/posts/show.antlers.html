@@ -149,6 +149,7 @@
     }
 
     function handleTouchStart(evt) {
+        showModalOverlay();
         const firstTouch = getTouches(evt)[0];
         xDown = firstTouch.clientX;
         yDown = firstTouch.clientY;
@@ -165,17 +166,21 @@
         let xDiff = xDown - xUp;
         let yDiff = yDown - yUp;
 
-        if ( Math.abs(xDiff) > Math.abs(yDiff) ) {
-            if ( xDiff > 0 ) {
-                onArrowRight();
-            } else {
-                onArrowLeft();
+        if (Math.abs(xDiff) > Math.abs(yDiff)) {
+            if (Math.abs(xDiff) > 20) {
+                if (xDiff > 0) {
+                    onArrowRight();
+                } else {
+                    onArrowLeft();
+                }
             }
         } else {
-            if ( yDiff > 0 ) {
-                /* up swipe */
-            } else {
-                closeModal();
+            if (Math.abs(yDiff) > 20) {
+                if (yDiff > 0) {
+                    /* up swipe */
+                } else {
+                    closeModal();
+                }
             }
         }
         /* reset values */
