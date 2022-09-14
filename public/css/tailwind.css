@@ -921,6 +921,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform-origin: center !important;
 }
 
+.-translate-y-4 {
+  --tw-translate-y: -1rem !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.translate-y-4 {
+  --tw-translate-y: 1rem !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
 .rotate-180 {
   --tw-rotate: 180deg !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
@@ -1384,6 +1394,10 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: underline !important;
 }
 
+.opacity-0 {
+  opacity: 0 !important;
+}
+
 .shadow-lang-box {
   --tw-shadow: 16px 16px 44px rgba(0, 0, 0, 0.25) !important;
   --tw-shadow-colored: 16px 16px 44px var(--tw-shadow-color) !important;
@@ -1416,6 +1430,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .duration-500 {
   transition-duration: 500ms !important;
+}
+
+.duration-300 {
+  transition-duration: 300ms !important;
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1) !important;
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1) !important;
 }
 
 .line-clamp-2 {

@@ -1,97 +1,64 @@
-<html >
-    <head  >
-        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
-        <script src="{{ mix src='/js/site.js' }}" defer></script>
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
+{{ partial:header3}}
 
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
-
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-    </head>
-    <body>
-
-    {{ partial:header3}}
-
-    <div id="wrapper" class="-mt-16 mb-32  ">
-        <div id="vrview" class="w-full absolute top-0 left-0">
-
-        </div>
-
-        <div class="shadow360-bottom w-screen relative z-10 pointer-events-none" style="height: 793px" >
-
-            <div class="content flex" style="height: 793px" >
-
-                <div class="desktop:mx-auto mt-auto desktop:mb-16 mb-8 max-w-1215px noselect grid grid-cols-1-3_0-7fr tablet:grid-cols-1 mobile:grid-cols-1  px-5 "  >
-
-                    <div class=" headImgText  " >
-                        <h3>{{header_block:header_text}}</h3>
-
-                        <h5 class="tablet:mt-2 mobile:mt-2">{{header_block:subheader_text}}</h5>
-                    </div>
-
-                    <div class="desktop:mt-175   ">
-                        <p class="mb-3.5">Kaip ir matyta:</p>
-                        <div class="flex gap-8">
-                            <a target="_blank" href="{{header_block:partner_link1}}"><img src="{{header_block:first_partner_logo}}" ></a>
-                            <a target="_blank" href="{{header_block:partner_link2}}"><img src="{{header_block:second_partner_logo}}" ></a>
-                            <a target="_blank" href="{{header_block:partner_link3}}"><img src="{{header_block:third_partner_logo}}" ></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="absolute menuShadow-header w-screen z-10 top-0">
-
-        </div>
+<div id="wrapper" class="-mt-16 mb-32  ">
+    <div id="vrview" class="w-full absolute top-0 left-0">
 
     </div>
+    <div class="shadow360-bottom w-screen relative z-10 pointer-events-none" style="height: 793px" >
 
-    <div>
+        <div class="content flex" style="height: 793px" >
 
-        <div class="container max-w-1215px w-full items-center mx-auto px-4 mb-9">
-                <div class="mb-32   ">
-                    <div class=" desktop:hidden tablet:hidden feedback-text flex justify-center">
-                        <h3 class=" mb-4 mx-auto ">Įkurtuvių istorijos ❤️</h3>
-                    </div>
+            <div class="desktop:mx-auto mt-auto desktop:mb-16 mb-8 max-w-1215px noselect grid grid-cols-1-3_0-7fr tablet:grid-cols-1 mobile:grid-cols-1  px-5 "  >
 
-                    {{ partial:partials/feedback-block }}
+                <div class=" headImgText  " >
+                    <h3>{{header_block:header_text}}</h3>
+
+                    <h5 class="tablet:mt-2 mobile:mt-2">{{header_block:subheader_text}}</h5>
                 </div>
 
-                <div class="mb-32">
-                    <div class="  feedback-text flex justify-center">
-                        <h3 class=" mb-4 mx-auto ">Mūsų darbai️</h3>
-                    </div>
-                    <div>
-                        {{partial:partials/projects-block}}
+                <div class="desktop:mt-175   ">
+                    <p class="mb-3.5">Kaip ir matyta:</p>
+                    <div class="flex gap-8">
+                        <a target="_blank" href="{{header_block:partner_link1}}"><img src="{{header_block:first_partner_logo}}" ></a>
+                        <a target="_blank" href="{{header_block:partner_link2}}"><img src="{{header_block:second_partner_logo}}" ></a>
+                        <a target="_blank" href="{{header_block:partner_link3}}"><img src="{{header_block:third_partner_logo}}" ></a>
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </div>
+    <div class="absolute menuShadow-header w-screen z-10 top-0">
 
-                <h3 class="mb-8 text-28-37px font-playfair font-bold tracking-006em">Naujausi straipsniai 👇</h3>
-                <div>
-                    {{ partial:posts/cardsMain }}
-                </div>
+    </div>
+</div>
+<div>
+    <div class="container max-w-1215px w-full items-center mx-auto px-4 mb-9">
+        <div class="mb-32   ">
+            <div class=" desktop:hidden tablet:hidden feedback-text flex justify-center">
+                <h3 class=" mb-4 mx-auto ">Įkurtuvių istorijos ❤️</h3>
+            </div>
 
-
-
-
-
+            {{ partial:partials/feedback-block }}
         </div>
 
+        <div class="mb-32">
+            <div class="  feedback-text flex justify-center">
+                <h3 class=" mb-4 mx-auto ">Mūsų darbai️</h3>
+            </div>
+            <div>
+                {{partial:partials/projects-block}}
+            </div>
         </div>
 
-        {{ partial:footer2 }}
+        <h3 class="mb-8 text-28-37px font-playfair font-bold tracking-006em">Naujausi straipsniai 👇</h3>
+        <div>
+            {{ partial:posts/cardsMain }}
+        </div>
+    </div>
+</div>
 
-    </body>
-
-</html>
+{{ partial:footer2 }}
 
 
 
@@ -101,12 +68,12 @@
 
     function onVrViewLoad() {
         var vrView = new VRView.Player('#vrview', {
-        image: 'https://nftrelicart.com/assets/site-images/360_panorama-test-optimize-4k.jpg',
-        is_stereo: false,
-        is_vr_off: true,
-        width: '100%',
-		height: 800,
-		});
+            image: 'https://nftrelicart.com/assets/site-images/360_panorama-test-optimize-4k.jpg',
+            is_stereo: false,
+            is_vr_off: true,
+            width: '100%',
+            height: 800,
+        });
     }
 </script>
 

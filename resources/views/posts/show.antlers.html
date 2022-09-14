@@ -91,7 +91,7 @@
 
     <div class="relative w-full h-full">
         <img id="modal-img" class="h-full m-auto zoom-animation object-contain" src="" alt="" />
-        <div class="absolute top-0 left-0 w-full h-80 bg-img-top-shadow lg:px-32 px-5 py-4 flex items-center">
+        <div id="top-modal-overlay" class="absolute top-0 left-0 w-full h-80 bg-img-top-shadow lg:px-32 px-5 py-4 flex items-center duration-300 ease-in">
             <div>
                 <p id="images-count" class="sans text-18-24px font-medium text-white tracking-widest">Image 2 of 12</p>
                 <div class="flex items-center">
@@ -108,7 +108,7 @@
                 </svg>
             </div>
         </div>
-        <div id="images-scrollable" class="absolute bottom-8 left-0 right-0 mx-auto w-fit max-w-full lg:max-w-1215px bg-black-0.25 p-2 rounded flex items-center gap-2 overflow-hidden">
+        <div id="images-scrollable" class="absolute bottom-8 left-0 right-0 mx-auto w-fit max-w-full lg:max-w-1215px bg-black-0.25 p-2 rounded flex items-center gap-2 overflow-hidden duration-300 ease-in">
             {{post_content }}
             {{ if type == "one_image" }}
             {{ image }}
@@ -135,11 +135,36 @@
     const authorNameDiv = document.getElementById('image-author');
     const modalImages = document.getElementsByClassName('modal-images');
     const scrollableContainer = document.getElementById('images-scrollable');
+    const topModalOverlay = document.getElementById('top-modal-overlay');
 
     window.addEventListener('keydown', handleArrowNavigation);
 
     let selectedImageIdx = 0;
     let imageModalOpened = false;
+    let hideOverlayTimeout = null;
+
+    modal.addEventListener('mousemove', showModalOverlay)
+
+    function showModalOverlay() {
+        topModalOverlay.classList.remove('ease-out');
+        topModalOverlay.classList.add('ease-in');
+        topModalOverlay.classList.remove('opacity-0');
+        topModalOverlay.classList.remove('-translate-y-4');
+        scrollableContainer.classList.remove('ease-out');
+        scrollableContainer.classList.add('ease-in');
+        scrollableContainer.classList.remove('opacity-0');
+        scrollableContainer.classList.remove('translate-y-4');
+
+        clearTimeout(hideOverlayTimeout);
+
+        hideOverlayTimeout = setTimeout(() => {
+            topModalOverlay.classList.remove('ease-in');
+            scrollableContainer.classList.remove('ease-in');
+
+            topModalOverlay.className += ' ease-out opacity-0 -translate-y-4';
+            scrollableContainer.className += ' ease-out opacity-0 translate-y-4';
+        }, 2000);
+    }
 
     function handleArrowNavigation(event) {
         if (!imageModalOpened) {
@@ -192,6 +217,7 @@
         image.onclick = () => {
             handleProjectImageClick(image, index);
             scrollTo(modalImages[index]);
+            showModalOverlay();
         };
     }
 
