@@ -138,6 +138,12 @@
     const scrollableContainer = document.getElementById('images-scrollable');
     const topModalOverlay = document.getElementById('top-modal-overlay');
 
+    window.addEventListener('keydown', handleArrowNavigation);
+
+    let selectedImageIdx = 0;
+    let imageModalOpened = false;
+    let hideOverlayTimeout = null;
+
     document.addEventListener('touchstart', handleTouchStart, false);
     document.addEventListener('touchmove', handleTouchMove, false);
 
@@ -149,6 +155,10 @@
     }
 
     function handleTouchStart(evt) {
+        if (!imageModalOpened) {
+            return;
+        }
+
         showModalOverlay();
         const firstTouch = getTouches(evt)[0];
         xDown = firstTouch.clientX;
@@ -156,7 +166,7 @@
     }
 
     function handleTouchMove(evt) {
-        if (!xDown || !yDown) {
+        if (!imageModalOpened || !xDown || !yDown) {
             return;
         }
 
@@ -183,12 +193,6 @@
         xDown = null;
         yDown = null;
     }
-
-    window.addEventListener('keydown', handleArrowNavigation);
-
-    let selectedImageIdx = 0;
-    let imageModalOpened = false;
-    let hideOverlayTimeout = null;
 
     modal.addEventListener('mousemove', showModalOverlay)
 
