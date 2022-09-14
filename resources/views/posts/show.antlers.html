@@ -128,6 +128,7 @@
 </div>
 
 <script type="application/javascript">
+    const body = document.body;
     const projectImages = document.getElementsByClassName('project-image');
     const modal = document.getElementById('images-modal');
     const modalImg = document.getElementById('modal-img');
@@ -240,11 +241,13 @@
     }
 
     function openModal() {
+        body.classList.add('overflow-hidden');
         imageModalOpened = true;
         modal.classList.remove('hidden');
     }
 
     function closeModal() {
+        body.classList.remove('overflow-hidden');
         imageModalOpened = false;
         modal.classList.add('hidden');
     }
