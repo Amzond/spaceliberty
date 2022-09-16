@@ -1,5 +1,6 @@
 {
     "private": true,
+    "type": "module",
     "scripts": {
         "dev": "mix",
         "development": "mix",
@@ -9,7 +10,8 @@
         "prod": "npm run production",
         "production": "mix --production",
         "tailwind": "tailwind-config-viewer -o --port 8000",
-        "build-css": "tailwindcss build resources/css/tailwind.css -o public/css/tailwind.css"
+        "build-css": "tailwindcss build resources/css/tailwind.css -o public/css/tailwind.css",
+        "build": "browserify public/js/360_image.js -o public/js/bundle.js"
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.1",
@@ -23,6 +25,12 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "@tailwindcss/line-clamp": "^0.4.0"
+        "@egjs/view360": "^3.6.3",
+        "@tailwindcss/line-clamp": "^0.4.0",
+        "360-image-viewer": "^1.0.1",
+        "browserify": "^17.0.0",
+        "canvas-fit": "^1.5.0",
+        "kaleidoscopejs": "^1.1.1",
+        "uniq": "^1.0.1"
     }
 }

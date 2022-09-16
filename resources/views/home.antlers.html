@@ -1,8 +1,8 @@
 {{ partial:header3}}
 
 <div id="wrapper" class="-mt-16 mb-32  ">
-    <div id="vrview" class="w-full absolute top-0 left-0">
-
+    <div id="pano" class="w-full absolute top-0 left-0" style="height: 800px;">
+        <canvas class="view360-canvas" style="min-height: 800px!important;"></canvas>
     </div>
     <div class="shadow360-bottom w-screen relative z-10 pointer-events-none" style="height: 793px" >
 
@@ -60,21 +60,49 @@
 
 {{ partial:footer2 }}
 
+<script src="/js/bundle.js"></script>
+
+<!--<script>-->
+<!--    window.addEventListener('load', onVrViewLoad);-->
+
+<!--    function onVrViewLoad() {-->
+<!--        console.log(window.APP_DATA);-->
+<!--        let panoElement = document.getElementById('pano');-->
+<!--        let viewerOpts = {-->
+<!--            controls: {-->
+<!--                mouseViewMode: 'drag',-->
+<!--                scrollZoom: false,-->
+<!--            }-->
+<!--        };-->
+
+<!--        let viewer = new Marzipano.Viewer(panoElement, viewerOpts)-->
+<!--        var levels = [-->
+<!--            {tileSize: 256, size: 256, fallbackOnly: true},-->
+<!--        {tileSize: 512, size: 512},-->
+<!--        {tileSize: 512, size: 1024},-->
+<!--        ];-->
 
 
+<!--        let urlPrefix = '//nftrelicart.com/assets/site-images'-->
+<!--        var geometry = new Marzipano.CubeGeometry(levels);-->
+<!--        var source = Marzipano.ImageUrlSource.fromString(urlPrefix + "/{z}/{f}/{y}/{x}.jpg",-->
+<!--            { cubeMapPreviewUrl: urlPrefix + "/360_panorama-test-optimize-4k.jpg" });-->
+<!--        console.log(source)-->
+<!--        var view = new Marzipano.RectilinearView();-->
 
-<script>
-    window.addEventListener('load', onVrViewLoad);
-
-    function onVrViewLoad() {
-        var vrView = new VRView.Player('#vrview', {
-            image: 'https://nftrelicart.com/assets/site-images/360_panorama-test-optimize-4k.jpg',
-            is_stereo: false,
-            is_vr_off: true,
-            width: '100%',
-            height: 800,
-        });
-    }
-</script>
+<!--        var scene = viewer.createScene({-->
+<!--            source: source,-->
+<!--            geometry: geometry,-->
+<!--            view: view-->
+<!--        });-->
+<!--        // var vrView = new VRView.Player('#vrview', {-->
+<!--        //     image: 'https://nftrelicart.com/assets/site-images/360_panorama-test-optimize-4k.jpg',-->
+<!--        //     is_stereo: false,-->
+<!--        //     is_vr_off: true,-->
+<!--        //     width: '100%',-->
+<!--        //     height: 800,-->
+<!--        // });-->
+<!--    }-->
+<!--</script>-->
 
 
