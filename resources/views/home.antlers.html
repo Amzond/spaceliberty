@@ -1,61 +1,255 @@
 {{ partial:header3}}
 
-<div id="wrapper" class="-mt-16 mb-32  ">
-    <div id="pano" class="w-full absolute top-0 left-0" style="height: 800px;">
-        <canvas class="view360-canvas" style="min-height: 800px!important;"></canvas>
-    </div>
-    <div class="shadow360-bottom w-screen relative z-10 pointer-events-none" style="height: 793px" >
+<div id="wrapper" class="-mt-16 mb-32 w-full">
+  <div id="pano" class="w-full absolute top-0 left-0 h-[800px]">
+    <canvas class="view360-canvas min-h-[800px]"></canvas>
+  </div>
+  <div class="shadow360-bottom w-full relative z-10 pointer-events-none" style="height: 793px" >
 
-        <div class="content flex" style="height: 793px" >
+    <div class="content flex" style="height: 793px" >
 
-            <div class="desktop:mx-auto mt-auto desktop:mb-16 mb-8 max-w-1215px noselect grid grid-cols-1-3_0-7fr tablet:grid-cols-1 mobile:grid-cols-1  px-5 "  >
+      <div class="desktop:mx-auto mt-auto desktop:mb-16 mb-8 max-w-1215px noselect grid grid-cols-1-3_0-7fr tablet:grid-cols-1 mobile:grid-cols-1  px-5 "  >
 
-                <div class=" headImgText  " >
-                    <h3>{{header_block:header_text}}</h3>
+        <div class="headImgText" >
+          <h3>{{header_block:header_text}}</h3>
 
-                    <h5 class="tablet:mt-2 mobile:mt-2">{{header_block:subheader_text}}</h5>
-                </div>
-
-                <div class="desktop:mt-175   ">
-                    <p class="mb-3.5">Kaip ir matyta:</p>
-                    <div class="flex gap-8">
-                        <a target="_blank" href="{{header_block:partner_link1}}"><img src="{{header_block:first_partner_logo}}" ></a>
-                        <a target="_blank" href="{{header_block:partner_link2}}"><img src="{{header_block:second_partner_logo}}" ></a>
-                        <a target="_blank" href="{{header_block:partner_link3}}"><img src="{{header_block:third_partner_logo}}" ></a>
-                    </div>
-                </div>
-
-            </div>
+          <h5 class="tablet:mt-2 mobile:mt-2">{{header_block:subheader_text}}</h5>
         </div>
-    </div>
-    <div class="absolute menuShadow-header w-screen z-10 top-0">
 
+        <div class="desktop:mt-175   ">
+          <p class="mb-3.5">Kaip ir matyta:</p>
+          <div class="flex gap-8">
+            <a target="_blank" href="{{header_block:partner_link1}}"><img src="{{header_block:first_partner_logo}}" ></a>
+            <a target="_blank" href="{{header_block:partner_link2}}"><img src="{{header_block:second_partner_logo}}" ></a>
+            <a target="_blank" href="{{header_block:partner_link3}}"><img src="{{header_block:third_partner_logo}}" ></a>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </div>
+  <div class="absolute menuShadow-header w-full z-10 top-0">
+
+  </div>
 </div>
-<div>
-    <div class="container max-w-1215px w-full items-center mx-auto px-4 mb-9">
-        <div class="mb-32   ">
-            <div class=" desktop:hidden tablet:hidden feedback-text flex justify-center">
-                <h3 class=" mb-4 mx-auto ">Įkurtuvių istorijos ❤️</h3>
-            </div>
-
-            {{ partial:partials/feedback-block }}
-        </div>
-
-        <div class="mb-32">
-            <div class="  feedback-text flex justify-center">
-                <h3 class=" mb-4 mx-auto ">Mūsų darbai️</h3>
-            </div>
-            <div>
-                {{partial:partials/projects-block}}
-            </div>
-        </div>
-
-        <h3 class="mb-8 text-28-37px font-playfair font-bold tracking-006em">Naujausi straipsniai 👇</h3>
-        <div>
-            {{ partial:posts/cardsMain }}
-        </div>
+<div class="container max-w-1215px w-full items-center mx-auto px-4 mb-9">
+  <div class="mb-32">
+    <div class="desktop:hidden tablet:hidden feedback-text flex justify-center">
+      <h3 class="mb-4 mx-auto">Įkurtuvių istorijos ❤️</h3>
     </div>
+
+    {{ partial:partials/feedback-block }}
+  </div>
+
+  <div class="mb-32">
+    <div class="feedback-text flex justify-center">
+      <h3 class="mb-4 mx-auto">Mūsų darbai️</h3>
+    </div>
+    <div>
+      {{partial:partials/projects-block}}
+    </div>
+  </div>
+</div>
+
+<div class="bg-active-orange relative w-full py-32" >
+  <div class="pricing-page-bg-shadow absolute top-0 left-0 w-full"></div>
+
+  <div class="container mx-auto max-w-1215px px-4">
+    <p class="sans font-18-24px tracking-widest text-darker-orange mb-4">Konsultacijos</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-16">
+      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-16 h-[480px] shadow=[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow=[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+        <h5 class="font-playfair text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Konsultacija internetu</h5>
+        <p class="font-ale-sans text-black text-16-22px tracking-002em mb-auto">Atsakom i interjero dizaino klausymus per Facebook Messenger Video call.</p>
+
+        <p class="sans text-18-24px text-center font-medium mb-4">80 EUR / val.</p>
+
+        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+          <p class="sans text-18-24px tracking-widest">Pasirinkti laiką</p>
+        </a>
+
+        <p class="font-ale-sans text-center tracking-002em text-14-19px">Arba skambinkite:</p>
+        <a href="tel:+370 647 47 876" class="font-ale-sans text-16-20px tracking-002em underline mx-auto">+370 647 47 876</a>
+      </div>
+
+      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-16 h-[480px] shadow=[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow=[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+        <h5 class="font-playfair text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Konsultacija vietoje*</h5>
+        <p class="font-ale-sans text-black text-16-22px tracking-002em mb-auto">Atsakome į interjero dizaino klausimus atvykus į objektą.
+          *Kaina Vilniuj ir Vilniaus raj.</p>
+
+        <p class="sans text-18-24px text-center font-medium mb-4">130 EUR / 1.5 val.</p>
+
+        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+          <p class="sans text-18-24px tracking-widest">Pasirinkti laiką</p>
+        </a>
+
+        <p class="font-ale-sans text-center tracking-002em text-14-19px">Arba skambinkite:</p>
+        <a href="tel:+370 647 47 876" class="font-ale-sans text-16-20px tracking-002em underline mx-auto">+370 647 47 876</a>
+      </div>
+
+      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-16 h-[480px] shadow=[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow=[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+        <h5 class="font-playfair text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Kuri paketą rinktis?</h5>
+        <p class="font-ale-sans text-black text-16-22px tracking-002em mb-8">Skaityk mūsų paslaugų ir proceso aprašymą arba susiek su mumis👇</p>
+
+        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+          <p class="sans text-18-24px tracking-widest">Skaityti aprasymus</p>
+        </a>
+
+        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+          <p class="sans text-18-24px tracking-widest">Užduoti klausymą</p>
+        </a>
+      </div>
+    </div>
+
+    <p class="sans font-18-24px tracking-widest text-darker-orange mb-4">Paslaugų paketai</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-16">
+      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-8 h-[617px] shadow=[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow=[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+        <div class="w-full h-[30px] mb-4"></div>
+        <h5 class="font-playfair text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Techninis projektas</h5>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Atvykimas ir išmatavimas</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Baldų išdėstymo planas</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Techniniai brėžiniai</p>
+
+        <p class="sans text-18-24px text-center font-medium mb-4 mt-auto">Nuo 30 Eur / kv. m.</p>
+
+        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+          <p class="sans text-18-24px tracking-widest">Išsiųsti užklausą</p>
+        </a>
+
+        <p class="font-ale-sans text-center tracking-002em text-14-19px">Arba skambinkite:</p>
+        <a href="tel:+370 647 47 876" class="font-ale-sans text-16-20px tracking-002em underline mx-auto">+370 647 47 876</a>
+        <div class="w-full h-[30px] mt-4"></div>
+      </div>
+
+      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-8 h-[617px] shadow=[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow=[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+        <div class="w-full h-[30px] mb-4"></div>
+        <h5 class="font-playfair text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Idejos vizualizacija</h5>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Atvykimas ir išmatavimas</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Baldų išdėstymo planas</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Stilistikos parinkimas</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">3d vizualizacijos (arba 360)</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Medžiagų ir baldų sąrašas</p>
+
+        <p class="sans text-18-24px text-center font-medium mb-4 mt-auto">Nuo 33 Eur / kv. m.</p>
+
+        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+          <p class="sans text-18-24px tracking-widest">Išsiųsti užklausą</p>
+        </a>
+
+        <p class="font-ale-sans text-center tracking-002em text-14-19px">Arba skambinkite:</p>
+        <a href="tel:+370 647 47 876" class="font-ale-sans text-16-20px tracking-002em underline mx-auto">+370 647 47 876</a>
+        <div class="w-full h-[30px] mt-4"></div>
+      </div>
+
+      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-8 h-[617px] shadow=[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow=[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+        <div class="w-full h-[30px] mb-4">
+          <div class="px-2 py-1 bg-light-orange w-fit">
+            <p class="font-ale-sans text-white text-16-22px tracking-002em">Populiariausias</p>
+          </div>
+        </div>
+        <h5 class="font-playfair text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Pilnas projektas</h5>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Atvykimas ir išmatavimas</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Baldų išdėstymo planas</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Stilistikos parinkimas</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">3d vizualizacijos (arba 360)</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Techniniai brėžiniai</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Nestandartinių baldų brėžiniai</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Medžiagų ir baldų sąrašas</p>
+
+        <p class="sans text-18-24px text-center font-medium mb-4 mt-auto">Nuo 2500 EUR</p>
+
+        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+          <p class="sans text-18-24px tracking-widest">Išsiųsti užklausą</p>
+        </a>
+
+        <p class="font-ale-sans text-center tracking-002em text-14-19px">Arba skambinkite:</p>
+        <a href="tel:+370 647 47 876" class="font-ale-sans text-16-20px tracking-002em underline mx-auto">+370 647 47 876</a>
+        <div class="w-full h-[30px] mt-4"></div>
+      </div>
+
+      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-8 h-[617px] shadow=[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow=[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+        <div class="w-full h-[30px] mb-4"></div>
+        <h5 class="sans text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Mini projektas</h5>
+        <p class="sans text-black text-14-17px tracking-002em h-[33px]">Atvykimas ir išmatavimas</p>
+        <p class="sans text-black text-14-17px tracking-002em h-[33px]">Baldų išdėstymo planas</p>
+        <p class="sans text-black text-14-17px tracking-002em h-[33px]">Stilistikos parinkimas</p>
+        <p class="sans text-black text-14-17px tracking-002em h-[33px]">Interjero koliažas</p>
+        <p class="sans text-black text-14-17px tracking-002em h-[33px]">Pagrindiniai techniniai brėžiniai</p>
+        <p class="sans text-black text-14-17px tracking-002em h-[33px]">Medžiagų ir baldų sąrašas</p>
+
+        <p class="sans text-18-24px text-center font-medium mb-4 mt-auto">Nuo 2500 EUR</p>
+
+        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+          <p class="sans text-18-24px tracking-widest">Išsiųsti užklausą</p>
+        </a>
+
+        <p class="sans text-center tracking-002em text-14-19px">Arba skambinkite:</p>
+        <a href="tel:+370 647 47 876" class="sans text-16-20px tracking-002em underline mx-auto">+370 647 47 876</a>
+        <div class="w-full h-[30px] mb-4"></div>
+      </div>
+    </div>
+
+    <p class="sans font-18-24px tracking-widest text-darker-orange mb-4">Papildomos paslaugas</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div class="group flex flex-col bg-cream hover:bg-white active:bg-clicked-card-bg p-8 h-[258px] shadow=[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow=[24px_33px_100px_rgba(126,44,26,0.15)] active:shadow-none rounded cursor-pointer">
+        <h5 class="font-playfair text-darker-purple text-24-32px tracking-006em font-bold mb-4 group-hover:text-light-orange group-active:text-dark-orange duration-75">360° vizualizacijos</h5>
+        <p class="font-ale-sans text-black text-16-22px tracking-002em mb-auto">Peržiurek savo svajoniu projekta is visu kampu</p>
+
+        <div class="flex items-center gap-2">
+          <p class="font-sans group-hover:underline group-hover:text-light-orange group-active:text-dark-orange text-black text-16-22px tracking-widest duration-75">Žiūrėti</p>
+          <svg class="text-black group-hover:text-light-orange group-active:text-dark-orange" width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6H21M21 6L15.5 0.5M21 6L15.5 11.5" stroke="currentColor"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="group flex flex-col bg-cream hover:bg-white active:bg-clicked-card-bg p-8 h-[258px] shadow=[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow=[24px_33px_100px_rgba(126,44,26,0.15)] active:shadow-none rounded cursor-pointer">
+        <h5 class="font-playfair text-darker-purple text-24-32px tracking-006em font-bold mb-4 group-hover:text-light-orange group-active:text-dark-orange duration-75">Virtualios realybes erdvė</h5>
+        <p class="font-ale-sans text-black text-16-22px tracking-002em mb-auto">Peržiurek savo projekta su VR akiniais</p>
+
+        <div class="flex items-center gap-2">
+          <p class="font-sans group-hover:underline group-hover:text-light-orange group-active:text-dark-orange text-black text-16-22px tracking-widest duration-75">Žiūrėti</p>
+          <svg class="text-black group-hover:text-light-orange group-active:text-dark-orange" width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6H21M21 6L15.5 0.5M21 6L15.5 11.5" stroke="currentColor"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="group flex flex-col bg-cream hover:bg-white active:bg-clicked-card-bg p-8 h-[258px] shadow=[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow=[24px_33px_100px_rgba(126,44,26,0.15)] active:shadow-none rounded cursor-pointer">
+        <h5 class="font-playfair text-darker-purple text-24-32px tracking-006em font-bold mb-4 group-hover:text-light-orange group-active:text-dark-orange duration-75">Autorinė priežiūra</h5>
+        <p class="font-ale-sans text-black text-16-22px tracking-002em mb-auto">Profesionali priežiura ir korekcijos projekto igivendinimo metu</p>
+
+        <div class="flex items-center gap-2">
+          <p class="font-sans group-hover:underline group-hover:text-light-orange group-active:text-dark-orange text-black text-16-22px tracking-widest duration-75">Žiūrėti</p>
+          <svg class="text-black group-hover:text-light-orange group-active:text-dark-orange" width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6H21M21 6L15.5 0.5M21 6L15.5 11.5" stroke="currentColor"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="group flex flex-col bg-cream hover:bg-white active:bg-clicked-card-bg p-8 h-[258px] shadow=[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow=[24px_33px_100px_rgba(126,44,26,0.15)] active:shadow-none rounded cursor-pointer">
+        <h5 class="font-playfair text-darker-purple text-24-32px tracking-006em font-bold mb-4 group-hover:text-light-orange group-active:text-dark-orange duration-75 mb-auto">Visos paslaugos</h5>
+
+        <div class="flex items-center gap-2">
+          <p class="font-sans group-hover:underline group-hover:text-light-orange group-active:text-dark-orange text-black text-16-22px tracking-widest duration-75">Žiūrėti</p>
+          <svg class="text-black group-hover:text-light-orange group-active:text-dark-orange" width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6H21M21 6L15.5 0.5M21 6L15.5 11.5" stroke="currentColor"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pricing-page-bg-shadow absolute bottom-0 left-0 origin-center rotate-180 w-full"></div>
+</div>
+
+<div class="container max-w-1215px w-full items-center mx-auto px-4 mb-9">
+  <h3 class="mb-8 text-28-37px font-playfair font-bold tracking-006em">Naujausi straipsniai 👇</h3>
+  <div>
+    {{ partial:posts/cardsMain }}
+  </div>
 </div>
 
 {{ partial:footer2 }}
