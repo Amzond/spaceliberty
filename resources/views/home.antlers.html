@@ -51,80 +51,85 @@
   </div>
 </div>
 
-<div id="pricing" class="bg-active-orange relative w-full py-32 mb-32">
-  <div class="pricing-page-bg-shadow absolute top-0 left-0 w-full"></div>
+<div id="pricing" class="bg-active-orange relative w-full py-16 md:py-32 mb-16 md:mb-32">
+  <div class="pricing-page-bg-shadow h-16 md:h-32 absolute top-0 left-0 w-full"></div>
 
   <div class="container mx-auto max-w-1215px px-4">
     <p class="sans font-18-24px tracking-widest text-darker-orange mb-4">Konsultacijos</p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-16">
-      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-16 h-[480px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
-        <h5 class="font-playfair text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Konsultacija internetu</h5>
-        <p class="font-ale-sans text-black text-16-22px tracking-002em mb-auto">Atsakom i interjero dizaino klausymus per Facebook Messenger Video call.</p>
+    <div class="flex flex-col md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-16">
+      <div class="group flex flex-col bg-white md:bg-cream hover:bg-white px-8 py-8 md:py-16 h-auto md:h-[480px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+        <h5 class="font-playfair text-light-orange md:text-darker-purple text-24-32px md:text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Konsultacija internetu</h5>
+        <p class="font-ale-sans text-black text-16-22px tracking-002em mb-8 md:mb-auto">Atsakom i interjero dizaino klausymus per Facebook Messenger Video call.</p>
 
         <p class="sans text-18-24px text-center font-medium mb-4">80 EUR / val.</p>
 
-        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+        <a href="#" class="flex items-center justify-center w-full border text-light-orange md:text-black border-light-orange md:border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
           <p class="sans text-18-24px tracking-widest">Pasirinkti laiką</p>
         </a>
 
-        <p class="font-ale-sans text-center tracking-002em text-14-19px">Arba skambinkite:</p>
-        <a href="tel:{{ globals:phone }}" class="font-ale-sans text-16-20px tracking-002em underline mx-auto hover:text-orange active:text-dark-orange">{{ globals:phone }}</a>
+        <p class="font-ale-sans text-center tracking-002em text-14-19px hidden md:block">Arba skambinkite:</p>
+        <a href="tel:{{ globals:phone }}" class="font-ale-sans text-16-20px tracking-002em underline mx-auto hover:text-orange active:text-dark-orange hidden md:block">{{ globals:phone }}</a>
       </div>
 
-      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-16 h-[480px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
-        <h5 class="font-playfair text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Konsultacija vietoje*</h5>
-        <p class="font-ale-sans text-black text-16-22px tracking-002em mb-auto">Atsakome į interjero dizaino klausimus atvykus į objektą.
+      <div class="group flex flex-col bg-white md:bg-cream hover:bg-white px-8 py-8 md:py-16 h-auto md:h-[480px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+        <h5 class="font-playfair text-light-orange md:text-darker-purple text-24-32px md:text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Konsultacija vietoje*</h5>
+        <p class="font-ale-sans text-black text-16-22px tracking-002em mb-8 md:mb-auto">Atsakome į interjero dizaino klausimus atvykus į objektą.
           *Kaina Vilniuj ir Vilniaus raj.</p>
 
         <p class="sans text-18-24px text-center font-medium mb-4">130 EUR / 1.5 val.</p>
 
-        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+        <a href="#" class="flex items-center justify-center w-full border text-light-orange md:text-black border-light-orange md:border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
           <p class="sans text-18-24px tracking-widest">Pasirinkti laiką</p>
         </a>
 
-        <p class="font-ale-sans text-center tracking-002em text-14-19px">Arba skambinkite:</p>
-        <a href="tel:{{ globals:phone }}" class="font-ale-sans text-16-20px tracking-002em underline mx-auto hover:text-orange active:text-dark-orange">{{ globals:phone }}</a>
+        <p class="font-ale-sans text-center tracking-002em text-14-19px hidden md:block">Arba skambinkite:</p>
+        <a href="tel:{{ globals:phone }}" class="font-ale-sans text-16-20px tracking-002em underline mx-auto hover:text-orange active:text-dark-orange hidden md:block">{{ globals:phone }}</a>
       </div>
 
-      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-16 h-[480px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
-        <h5 class="font-playfair text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Kuri paketą rinktis?</h5>
+      <div class="group flex flex-col bg-white md:bg-cream hover:bg-white px-8 py-8 md:py-16 h-auto md:h-[480px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+        <h5 class="font-playfair text-light-orange md:text-darker-purple text-24-32px md:text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Kuri paketą rinktis?</h5>
         <p class="font-ale-sans text-black text-16-22px tracking-002em mb-8">Skaityk mūsų paslaugų ir proceso aprašymą arba susiek su mumis👇</p>
 
-        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+        <a href="#" class="flex items-center justify-center w-full border text-light-orange md:text-black border-light-orange md:border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
           <p class="sans text-18-24px tracking-widest">Skaityti aprasymus</p>
         </a>
 
-        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+        <a href="#" class="flex items-center justify-center w-full border text-light-orange md:text-black border-light-orange md:border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
           <p class="sans text-18-24px tracking-widest">Užduoti klausymą</p>
         </a>
+      </div>
+
+      <div class="flex items-center gap-1 mx-auto">
+        <p class="font-ale-sans text-center tracking-002em text-14-19px block md:hidden">Arba skambinkite:</p>
+        <a href="tel:{{ globals:phone }}" class="font-ale-sans text-16-20px tracking-002em underline hover:text-orange active:text-dark-orange flex md:hidden">{{ globals:phone }}</a>
       </div>
     </div>
 
     <p class="sans font-18-24px tracking-widest text-darker-orange mb-4">Paslaugų paketai</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-16">
-      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-8 h-[617px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
-        <div class="w-full h-[30px] mb-4"></div>
-        <h5 class="font-playfair text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Techninis projektas</h5>
+      <div class="group flex flex-col bg-white md:bg-cream hover:bg-white px-8 py-8 md:py-16 h-auto md:h-[480px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+        <div class="w-full h-[30px] mb-4 hidden md:block"></div>
+        <h5 class="font-playfair text-light-orange md:text-darker-purple text-24-32px md:text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Techninis projektas</h5>
         <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Atvykimas ir išmatavimas</p>
         <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Baldų išdėstymo planas</p>
         <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Techniniai brėžiniai</p>
 
         <p class="sans text-18-24px text-center font-medium mb-4 mt-auto">Nuo 30 Eur / kv. m.</p>
 
-        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+        <a href="#" class="flex items-center justify-center w-full border text-light-orange md:text-black border-light-orange md:border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
           <p class="sans text-18-24px tracking-widest">Išsiųsti užklausą</p>
         </a>
 
-        <p class="font-ale-sans text-center tracking-002em text-14-19px">Arba skambinkite:</p>
-        <a href="tel:{{ globals:phone }}" class="font-ale-sans text-16-20px tracking-002em underline mx-auto hover:text-orange active:text-dark-orange">{{ globals:phone }}</a>
-        <div class="w-full h-[30px] mt-4"></div>
+        <p class="font-ale-sans text-center tracking-002em text-14-19px hidden md:block">Arba skambinkite:</p>
+        <a href="tel:{{ globals:phone }}" class="font-ale-sans text-16-20px tracking-002em underline mx-auto hover:text-orange active:text-dark-orange hidden md:block">{{ globals:phone }}</a>
+        <div class="w-full h-[30px] mt-4 hidden md:block"></div>
       </div>
 
-      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-8 h-[617px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
-        <div class="w-full h-[30px] mb-4"></div>
-        <h5 class="font-playfair text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Idejos vizualizacija</h5>
+      <div class="group flex flex-col bg-white md:bg-cream hover:bg-white px-8 py-8 md:py-16 h-auto md:h-[480px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+        <div class="w-full h-[30px] mb-4 hidden md:block"></div>
+        <h5 class="font-playfair text-light-orange md:text-darker-purple text-24-32px md:text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Idejos vizualizacija</h5>
         <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Atvykimas ir išmatavimas</p>
         <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Baldų išdėstymo planas</p>
         <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Stilistikos parinkimas</p>
@@ -133,22 +138,22 @@
 
         <p class="sans text-18-24px text-center font-medium mb-4 mt-auto">Nuo 33 Eur / kv. m.</p>
 
-        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+        <a href="#" class="flex items-center justify-center w-full border text-light-orange md:text-black border-light-orange md:border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
           <p class="sans text-18-24px tracking-widest">Išsiųsti užklausą</p>
         </a>
 
-        <p class="font-ale-sans text-center tracking-002em text-14-19px">Arba skambinkite:</p>
-        <a href="tel:{{ globals:phone }}" class="font-ale-sans text-16-20px tracking-002em underline mx-auto hover:text-orange active:text-dark-orange">{{ globals:phone }}</a>
-        <div class="w-full h-[30px] mt-4"></div>
+        <p class="font-ale-sans text-center tracking-002em text-14-19px hidden md:block">Arba skambinkite:</p>
+        <a href="tel:{{ globals:phone }}" class="font-ale-sans text-16-20px tracking-002em underline mx-auto hover:text-orange active:text-dark-orange hidden md:block">{{ globals:phone }}</a>
+        <div class="w-full h-[30px] mt-4 hidden md:block"></div>
       </div>
 
-      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-8 h-[617px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+      <div class="group flex flex-col bg-white md:bg-cream hover:bg-white px-8 py-8 md:py-16 h-auto md:h-[480px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
         <div class="w-full h-[30px] mb-4">
           <div class="px-2 py-1 bg-light-orange w-fit">
             <p class="font-ale-sans text-white text-16-22px tracking-002em">Populiariausias</p>
           </div>
         </div>
-        <h5 class="font-playfair text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Pilnas projektas</h5>
+        <h5 class="font-playfair text-light-orange md:text-darker-purple text-24-32px md:text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Pilnas projektas</h5>
         <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Atvykimas ir išmatavimas</p>
         <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Baldų išdėstymo planas</p>
         <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Stilistikos parinkimas</p>
@@ -159,42 +164,47 @@
 
         <p class="sans text-18-24px text-center font-medium mb-4 mt-auto">Nuo 2500 EUR</p>
 
-        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+        <a href="#" class="flex items-center justify-center w-full border text-light-orange md:text-black border-light-orange md:border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
           <p class="sans text-18-24px tracking-widest">Išsiųsti užklausą</p>
         </a>
 
-        <p class="font-ale-sans text-center tracking-002em text-14-19px">Arba skambinkite:</p>
-        <a href="tel:{{ globals:phone }}" class="font-ale-sans text-16-20px tracking-002em underline mx-auto hover:text-orange active:text-dark-orange">{{ globals:phone }}</a>
-        <div class="w-full h-[30px] mt-4"></div>
+        <p class="font-ale-sans text-center tracking-002em text-14-19px hidden md:block">Arba skambinkite:</p>
+        <a href="tel:{{ globals:phone }}" class="font-ale-sans text-16-20px tracking-002em underline mx-auto hover:text-orange active:text-dark-orange hidden md:block">{{ globals:phone }}</a>
+        <div class="w-full h-[30px] mt-4 hidden md:block"></div>
       </div>
 
-      <div class="group flex flex-col bg-cream hover:bg-white px-8 py-8 h-[617px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
-        <div class="w-full h-[30px] mb-4"></div>
-        <h5 class="sans text-darker-purple text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Mini projektas</h5>
-        <p class="sans text-black text-14-17px tracking-002em h-[33px]">Atvykimas ir išmatavimas</p>
-        <p class="sans text-black text-14-17px tracking-002em h-[33px]">Baldų išdėstymo planas</p>
-        <p class="sans text-black text-14-17px tracking-002em h-[33px]">Stilistikos parinkimas</p>
-        <p class="sans text-black text-14-17px tracking-002em h-[33px]">Interjero koliažas</p>
-        <p class="sans text-black text-14-17px tracking-002em h-[33px]">Pagrindiniai techniniai brėžiniai</p>
-        <p class="sans text-black text-14-17px tracking-002em h-[33px]">Medžiagų ir baldų sąrašas</p>
+      <div class="group flex flex-col bg-white md:bg-cream hover:bg-white px-8 py-8 md:py-16 h-auto md:h-[480px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] rounded">
+        <div class="w-full h-[30px] mb-4 hidden md:block"></div>
+        <h5 class="font-playfair text-light-orange md:text-darker-purple text-24-32px md:text-28-37px tracking-006em font-bold mb-4 group-hover:text-light-orange duration-75">Mini projektas</h5>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Atvykimas ir išmatavimas</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Baldų išdėstymo planas</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Stilistikos parinkimas</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Interjero koliažas</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Pagrindiniai techniniai brėžiniai</p>
+        <p class="font-ale-sans text-black text-14-17px tracking-002em h-[33px]">Medžiagų ir baldų sąrašas</p>
 
         <p class="sans text-18-24px text-center font-medium mb-4 mt-auto">Nuo 27 Eur / kv. m.</p>
 
-        <a href="#" class="flex items-center justify-center w-full border border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
+        <a href="#" class="flex items-center justify-center w-full border text-light-orange md:text-black border-light-orange md:border-black rounded h-[40px] mb-4 group-hover:border-light-orange group-hover:text-light-orange duration-75 cursor-pointer hover:bg-light-orange hover:group-hover:text-white active:bg-dark-orange active:border-dark-orange">
           <p class="sans text-18-24px tracking-widest">Išsiųsti užklausą</p>
         </a>
 
-        <p class="sans text-center tracking-002em text-14-19px">Arba skambinkite:</p>
-        <a href="tel:{{ globals:phone }}" class="sans text-16-20px tracking-002em underline mx-auto">{{ globals:phone }}</a>
-        <div class="w-full h-[30px] mb-4"></div>
+        <p class="font-ale-sans text-center tracking-002em text-14-19px hidden md:block">Arba skambinkite:</p>
+        <a href="tel:{{ globals:phone }}" class="font-ale-sans text-16-20px tracking-002em underline mx-auto hidden md:block">{{ globals:phone }}</a>
+        <div class="w-full h-[30px] mb-4 hidden md:block"></div>
+      </div>
+
+      <div class="flex items-center gap-1 mx-auto">
+        <p class="font-ale-sans text-center tracking-002em text-14-19px block md:hidden">Arba skambinkite:</p>
+        <a href="tel:{{ globals:phone }}" class="font-ale-sans text-16-20px tracking-002em underline hover:text-orange active:text-dark-orange flex md:hidden">{{ globals:phone }}</a>
       </div>
     </div>
 
     <p class="sans font-18-24px tracking-widest text-darker-orange mb-4">Papildomos paslaugas</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-      <div class="group flex flex-col bg-cream hover:bg-white active:bg-clicked-card-bg p-8 h-[258px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] active:shadow-none rounded cursor-pointer">
-        <h5 class="font-playfair text-darker-purple text-24-32px tracking-006em font-bold mb-4 group-hover:text-light-orange group-active:text-dark-orange duration-75">360° vizualizacijos</h5>
+      <div class="group flex flex-col bg-white md:bg-cream hover:bg-white active:bg-clicked-card-bg p-8 h-[258px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] active:shadow-none rounded cursor-pointer">
+        <h5 class="font-playfair text-light-orange md:text-darker-purple text-24-32px tracking-006em font-bold mb-4 group-hover:text-light-orange group-active:text-dark-orange duration-75">360° vizualizacijos</h5>
         <p class="font-ale-sans text-black text-16-22px tracking-002em mb-auto">Peržiurek savo svajoniu projekta is visu kampu</p>
 
         <div class="flex items-center gap-2">
@@ -205,8 +215,8 @@
         </div>
       </div>
 
-      <div class="group flex flex-col bg-cream hover:bg-white active:bg-clicked-card-bg p-8 h-[258px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] active:shadow-none rounded cursor-pointer">
-        <h5 class="font-playfair text-darker-purple text-24-32px tracking-006em font-bold mb-4 group-hover:text-light-orange group-active:text-dark-orange duration-75">Virtualios realybes erdvė</h5>
+      <div class="group flex flex-col bg-white md:bg-cream hover:bg-white active:bg-clicked-card-bg p-8 h-[258px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] active:shadow-none rounded cursor-pointer">
+        <h5 class="font-playfair text-light-orange md:text-darker-purple text-24-32px tracking-006em font-bold mb-4 group-hover:text-light-orange group-active:text-dark-orange duration-75">Virtualios realybes erdvė</h5>
         <p class="font-ale-sans text-black text-16-22px tracking-002em mb-auto">Peržiurek savo projekta su VR akiniais</p>
 
         <div class="flex items-center gap-2">
@@ -217,8 +227,8 @@
         </div>
       </div>
 
-      <div class="group flex flex-col bg-cream hover:bg-white active:bg-clicked-card-bg p-8 h-[258px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] active:shadow-none rounded cursor-pointer">
-        <h5 class="font-playfair text-darker-purple text-24-32px tracking-006em font-bold mb-4 group-hover:text-light-orange group-active:text-dark-orange duration-75">Autorinė priežiūra</h5>
+      <div class="group flex flex-col bg-white md:bg-cream hover:bg-white active:bg-clicked-card-bg p-8 h-[258px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] active:shadow-none rounded cursor-pointer">
+        <h5 class="font-playfair text-light-orange md:text-darker-purple text-24-32px tracking-006em font-bold mb-4 group-hover:text-light-orange group-active:text-dark-orange duration-75">Autorinė priežiūra</h5>
         <p class="font-ale-sans text-black text-16-22px tracking-002em mb-auto">Profesionali priežiura ir korekcijos projekto igivendinimo metu</p>
 
         <div class="flex items-center gap-2">
@@ -229,8 +239,8 @@
         </div>
       </div>
 
-      <div class="group flex flex-col bg-cream hover:bg-white active:bg-clicked-card-bg p-8 h-[258px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] active:shadow-none rounded cursor-pointer">
-        <h5 class="font-playfair text-darker-purple text-24-32px tracking-006em font-bold mb-4 group-hover:text-light-orange group-active:text-dark-orange duration-75 mb-auto">Visos paslaugos</h5>
+      <div class="group flex flex-col bg-white md:bg-cream hover:bg-white active:bg-clicked-card-bg p-8 h-[258px] shadow-[24px_33px_100px_rgba(63,34,31,0.1)] hover:shadow-[24px_33px_100px_rgba(126,44,26,0.15)] active:shadow-none rounded cursor-pointer">
+        <h5 class="font-playfair text-light-orange md:text-darker-purple text-24-32px tracking-006em font-bold mb-4 group-hover:text-light-orange group-active:text-dark-orange duration-75 mb-auto">Visos paslaugos</h5>
 
         <div class="flex items-center gap-2">
           <p class="font-sans group-hover:underline group-hover:text-light-orange group-active:text-dark-orange text-black text-16-22px tracking-widest duration-75">Žiūrėti</p>
@@ -242,7 +252,7 @@
     </div>
   </div>
 
-  <div class="pricing-page-bg-shadow absolute bottom-0 left-0 origin-center rotate-180 w-full"></div>
+  <div class="pricing-page-bg-shadow h-16 md:h-32 absolute bottom-0 left-0 origin-center rotate-180 w-full"></div>
 </div>
 
 <div class="container max-w-1215px w-full items-center mx-auto px-4 mb-9">
