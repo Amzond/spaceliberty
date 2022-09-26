@@ -699,12 +699,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem !important;
 }
 
-.mb-auto {
-  margin-bottom: auto !important;
-}
-
 .mt-4 {
   margin-top: 1rem !important;
+}
+
+.mb-auto {
+  margin-bottom: auto !important;
 }
 
 .mb-2 {
@@ -819,16 +819,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 4rem !important;
 }
 
-.h-\[480px\] {
-  height: 480px !important;
+.h-auto {
+  height: auto !important;
 }
 
 .h-\[40px\] {
   height: 40px !important;
-}
-
-.h-\[617px\] {
-  height: 617px !important;
 }
 
 .h-\[30px\] {
@@ -984,10 +980,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: 1.3fr 0.7fr !important;
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
-}
-
 .grid-cols-1-2fr {
   grid-template-columns: 0.6fr 1.3fr !important;
 }
@@ -1028,6 +1020,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 2rem !important;
 }
 
+.gap-1 {
+  gap: 0.25rem !important;
+}
+
 .gap-2 {
   gap: 0.5rem !important;
 }
@@ -1038,10 +1034,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-4 {
   gap: 1rem !important;
-}
-
-.gap-1 {
-  gap: 0.25rem !important;
 }
 
 .overflow-hidden {
@@ -1109,11 +1101,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-cream {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(255 249 245 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-light-orange {
@@ -1327,9 +1314,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Alegreya, sans !important;
 }
 
-.text-28-37px {
-  font-size: 28px !important;
-  line-height: 37px !important;
+.text-24-32px {
+  font-size: 24px !important;
+  line-height: 32px !important;
 }
 
 .text-16-22px {
@@ -1357,9 +1344,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 17px !important;
 }
 
-.text-24-32px {
-  font-size: 24px !important;
-  line-height: 32px !important;
+.text-28-37px {
+  font-size: 28px !important;
+  line-height: 37px !important;
 }
 
 .text-28px {
@@ -1450,11 +1437,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-black {
   --tw-text-opacity: 1 !important;
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
-}
-
-.text-darker-purple {
-  --tw-text-opacity: 1 !important;
-  color: rgb(70 1 117 / var(--tw-text-opacity)) !important;
 }
 
 .text-white {
@@ -2520,8 +2502,32 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 8rem !important;
   }
 
+  .md\:mb-auto {
+    margin-bottom: auto !important;
+  }
+
+  .md\:mt-auto {
+    margin-top: auto !important;
+  }
+
+  .md\:block {
+    display: block !important;
+  }
+
+  .md\:grid {
+    display: grid !important;
+  }
+
+  .md\:hidden {
+    display: none !important;
+  }
+
   .md\:h-32 {
     height: 8rem !important;
+  }
+
+  .md\:h-\[480px\] {
+    height: 480px !important;
   }
 
   .md\:grid-cols-2 {
@@ -2541,6 +2547,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:py-32 {
     padding-top: 8rem !important;
     padding-bottom: 8rem !important;
+  }
+
+  .md\:py-16 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .md\:text-28-37px {
+    font-size: 28px !important;
+    line-height: 37px !important;
   }
 
   .md\:text-darker-purple {
