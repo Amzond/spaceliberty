@@ -561,6 +561,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px !important;
 }
 
+.left-4 {
+  left: 1rem !important;
+}
+
+.top-4 {
+  top: 1rem !important;
+}
+
 .top-8 {
   top: 2rem !important;
 }
@@ -699,6 +707,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem !important;
 }
 
+.ml-auto {
+  margin-left: auto !important;
+}
+
 .mt-4 {
   margin-top: 1rem !important;
 }
@@ -725,10 +737,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-16 {
   margin-top: 4rem !important;
-}
-
-.ml-auto {
-  margin-left: auto !important;
 }
 
 .ml-4 {
@@ -915,6 +923,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
   width: fit-content !important;
+}
+
+.w-\[282px\] {
+  width: 282px !important;
 }
 
 .w-40 {
@@ -1178,6 +1190,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem !important;
 }
 
+.p-5 {
+  padding: 1.25rem !important;
+}
+
 .p-2 {
   padding: 0.5rem !important;
 }
@@ -1398,6 +1414,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-semibold {
   font-weight: 600 !important;
+}
+
+.italic {
+  font-style: italic !important;
 }
 
 .leading-normal {
@@ -2322,6 +2342,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   background: linear-gradient(180deg, #F1C4A6 0%, rgba(252, 224, 205, 0) 100%);
 }
 
+.hovered-question-mark {
+  display: none;
+}
+
+.inactive-question-mark {
+  display: none;
+}
+
+.muted-question-mark {
+  display: block;
+}
+
+.service-packet-card:hover .muted-question-mark {
+  display: none;
+}
+
+.service-packet-card:hover .inactive-question-mark {
+  display: block;
+}
+
+.question-mark-icon:hover .inactive-question-mark {
+  display: none;
+}
+
+.question-mark-icon:hover .hovered-question-mark {
+  display: block;
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent !important;
 }
@@ -2336,13 +2384,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(238 127 79 / var(--tw-bg-opacity)) !important;
 }
 
+.hover\:bg-lang-bg-h:hover {
+  background-color: rgba(242, 148, 107, 0.05) !important;
+}
+
 .hover\:bg-orange:hover {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(242 148 107 / var(--tw-bg-opacity)) !important;
-}
-
-.hover\:bg-lang-bg-h:hover {
-  background-color: rgba(242, 148, 107, 0.05) !important;
 }
 
 .hover\:bg-white-menu-bg-a:hover {
@@ -2528,6 +2576,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:h-\[480px\] {
     height: 480px !important;
+  }
+
+  .md\:h-\[617px\] {
+    height: 617px !important;
   }
 
   .md\:grid-cols-2 {

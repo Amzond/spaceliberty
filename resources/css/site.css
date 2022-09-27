@@ -757,3 +757,31 @@ color: #000000;
 .pricing-page-bg-shadow {
   background: linear-gradient(180deg, #F1C4A6 0%, rgba(252, 224, 205, 0) 100%);
 }
+
+.hovered-question-mark {
+  display: none;
+}
+
+.inactive-question-mark {
+  display: none;
+}
+
+.muted-question-mark {
+  display: block;
+}
+
+.service-packet-card:hover .muted-question-mark {
+  display: none;
+}
+
+.service-packet-card:hover .inactive-question-mark {
+  display: block;
+}
+
+.question-mark-icon:hover .inactive-question-mark {
+  display: none;
+}
+
+.question-mark-icon:hover .hovered-question-mark {
+  display: block;
+}
