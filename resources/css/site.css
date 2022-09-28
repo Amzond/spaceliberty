@@ -767,14 +767,18 @@ color: #000000;
 }
 
 .muted-question-mark {
-  display: block;
-}
-
-.service-packet-card:hover .muted-question-mark {
   display: none;
 }
 
-.service-packet-card:hover .inactive-question-mark {
+.service-packet-card:hover .muted-question-mark {
+  display: block;
+}
+
+.service-packet-item:hover .muted-question-mark {
+  display: none;
+}
+
+.service-packet-item:hover .inactive-question-mark{
   display: block;
 }
 

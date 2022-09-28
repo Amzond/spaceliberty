@@ -565,6 +565,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 1rem !important;
 }
 
+.right-4 {
+  right: 1rem !important;
+}
+
 .top-4 {
   top: 1rem !important;
 }
@@ -2351,14 +2355,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .muted-question-mark {
-  display: block;
-}
-
-.service-packet-card:hover .muted-question-mark {
   display: none;
 }
 
-.service-packet-card:hover .inactive-question-mark {
+.service-packet-card:hover .muted-question-mark {
+  display: block;
+}
+
+.service-packet-item:hover .muted-question-mark {
+  display: none;
+}
+
+.service-packet-item:hover .inactive-question-mark{
   display: block;
 }
 
