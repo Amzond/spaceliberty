@@ -789,3 +789,23 @@ color: #000000;
 .question-mark-icon:hover .hovered-question-mark {
   display: block;
 }
+
+@media only screen and (max-width: 767px) {
+  .muted-question-mark {
+    display: block;
+  }
+}
+
+.black-scrollbar::-webkit-scrollbar {
+  width: 2px;
+}
+
+.black-scrollbar::-webkit-scrollbar-track {
+  background: #00000005;
+  border-radius: 8px;
+}
+
+.black-scrollbar::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 8px;
+}

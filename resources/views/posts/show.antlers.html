@@ -91,7 +91,7 @@
 
     <div class="relative w-full h-full">
         <img id="modal-img" class="h-full m-auto zoom-animation object-contain" src="" alt="" />
-        <div id="top-modal-overlay" class="absolute top-0 left-0 w-full h-80 bg-img-top-shadow lg:px-32 px-5 py-4 flex items-center duration-300 ease-in">
+        <div id="top-modal-overlay" class="absolute top-0 left-0 w-full h-80 bg-img-top-shadow md:px-32 px-5 py-4 flex items-center duration-300 ease-in">
             <div>
                 <p id="images-count" class="sans text-18-24px font-medium text-white tracking-widest">Image 2 of 12</p>
                 <div class="flex items-center">
@@ -108,18 +108,18 @@
                 </svg>
             </div>
         </div>
-        <div id="images-scrollable" class="absolute bottom-8 left-0 right-0 mx-auto w-fit max-w-full lg:max-w-1215px bg-black-0.25 p-2 rounded flex items-center gap-2 overflow-hidden duration-300 ease-in">
+        <div id="images-scrollable" class="absolute bottom-8 left-0 right-0 mx-auto w-fit max-w-full md:max-w-1215px bg-black-0.25 p-2 rounded flex items-center gap-2 overflow-hidden duration-300 ease-in">
             {{post_content }}
             {{ if type == "one_image" }}
             {{ image }}
-            <img class="h-11 lg:h-14 cursor-pointer rounded-sm border border-transparent modal-images" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{photo_author}}', this)">
+            <img class="h-11 md:h-14 cursor-pointer rounded-sm border border-transparent modal-images" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{photo_author}}', this)">
             {{ /image }}
             {{ elseif type == "two_images_in_row"}}
             {{image1}}
-            <img class="h-11 lg:h-14 cursor-pointer rounded-sm border border-transparent modal-images" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image1_author}}', this)">
+            <img class="h-11 md:h-14 cursor-pointer rounded-sm border border-transparent modal-images" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image1_author}}', this)">
             {{/image1}}
             {{image2}}
-            <img class="h-11 lg:h-14 cursor-pointer rounded-sm border border-transparent modal-images" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image2_author}}', this)">
+            <img class="h-11 md:h-14 cursor-pointer rounded-sm border border-transparent modal-images" src="{{url}}" alt="" onclick="selectImage('{{url}}', '{{image2_author}}', this)">
             {{/image2}}
             {{ /if }}
             {{/post_content }}

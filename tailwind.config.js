@@ -89,7 +89,6 @@ module.exports = {
         'desktop': {'min': '1025px'},
         'tablet': {'min': '751px', 'max': '1024px'},
         'mobile': {'min': '300px', 'max': '750px'},
-        'lg': '851px',
         'bp-footer': '1234px',
         '1215px-screen': '1215px',
       },
